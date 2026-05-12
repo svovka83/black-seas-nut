@@ -1,5 +1,6 @@
 import { initializeApp, getApps, getApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
+import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
 	apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
@@ -10,26 +11,18 @@ const firebaseConfig = {
 	appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
-let app;
-let db;
+const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
+const db = getFirestore(app);
+const auth = getAuth(app);
 
-export function getFirebase() {
-	if (!app) {
-		app = getApps().length ? getApp() : initializeApp(firebaseConfig);
-		db = getFirestore(app);
-	}
-
-	return { app, db };
-}
+export { app, db, auth };
 
 // template for every page
 
-// if (document.querySelector(".main-page")) {
-// 	const { getFirebase } = await import("../../firebase.js");
+// const page = document.body.dataset.page;
 
+// if (page === "main") {
 // 	const { initGeneral } = await import("../../init-general.js");
 
-// 	const { db } = getFirebase();
-
-// 	await initGeneral(db);
+// 	await initGeneral();
 // }

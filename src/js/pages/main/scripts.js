@@ -1,9 +1,7 @@
-if (document.querySelector(".main-page")) {
-	const { getFirebase } = await import("../../firebase.js");
+const page = document.body.dataset.page;
 
+if (page === "main") {
 	const { initGeneral } = await import("../../init-general.js");
 
-	const { db } = getFirebase();
-
-	await initGeneral(db);
+	await initGeneral();
 }
