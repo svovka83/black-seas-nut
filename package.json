@@ -1,0 +1,31 @@
+{
+	"name": "seedra",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"deploy": "gh-pages -d dist"
+	},
+	"devDependencies": {
+		"@fluejs/noscroll": "^1.0.0",
+		"gh-pages": "^6.3.0",
+		"sass": "^1.99.0",
+		"sharp": "^0.34.5",
+		"svgo": "^4.0.1",
+		"vite": "^8.0.4",
+		"vite-plugin-image-optimizer": "^2.0.3",
+		"vite-plugin-nunjucks": "^0.2.0"
+	},
+	"dependencies": {
+		"firebase": "^12.12.0",
+		"imask": "^7.6.1",
+		"libphonenumber-js": "^1.12.42",
+		"nouislider": "^15.8.1",
+		"swiper": "^12.1.3",
+		"toastify-js": "^1.12.0",
+		"validator": "^13.15.35"
+	}
+}
