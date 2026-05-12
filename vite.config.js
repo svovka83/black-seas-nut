@@ -22,7 +22,7 @@ export default defineConfig({
 			},
 		},
 	},
-	base: "/seedra/",
+	base: "/black-seas-nut/",
 });
 
 // const base = import.meta.env.BASE_URL;
