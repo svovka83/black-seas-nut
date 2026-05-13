@@ -6,7 +6,109 @@
 		<title>Главная страница</title>
 		<link rel="stylesheet" href="src/scss/styles.scss" />
 	</head>
-	<body data-page="main" class="container" style="margin-top: 40px">
+	<body data-page="main">
+		<!-- header -->
+		<header class="header">
+			<div class="header-top-desktop">
+				<div class="header-top-desktop__inner container">
+					<div class="header-top-desktop__socials">
+						<!-- socialIcons() -->
+						<!-- prettier-ignore -->
+						{% from "src/partials/components/layouts/social-icons.njk" import socialIcons %}
+						{{ socialIcons() }}
+					</div>
+					<p class="header-top-desktop__discount">
+						<!-- getDiscount() -->
+					</p>
+					<div class="header-top-desktop__sign">
+						<!-- getSign() -->
+					</div>
+					<div class="header-top-desktop__language">
+						<span class="header-top-desktop__language-title">Ru</span>
+						<svg class="header-top-desktop__language-icon">
+							<use href="images/sprites.svg#chevron-icon"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+
+			<div class="header-top-mobile">
+				<div class="header-top-mobile__inner container">
+					<ul class="header-top-mobile__info">
+						<li class="header-top-mobile__item">
+							<a class="header-top-mobile__link" href="tel:+380447505011">
+								<svg class="header-top-mobile__icon">
+									<use href="images/sprites.svg#mobile-phone-icon"></use>
+								</svg>
+								<span class="header-top-mobile__primary-text">+38 (044)</span> 750-50-11
+							</a>
+						</li>
+						<li class="header-top-mobile__item">
+							<a class="header-top-mobile__link" href="#!"
+								><span class="header-top-mobile__primary-text header-top-mobile__primary-text_underline"
+									>Заказать звонок</span
+								></a
+							>
+						</li>
+					</ul>
+					<div class="header-top-mobile__language">
+						<span class="header-top-mobile__language-title">Ru</span>
+						<svg class="header-top-mobile__language-icon">
+							<use href="images/sprites.svg#chevron-icon"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+
+			<div class="header-middle">
+				<div class="header-middle__inner container">
+					<button class="header-middle__burger">
+						<svg class="header-middle__burger-icon">
+							<use href="images/sprites.svg#burger-icon"></use>
+						</svg>
+					</button>
+					<div class="header-middle__logo">
+						<!-- logo( classLogo ) -->
+						<!-- prettier-ignore -->
+						{% from "src/partials/components/layouts/logo.njk" import logo %}
+					{{ logo( "" ) }}
+					</div>
+					<div class="header-middle__contacts">
+						<!-- contactIcons() -->
+						<!-- prettier-ignore -->
+						{% from "src/partials/components/layouts/contact-icons.njk" import contactIcons %}
+					{{ contactIcons() }}
+					</div>
+					<div class="header-middle__phones">
+						<a class="header-middle__link" href="tel:+380447505011"
+							><span class="header-middle__primary-text">+38 (044) </span> 750-50-11</a
+						>
+						<a class="header-middle__link" href="tel:+380977755051"
+							><span class="header-middle__primary-text">+38 (097)</span> 775-50-51</a
+						>
+					</div>
+					<div class="header-middle__button">
+						<!-- getButton() -->
+					</div>
+					<p class="header-middle__text">Ждем Вашего звонка ежедневно с 9 до 18</p>
+					<div class="header-middle__bag">
+						<!-- getBag() -->
+					</div>
+				</div>
+			</div>
+
+			<div class="header-bottom-desktop container">
+				<!-- menuHeader() -->
+				<!-- prettier-ignore -->
+				{% from "src/partials/components/layouts/menu-header.njk" import menuHeader %}
+				{{ menuHeader() }}
+			</div>
+
+			<div class="header-bottom-mobile">
+				<p class="header-bottom-mobile__discount">Ваша персональная скидка - 5%</p>
+			</div>
+		</header>
+
 		<main></main>
 
 		<script type="module" src="src/js/pages/main/scripts.js"></script>

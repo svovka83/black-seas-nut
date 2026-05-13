@@ -1,0 +1,27 @@
+@use "../../settings/variables.scss" as *;
+
+.bag {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	&__icon {
+		width: 24px;
+		height: 24px;
+		fill: $color_primary;
+	}
+	&__quantity {
+		position: absolute;
+		top: 0px;
+		right: -5px;
+		display: inline-block;
+		width: 15px;
+		height: 15px;
+		padding: 3px 5px;
+		background-color: $color_secondary;
+		border-radius: 50%;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 700;
+		font-size: 8px;
+		color: $white;
+	}
+}

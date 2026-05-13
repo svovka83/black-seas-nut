@@ -1,0 +1,32 @@
+@use "../../settings/variables.scss" as *;
+
+.menu-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 52px;
+	@media (max-width: 1200px) {
+		column-gap: 20px;
+	}
+	&__item {
+		padding-inline: 8px;
+		padding-bottom: 12px;
+		color: $text_primary;
+		border-bottom: 3px solid transparent;
+		cursor: pointer;
+		transition: color 0.3s ease, border 0.3s ease;
+		&:hover {
+			color: $color_secondary;
+			border-bottom: 3px solid $color_secondary;
+		}
+		&_active {
+			color: $color_primary;
+			border-bottom: 3px solid $color_primary;
+		}
+	}
+	&__link {
+		font-weight: 600;
+		font-size: 15px;
+		color: inherit;
+	}
+}

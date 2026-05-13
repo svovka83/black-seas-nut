@@ -1,0 +1,29 @@
+@use "../../settings/variables.scss" as *;
+
+.sign {
+	width: 158px;
+	display: inline-flex;
+	justify-content: end;
+	align-items: center;
+	column-gap: 27px;
+	&__item {
+		font-weight: 500;
+		font-size: 13px;
+		letter-spacing: 4%;
+		border-bottom: 2px solid transparent;
+		cursor: pointer;
+		transition: border 0.3s ease;
+		&:hover {
+			border-bottom: 2px solid $color_secondary;
+		}
+	}
+	&__icon {
+		width: 11px;
+		height: 11px;
+		fill: $color_secondary;
+		margin-right: 2px;
+		transform: translate(0px, 1px);
+	}
+}
+
+// create line for signout-icon or download one

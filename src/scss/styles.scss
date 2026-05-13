@@ -4,8 +4,19 @@
 @use "./settings/fonts.scss";
 @use "./settings/base.scss";
 
-// components
+// UI
+@use "./ui/button.scss";
+
+// components/layouts
 
 @use "./components/layouts/logo.scss";
 @use "./components/layouts/contact-icons.scss";
 @use "./components/layouts/social-icons.scss";
+@use "./components/layouts/menu-header.scss";
+@use "./components/layouts/menu-footer.scss";
+@use "./components/layouts/sign.scss";
+@use "./components/layouts/bag.scss";
+
+// modules
+
+@use "./modules/header.scss";

@@ -1,0 +1,205 @@
+@use "../settings/variables.scss" as *;
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.header-top-desktop {
+	background-color: #fafafa;
+	&__inner {
+		height: 38px;
+		display: grid;
+		grid-template-columns: 265px 1fr 207px 30px;
+		align-items: center;
+	}
+	&__socials {
+	}
+	&__discount {
+		justify-self: center;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 600;
+		font-size: 14px;
+		letter-spacing: 4%;
+		color: $color_primary;
+		@media (max-width: 1024px) {
+			visibility: hidden;
+		}
+	}
+	&__sign {
+	}
+	&__language {
+		cursor: pointer;
+		&-title {
+			font-size: 13px;
+			letter-spacing: 5%;
+			color: #000;
+		}
+		&-icon {
+			width: 8px;
+			height: 6px;
+			fill: $color_secondary;
+		}
+	}
+	@media (max-width: 768px) {
+		display: none;
+	}
+}
+
+.header-top-mobile {
+	background-color: #fafafa;
+	&__inner {
+		height: 38px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__info {
+	}
+	&__item {
+		display: inline-block;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 600;
+		font-size: 12px;
+		letter-spacing: 2%;
+		margin-right: 18px;
+	}
+	&__link {
+	}
+	&__icon {
+		width: 10px;
+		height: 10px;
+		fill: $color_primary;
+	}
+	&__primary-text {
+		color: $color_primary;
+		&_underline {
+			padding-bottom: 2px;
+			border-bottom: 1px solid $color_primary;
+		}
+	}
+	&__language {
+		width: 55px;
+		height: 38px;
+		border: 1px solid $color_secondary;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transform: translate(12px, 0px);
+		cursor: pointer;
+		&-title {
+			font-size: 13px;
+			letter-spacing: 5%;
+			color: #000;
+			margin-right: 2px;
+		}
+		&-icon {
+			width: 10px;
+			height: 8px;
+			fill: $color_primary;
+			transform: translate(0px, 2px);
+		}
+	}
+	@media (min-width: 769px) {
+		display: none;
+	}
+}
+
+.header-middle {
+	border-bottom: 1px solid #0000000f;
+	&__inner {
+		height: 84px;
+		display: grid;
+		grid-template-columns: 1fr 142px 222px 164px 203px 30px;
+		align-items: center;
+		@media (max-width: 1024px) {
+			display: flex;
+			justify-content: space-between;
+			height: 79px;
+		}
+	}
+	&__burger {
+		&-icon {
+			width: 17px;
+			height: 19px;
+			fill: #000;
+		}
+		@media (min-width: 1025px) {
+			display: none;
+		}
+	}
+	&__logo {
+		transform: translate(0px, 4px);
+		@media (max-width: 768px) {
+			transform: translate(4px, 2px);
+		}
+	}
+	&__contacts {
+		transform: translate(0px, -4px);
+		@media (max-width: 1024px) {
+			display: none;
+		}
+	}
+	&__phones {
+		width: 136px;
+		@media (max-width: 768px) {
+			display: none;
+		}
+	}
+	&__link {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 600;
+		font-size: 13px;
+		letter-spacing: 2%;
+	}
+	&__primary-text {
+		color: $color_primary;
+	}
+	&__button {
+		width: 148px;
+		@media (max-width: 768px) {
+			display: none;
+		}
+	}
+	&__text {
+		width: 178px;
+		font-family: "Montserrat", sans-serif;
+		font-size: 12px;
+		letter-spacing: 10%;
+		color: $text_secondary;
+		@media (max-width: 1024px) {
+			display: none;
+		}
+	}
+	&__bag {
+		@media (max-width: 768px) {
+			transform: translate(-3px, -1px);
+		}
+	}
+}
+
+.header-bottom-desktop {
+	height: 38px;
+	padding-top: 22px;
+	@media (max-width: 1024px) {
+		display: none;
+	}
+}
+
+.header-bottom-mobile {
+	height: 38px;
+	text-align: center;
+	&__discount {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 600;
+		font-size: 13px;
+		letter-spacing: 4%;
+		padding-top: 8px;
+		color: $color_primary;
+	}
+	@media (min-width: 1025px) {
+		display: none;
+	}
+}
