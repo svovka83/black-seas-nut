@@ -1,0 +1,38 @@
+.logo {
+	display: inline-flex;
+	align-items: center;
+	column-gap: 8px;
+	&__img {
+		width: 54px;
+		height: 53px;
+	}
+	&__text {
+		width: 155px;
+		font-weight: 800;
+		font-size: 15px;
+		letter-spacing: -8.5%;
+	}
+	&_menu {
+		.logo__img {
+			width: 34px;
+			height: 33px;
+		}
+		.logo__text {
+			width: 140px;
+			font-size: 12px;
+		}
+	}
+	@media (max-width: 768px) {
+		flex-direction: column;
+		row-gap: 7px;
+		&__img {
+			width: 29px;
+			height: 28px;
+		}
+		&__text {
+			text-align: center;
+			width: 130px;
+			font-size: 11px;
+		}
+	}
+}

@@ -1,0 +1,19 @@
+@use "../../settings/variables.scss" as *;
+
+.social-icons {
+	display: flex;
+	column-gap: 16px;
+	&__item {
+		&:first-of-type .social-icons__icon {
+			fill: $color_secondary;
+		}
+	}
+	&__link {
+		line-height: 0;
+	}
+	&__icon {
+		width: 16px;
+		height: 16px;
+		fill: #323232;
+	}
+}

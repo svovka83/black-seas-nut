@@ -5,3 +5,7 @@
 @use "./settings/base.scss";
 
 // components
+
+@use "./components/layouts/logo.scss";
+@use "./components/layouts/contact-icons.scss";
+@use "./components/layouts/social-icons.scss";
