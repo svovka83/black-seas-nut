@@ -1,0 +1,1 @@
+function e(){let e=document.querySelector(`.header-top-desktop__discount`),t=document.querySelector(`.header-bottom-mobile`);e&&t&&(e.innerText=`Ваша персональная скидка - 5%`)}export{e as getDiscount};
