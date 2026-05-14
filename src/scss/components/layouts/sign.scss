@@ -1,7 +1,7 @@
 @use "../../settings/variables.scss" as *;
 
 .sign {
-	width: 158px;
+	width: 164px;
 	display: inline-flex;
 	justify-content: end;
 	align-items: center;
@@ -9,7 +9,7 @@
 	&__item {
 		font-weight: 500;
 		font-size: 13px;
-		letter-spacing: 4%;
+		letter-spacing: 2%;
 		border-bottom: 2px solid transparent;
 		cursor: pointer;
 		transition: border 0.3s ease;

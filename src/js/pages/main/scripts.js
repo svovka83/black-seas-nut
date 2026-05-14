@@ -3,6 +3,8 @@ async function initApp() {
 	const page = document.body.dataset.page;
 
 	try {
+		document.body.style.overflow = "hidden";
+
 		if (page === "main") {
 			const { initGeneral } = await import("../../init-general.js");
 			const { lightMenuHeader, lightMenuFooter } = await import("../../utils/light-current-page.js");

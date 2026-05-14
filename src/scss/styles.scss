@@ -5,6 +5,7 @@
 @use "./settings/base.scss";
 
 // UI
+@use "./ui/title.scss";
 @use "./ui/button.scss";
 
 // components/preloader
@@ -21,3 +22,4 @@
 
 // modules
 @use "./modules/header.scss";
+@use "./modules/footer.scss";

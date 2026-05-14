@@ -1,0 +1,12 @@
+@use "../settings/variables.scss" as *;
+
+.title {
+	font-family: "Raleway", sans-serif;
+	&_h2 {
+		font-weight: 800;
+		font-size: 45px;
+	}
+	&_white {
+		color: $white;
+	}
+}

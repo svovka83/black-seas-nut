@@ -1,0 +1,6 @@
+{# heading - 1: h2 #}
+{# classTitle - 1: title_h2  2: title_white #}
+
+{% macro title( heading, classTitle, title ) %}
+  <{{ heading }} class="title {{ classTitle }}">{{ title }}</{{ heading }}>
+{% endmacro %}

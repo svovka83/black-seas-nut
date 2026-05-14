@@ -1,0 +1,77 @@
+@use "../settings/variables.scss" as *;
+
+.footer {
+}
+
+.footer-top {
+	&__inner {
+	}
+	&__content {
+	}
+	&__map {
+	}
+}
+
+.footer-middle {
+	padding-bottom: 8px;
+	border-bottom: 1px solid #00000014;
+	@media (max-width: 1240px) {
+		padding-bottom: 24px;
+	}
+	&__inner {
+		height: 64px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@media (max-width: 1240px) {
+			justify-content: center;
+		}
+	}
+	&__logo {
+		transform: translate(0px, -8px);
+		@media (max-width: 1240px) {
+			transform: translate(0px, 0px);
+		}
+	}
+	&__menu {
+		@media (max-width: 1240px) {
+			display: none;
+		}
+	}
+}
+
+.footer-bottom {
+	&__inner {
+		padding-block: 28px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@media (max-width: 768px) {
+			flex-direction: column;
+			row-gap: 16px;
+		}
+	}
+	&__developed {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 400;
+		font-size: 12px;
+		&-primary-bold {
+			font-weight: 600;
+			color: $color_primary;
+		}
+		&-primary {
+			color: $color_primary;
+		}
+	}
+	&__copyright {
+		font-family: "Montserrat", sans-serif;
+		font-size: 12px;
+		transform: translate(-47px, 0px);
+		@media (max-width: 768px) {
+			order: 1;
+			transform: translate(0px, 0px);
+		}
+	}
+	&__socials {
+	}
+}

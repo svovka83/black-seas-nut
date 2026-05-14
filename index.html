@@ -17,7 +17,58 @@
 		{% from "src/partials/modules/header.njk" import header %}
     {{ header() }}
 
-		<main></main>
+		<main class="container"></main>
+
+		<!-- footer() -->
+		<footer class="footer">
+			<section class="footer-top">
+				<div class="footer-top__inner container">
+					<div class="footer-top__content">
+						<div class="footer-top__content-title">
+							<!-- title( heading, classTitle, title ) -->
+							<!-- prettier-ignore -->
+							{% from "src/partials/ui/title.njk" import title %}
+							{{ title( "h2", "title_h2", "Контакты") }}
+						</div>
+					</div>
+					<img class="footer-top__map" src="images/jpg/map.jpg" alt="map" />
+				</div>
+			</section>
+
+			<div class="footer-middle">
+				<div class="footer-middle__inner container">
+					<div class="footer-middle__logo">
+						<!-- logo( classLogo ) -->
+						<!-- prettier-ignore -->
+						{% from "src/partials/components/layouts/logo.njk" import logo %}
+						{{ logo( "" ) }}
+					</div>
+					<div class="footer-middle__menu">
+						<!-- menuFooter() -->
+						<!-- prettier-ignore -->
+						{% from "src/partials/components/layouts/menu-footer.njk" import menuFooter %}
+						{{ menuFooter() }}
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<div class="footer-bottom__inner container">
+					<p class="footer-bottom__developed">
+						Разработано
+						<span class="footer-bottom__developed-primary-bold">AVADA</span>
+						<span class="footer-bottom__developed-primary">MEDIA</span>
+					</p>
+					<p class="footer-bottom__copyright">Copyright © 2019. Все права защищены</p>
+					<div class="footer-bottom__socials">
+						<!-- socialIcons() -->
+						<!-- prettier-ignore -->
+						{% from "src/partials/components/layouts/social-icons.njk" import socialIcons %}
+						{{ socialIcons() }}
+					</div>
+				</div>
+			</div>
+		</footer>
 
 		<script type="module" src="src/js/pages/main/scripts.js"></script>
 	</body>

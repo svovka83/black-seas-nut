@@ -1,7 +1,7 @@
 .logo {
 	display: inline-flex;
 	align-items: center;
-	column-gap: 8px;
+	column-gap: 7px;
 	&__img {
 		width: 54px;
 		height: 53px;
@@ -10,7 +10,7 @@
 		width: 155px;
 		font-weight: 800;
 		font-size: 15px;
-		letter-spacing: -8.5%;
+		letter-spacing: 2%;
 	}
 	&_menu {
 		.logo__img {
