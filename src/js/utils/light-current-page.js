@@ -1,4 +1,4 @@
-export function lightCurrentPageHeader() {
+export function lightMenuHeader() {
 	const links = document.querySelectorAll(".menu-header__link");
 	if (!links) return;
 
@@ -16,7 +16,7 @@ export function lightCurrentPageHeader() {
 	});
 }
 
-export function lightCurrentPageFooter() {
+export function lightMenuFooter() {
 	const links = document.querySelectorAll(".menu-footer__link");
 	if (!links) return;
 

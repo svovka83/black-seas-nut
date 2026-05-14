@@ -7,8 +7,10 @@
 // UI
 @use "./ui/button.scss";
 
-// components/layouts
+// components/preloader
+@use "./components/preloader/preloader.scss";
 
+// components/layouts
 @use "./components/layouts/logo.scss";
 @use "./components/layouts/contact-icons.scss";
 @use "./components/layouts/social-icons.scss";
@@ -18,5 +20,4 @@
 @use "./components/layouts/bag.scss";
 
 // modules
-
 @use "./modules/header.scss";

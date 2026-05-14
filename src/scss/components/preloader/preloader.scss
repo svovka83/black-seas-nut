@@ -1,0 +1,30 @@
+.preloader {
+	position: fixed;
+	inset: 0;
+	z-index: 9999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+	transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.preloader_hide {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.preloader__spinner {
+	width: 60px;
+	height: 60px;
+	border: 5px solid #ddd;
+	border-top-color: #359740;
+	border-radius: 50%;
+	animation: loader 0.8s linear infinite;
+}
+
+@keyframes loader {
+	to {
+		transform: rotate(360deg);
+	}
+}
