@@ -5,6 +5,7 @@
 	top: 0;
 	left: 0;
 	right: 0;
+	z-index: 1000;
 }
 
 .header-top-desktop {
@@ -107,6 +108,7 @@
 }
 
 .header-middle {
+	background-color: $white;
 	border-bottom: 1px solid #0000000f;
 	&__inner {
 		height: 84px;
@@ -181,6 +183,7 @@
 .header-bottom-desktop {
 	height: 38px;
 	padding-top: 22px;
+	background-color: $white;
 	@media (max-width: 1024px) {
 		display: none;
 	}
@@ -188,6 +191,7 @@
 
 .header-bottom-mobile {
 	height: 38px;
+	background-color: $white;
 	text-align: center;
 	&__discount {
 		font-family: "Montserrat", sans-serif;

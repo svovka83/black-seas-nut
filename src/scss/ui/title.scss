@@ -5,6 +5,12 @@
 	&_h2 {
 		font-weight: 800;
 		font-size: 45px;
+		@media (max-width: 768px) {
+			font-size: 35px;
+		}
+		@media (max-width: 420px) {
+			font-size: 25px;
+		}
 	}
 	&_white {
 		color: $white;

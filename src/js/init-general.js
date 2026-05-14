@@ -5,9 +5,12 @@ export async function initGeneral() {
 	const { getSign } = await import("./components/layouts/sign.js");
 	const { getButton } = await import("./ui/button.js");
 	const { getBag } = await import("./components/layouts/bag.js");
+	const { initMap } = await import("./api/init-map.js");
 
 	getDiscount();
 	getSign();
 	getButton();
 	getBag();
+
+	initMap();
 }

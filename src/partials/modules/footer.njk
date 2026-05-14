@@ -1,0 +1,108 @@
+{# some class - 1: #}
+
+{% macro footer() %}
+  <footer class="footer">
+    <section class="footer-top">
+      <div class="footer-top__inner container">
+        <div class="footer-top__content">
+          <div class="footer-top__content-title">
+            <!-- title( heading, classTitle, title ) -->
+            {% from "src/partials/ui/title.njk" import title %}
+            {{ title( "h2", "title_h2", "Контакты") }}
+          </div>
+
+          <div class="footer-top__content-contacts">
+            <svg class="footer-top__content-contacts-icon">
+              <use href="images/sprites.svg#phone-icon"></use>
+            </svg>
+
+            <div class="footer-top__content-contacts-phones">
+              <a class="footer-top__content-contacts-phones-link" href="tel:+380957111111"
+                >+38 (095) 711 11 11</a
+              >
+              <a class="footer-top__content-contacts-phones-link" href="tel:+380957111111"
+                >+38 (095) 711 11 11</a
+              >
+            </div>
+
+            <div class="footer-top__content-contacts-contacts">
+              <!-- contactIcons() -->
+              {% from "src/partials/components/layouts/contact-icons.njk" import contactIcons %}
+            {{ contactIcons() }}
+            </div>
+          </div>
+
+          <a class="footer-top__content-email" href="mailto:nuts@nbsc.com.ua">
+            <svg class="footer-top__content-email-icon">
+              <use href="images/sprites.svg#envelope-icon"></use>
+            </svg>
+            nuts@nbsc.com.ua
+          </a>
+
+          <div class="footer-top__content-address">
+            <h4 class="footer-top__content-address-title">
+              <svg class="footer-top__content-address-title-icon">
+                <use href="images/sprites.svg#office-icon"></use>
+              </svg>
+              Офис и отдел продаж
+            </h4>
+            <div class="footer-top__content-address-content">
+              <p class="footer-top__content-address-content-address">Украина, г. Одесса,</p>
+              <p class="footer-top__content-address-content-address">ул. Космонавтов, 32</p>
+            </div>
+          </div>
+
+          <div class="footer-top__content-address">
+            <h4 class="footer-top__content-address-title">
+              <svg class="footer-top__content-address-title-icon">
+                <use href="images/sprites.svg#tree-icon"></use>
+              </svg>
+              Производство
+            </h4>
+            <div class="footer-top__content-address-content">
+              <p class="footer-top__content-address-content-address">Украина, Одесская обл,</p>
+              <p class="footer-top__content-address-content-address">
+                с. Яськи, ул. Центральная, 232
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-top__map" id="map">
+          <img class="footer-top__map-img" src="images/jpg/map.jpg" alt="map" />
+        </div>
+      </div>
+    </section>
+
+    <div class="footer-middle">
+      <div class="footer-middle__inner container">
+        <div class="footer-middle__logo">
+          <!-- logo( classLogo ) -->
+          {% from "src/partials/components/layouts/logo.njk" import logo %}
+          {{ logo( "" ) }}
+        </div>
+        <div class="footer-middle__menu">
+          <!-- menuFooter() -->
+          {% from "src/partials/components/layouts/menu-footer.njk" import menuFooter %}
+          {{ menuFooter() }}
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom__inner container">
+        <p class="footer-bottom__developed">
+          Разработано
+          <span class="footer-bottom__developed-primary-bold">AVADA</span>
+          <span class="footer-bottom__developed-primary">MEDIA</span>
+        </p>
+        <p class="footer-bottom__copyright">Copyright © 2019. Все права защищены</p>
+        <div class="footer-bottom__socials">
+          <!-- socialIcons() -->
+          {% from "src/partials/components/layouts/social-icons.njk" import socialIcons %}
+          {{ socialIcons() }}
+        </div>
+      </div>
+    </div>
+  </footer>
+{% endmacro %}
