@@ -4,8 +4,9 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Главная страница</title>
-		<script type="module" crossorigin src="/black-seas-nut/assets/main-BdxgI6If.js"></script>
-		<link rel="stylesheet" crossorigin href="/black-seas-nut/assets/main-C0eCBj37.css">
+		<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+		<script type="module" crossorigin src="/black-seas-nut/assets/main-EkQZ3TbY.js"></script>
+		<link rel="stylesheet" crossorigin href="/black-seas-nut/assets/main-BPF3QCLD.css">
 	</head>
 	<body data-page="main">
 		<!-- preloader -->
@@ -203,7 +204,198 @@
   </header>
 
 
-		<main></main>
+		<main class="container"></main>
 
+		<!-- footer() -->
+		<!-- prettier-ignore -->
+		
+    
+  <footer class="footer">
+    <section class="footer-top">
+      <div class="footer-top__inner container">
+        <div class="footer-top__content">
+          <div class="footer-top__content-title">
+            <!-- title( heading, classTitle, title ) -->
+            
+            
+  <h2 class="title title_h2">Контакты</h2>
+
+          </div>
+
+          <div class="footer-top__content-contacts">
+            <svg class="footer-top__content-contacts-icon">
+              <use href="images/sprites.svg#phone-icon"></use>
+            </svg>
+
+            <div class="footer-top__content-contacts-phones">
+              <a class="footer-top__content-contacts-phones-link" href="tel:+380957111111"
+                >+38 (095) 711 11 11</a
+              >
+              <a class="footer-top__content-contacts-phones-link" href="tel:+380957111111"
+                >+38 (095) 711 11 11</a
+              >
+            </div>
+
+            <div class="footer-top__content-contacts-contacts">
+              <!-- contactIcons() -->
+              
+            
+  <ul class="contact-icons">
+    <li class="contact-icons__item">
+      <a class="contact-icons__link" href="#!">
+        <svg class="contact-icons__icon">
+          <use href="images/sprites.svg#viber-icon"></use>
+        </svg>
+      </a>
+    </li>
+
+    <li class="contact-icons__item">
+      <a class="contact-icons__link" href="#!">
+        <svg class="contact-icons__icon">
+          <use href="images/sprites.svg#telegram-icon"></use>
+        </svg>
+      </a>
+    </li>
+ 
+    <li class="contact-icons__item">
+      <a class="contact-icons__link" href="#!">
+        <svg class="contact-icons__icon">
+          <use href="images/sprites.svg#whatsapp-icon"></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
+
+            </div>
+          </div>
+
+          <a class="footer-top__content-email" href="mailto:nuts@nbsc.com.ua">
+            <svg class="footer-top__content-email-icon">
+              <use href="images/sprites.svg#envelope-icon"></use>
+            </svg>
+            nuts@nbsc.com.ua
+          </a>
+
+          <div class="footer-top__content-address">
+            <h4 class="footer-top__content-address-title">
+              <svg class="footer-top__content-address-title-icon">
+                <use href="images/sprites.svg#office-icon"></use>
+              </svg>
+              Офис и отдел продаж
+            </h4>
+            <div class="footer-top__content-address-content">
+              <p class="footer-top__content-address-content-address">Украина, г. Одесса,</p>
+              <p class="footer-top__content-address-content-address">ул. Космонавтов, 32</p>
+            </div>
+          </div>
+
+          <div class="footer-top__content-address">
+            <h4 class="footer-top__content-address-title">
+              <svg class="footer-top__content-address-title-icon">
+                <use href="images/sprites.svg#tree-icon"></use>
+              </svg>
+              Производство
+            </h4>
+            <div class="footer-top__content-address-content">
+              <p class="footer-top__content-address-content-address">Украина, Одесская обл,</p>
+              <p class="footer-top__content-address-content-address">
+                с. Яськи, ул. Центральная, 232
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-top__map" id="map">
+          <img class="footer-top__map-img" src="images/jpg/map.jpg" alt="map" />
+        </div>
+      </div>
+    </section>
+
+    <div class="footer-middle">
+      <div class="footer-middle__inner container">
+        <div class="footer-middle__logo">
+          <!-- logo( classLogo ) -->
+          
+          
+  <a class="logo " href="/black-seas-nut/">
+    <img class="logo__img" src="images/png/logo.png" alt="logo" />
+    <p class="logo__text">ОРЕХ ПРИЧЕРНОМОРЬЯ</p>
+  </a>
+
+        </div>
+        <div class="footer-middle__menu">
+          <!-- menuFooter() -->
+          
+          
+  <ul class="menu-footer">
+    <li class="menu-footer__item">
+      <a class="menu-footer__link" href="/black-seas-nut/shop/">Магазин</a>
+    </li>
+    <li class="menu-footer__item">
+      <a class="menu-footer__link" href="/black-seas-nut/wholesales/">Корпоративным клиентам</a>
+    </li>
+    <li class="menu-footer__item">
+      <a class="menu-footer__link" href="/black-seas-nut/payment/">Оплата и доставка</a>
+    </li>
+    <li class="menu-footer__item">
+      <a class="menu-footer__link" href="/black-seas-nut/about/">О производстве</a>
+    </li>
+    <li class="menu-footer__item">
+      <a class="menu-footer__link" href="/black-seas-nut/news/">Новости и статьи</a>
+    </li>
+    <li class="menu-footer__item">
+      <a class="menu-footer__link" href="/black-seas-nut/galery/">Галерея</a>
+    </li>
+  </ul>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom__inner container">
+        <p class="footer-bottom__developed">
+          Разработано
+          <span class="footer-bottom__developed-primary-bold">AVADA</span>
+          <span class="footer-bottom__developed-primary">MEDIA</span>
+        </p>
+        <p class="footer-bottom__copyright">Copyright © 2019. Все права защищены</p>
+        <div class="footer-bottom__socials">
+          <!-- socialIcons() -->
+          
+          
+  <ul class="social-icons">
+    <li class="social-icons__item">
+      <a class="social-icons__link" href="#!">
+        <svg class="social-icons__icon">
+          <use href="images/sprites.svg#facebook-icon"></use>
+        </svg>
+      </a>
+    </li>
+
+    <li class="social-icons__item">
+      <a class="social-icons__link" href="#!">
+        <svg class="social-icons__icon">
+          <use href="images/sprites.svg#instagram-icon"></use>
+        </svg>
+      </a>
+    </li>
+
+    <li class="social-icons__item">
+      <a class="social-icons__link" href="#!">
+        <svg class="social-icons__icon">
+          <use href="images/sprites.svg#youtube-icon"></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+		<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 	</body>
 </html>
