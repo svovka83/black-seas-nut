@@ -5,8 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Главная страница</title>
 		<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-		<script type="module" crossorigin src="/black-seas-nut/assets/main-zNc56Ns9.js"></script>
-		<link rel="stylesheet" crossorigin href="/black-seas-nut/assets/main-B-aeHvW3.css">
+		<script type="module" crossorigin src="/black-seas-nut/assets/main-DlDrZi4J.js"></script>
+		<link rel="stylesheet" crossorigin href="/black-seas-nut/assets/main-BkQmf-S9.css">
 	</head>
 	<body data-page="main">
 		<!-- preloader -->
@@ -171,10 +171,11 @@
       </div>
     </div>
 
-    <div class="header-bottom-desktop container">
-      <!-- menuHeader() -->
-      
-      
+    <div class="header-bottom-desktop">
+      <div class="header-bottom-desktop__inner container">
+        <!-- menuHeader() -->
+        
+        
   <ul class="menu-header">
     <li class="menu-header__item">
       <a class="menu-header__link" href="/black-seas-nut/shop/">Магазин</a>
@@ -196,6 +197,7 @@
     </li>
   </ul>
 
+      </div>
     </div>
 
     <div class="header-bottom-mobile">
@@ -204,7 +206,124 @@
   </header>
 
 
-		<main class="container"></main>
+		<main class="main-content">
+			<!-- main-top -->
+			<section class="main-top">
+				<!-- bannerVideo( posterPath, videoPath ) -->
+				<!-- prettier-ignore -->
+				
+        
+  <video class="banner-video" preload="metadata" poster="/black-seas-nut/images/jpg/top/main.jpg" muted loop>
+    <source src="/black-seas-nut/videos/main-top.mp4" type="video/mp4" />
+  </video>
+
+  <div class="banner-content">
+    <div class="banner-content__title">
+      <!-- title( heading, classTitle, title ) -->
+      
+      
+  <h1 class="title title_h1 title_white">Орех Причерноморья</h1>
+
+    </div>
+    <div class="banner-content__text">
+      <!-- text( classText, text ) -->
+      
+      
+  <p class="text text_top">Единственный в Украине сад совместного выращивание фундука и грецкого ореха</p>
+
+    </div>
+    <div class="banner-content__button">
+      <!-- play() -->
+      
+      
+  <button class="play">
+    <svg class="play__icon">
+      <use
+        class="play__use"
+        href="/black-seas-nut/images/sprites.svg#play-icon"
+        data-play="play-icon"
+        data-stop="stop-icon"></use>
+    </svg>
+  </button>
+
+    </div>
+  </div>
+
+  <div class="banner-eclipse"></div>
+
+			</section>
+
+			<div class="container" style="margin-top: 40px">
+				<div class="product-card">
+					<div class="product-card__slider"></div>
+					<div class="product-card__content">
+						<h4 class="product-card__title">Грецкий орех</h4>
+						<p class="product-card__art">Арт: <span>0091</span></p>
+						<p class="product-card__tags">Орех <span>сладкий, классический, очищенный</span></p>
+						<div class="product-card__info">
+							<div class="product-card__info-item">
+								<svg class="product-card__info-icon">
+									<use href="images/sprites.svg#scale-icon"></use>
+								</svg>
+								<dl class="product-card__info-list">
+									<dt class="product-card__info-term">Масса:</dt>
+									<dd class="product-card__info-definition">40г.</dd>
+								</dl>
+							</div>
+							<div class="product-card__info-item">
+								<svg class="product-card__info-icon">
+									<use href="images/sprites.svg#product-bag-icon"></use>
+								</svg>
+								<dl class="product-card__info-list">
+									<dt class="product-card__info-term">Упаковка</dt>
+									<dd class="product-card__info-definition">вакуумная</dd>
+								</dl>
+							</div>
+						</div>
+
+						<hr class="product-card__hr" />
+
+						<div class="product-card__bottom">
+							<!-- <p class="product-card__bottom-price">
+								Цена:
+								<span class="product-card__bottom-cost"
+									>19 <span class="product-card__bottom-cost-ua">грн.</span></span
+								>
+								<span class="product-card__bottom-discount"
+									>21 <span class="product-card__bottom-discount-ua">грн.</span></span
+								>
+							</p> -->
+
+							<p class="product-card__bottom-price">
+								Цена:
+								<span class="product-card__bottom-cost"
+									><span class="product-card__bottom-cost-ua">от</span> 21
+									<span class="product-card__bottom-cost-ua">грн.</span></span
+								>
+							</p>
+
+							<div class="product-card__bottom-button">
+								<!-- getButton() -->
+							</div>
+						</div>
+					</div>
+
+					<div class="product-card__promotion-new">
+						<svg class="product-card__promotion-new-icon product-card__promotion-new-icon_red">
+							<use href="images/sprites.svg#prmotion-new-icon"></use>
+						</svg>
+						<span class="product-card__promotion-new-text">АКЦИЯ</span>
+					</div>
+
+					<!-- <div class="product-card__promotion-new">
+						<svg class="product-card__promotion-new-icon product-card__promotion-new-icon_orange">
+							<use href="images/sprites.svg#prmotion-new-icon"></use>
+						</svg>
+						<span class="product-card__promotion-new-text">НОВИНКА</span>
+					</div> -->
+				</div>
+			</div>
+		</main>
 
 		<!-- footer() -->
 		<!-- prettier-ignore -->
