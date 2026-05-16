@@ -6,10 +6,17 @@
 
 // UI
 @use "./ui/title.scss";
+@use "./ui/text.scss";
 @use "./ui/button.scss";
+@use "./ui/input.scss";
+@use "./ui/select.scss";
+@use "./ui/play.scss";
 
 // components/preloader
 @use "./components/preloader/preloader.scss";
+
+// components/banner
+@use "./components/banner/banner-video.scss";
 
 // components/layouts
 @use "./components/layouts/logo.scss";
@@ -20,6 +27,12 @@
 @use "./components/layouts/sign.scss";
 @use "./components/layouts/bag.scss";
 
+// components/common
+@use "./components/common/tags.scss";
+
 // modules
 @use "./modules/header.scss";
 @use "./modules/footer.scss";
+
+// main page
+@use "./pages/main/main-top.scss";

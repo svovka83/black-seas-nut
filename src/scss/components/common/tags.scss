@@ -1,0 +1,50 @@
+@use "../../settings/variables.scss" as *;
+
+.tags {
+	display: grid;
+	grid-template-columns: 300px 352px 309px 345px;
+	padding-inline: 14px;
+	@media (max-width: 1440px) {
+		display: flex;
+		justify-content: space-evenly;
+	}
+	@media (max-width: 768px) {
+		display: none;
+	}
+	&__item {
+		text-align: center;
+		&:not(:last-of-type) .tags__text {
+			transform: translate(-8px, 0px);
+		}
+	}
+	&__title {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 800;
+		font-size: 72px;
+		letter-spacing: 1%;
+		margin-bottom: 6px;
+		@media (max-width: 1024px) {
+			font-size: 56px;
+		}
+	}
+	&__mark {
+		font-family: "Raleway", sans-serif;
+		font-weight: 900;
+		font-size: 18px;
+		position: relative;
+		top: -38px;
+		right: -3px;
+		@media (max-width: 1024px) {
+			top: -28px;
+			font-size: 14px;
+		}
+	}
+	&__text {
+		font-weight: 400;
+		font-size: 18px;
+		letter-spacing: 2%;
+		@media (max-width: 1024px) {
+			font-size: 14px;
+		}
+	}
+}

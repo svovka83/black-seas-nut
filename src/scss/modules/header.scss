@@ -181,9 +181,13 @@
 }
 
 .header-bottom-desktop {
-	height: 38px;
-	padding-top: 22px;
 	background-color: $white;
+	border-bottom: 1px solid #0000000f;
+	&__inner {
+		padding-top: 22px;
+		padding-bottom: 33px;
+		height: 38px;
+	}
 	@media (max-width: 1024px) {
 		display: none;
 	}

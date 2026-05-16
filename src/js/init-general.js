@@ -6,6 +6,9 @@ export async function initGeneral() {
 	const { getButton } = await import("./ui/button.js");
 	const { getBag } = await import("./components/layouts/bag.js");
 	const { initMap } = await import("./api/init-map.js");
+	// just in separate file
+	// const { selectDemo } = await import("./ui/select.js");
+	// const { controlSelect } = await import("./controllers/control-select.js");
 
 	getDiscount();
 	getSign();
@@ -13,4 +16,9 @@ export async function initGeneral() {
 	getBag();
 
 	initMap();
+
+	// first paint just in separate file
+	// selectDemo();
+	// after addEvent just in separate file
+	// controlSelect();
 }

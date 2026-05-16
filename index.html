@@ -18,7 +18,15 @@
 		{% from "src/partials/modules/header.njk" import header %}
     {{ header() }}
 
-		<main class="container"></main>
+		<main class="main-content">
+			<!-- main-top -->
+			<section class="main-top">
+				<!-- bannerVideo( posterPath, videoPath ) -->
+				<!-- prettier-ignore -->
+				{% from "src/partials/components/banner/banner-video.njk" import bannerVideo %}
+        {{ bannerVideo( "/images/jpg/top/main.jpg", "/videos/main-top.mp4" ) }}
+			</section>
+		</main>
 
 		<!-- footer() -->
 		<!-- prettier-ignore -->

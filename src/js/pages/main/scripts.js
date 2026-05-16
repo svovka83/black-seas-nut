@@ -8,10 +8,13 @@ async function initApp() {
 		if (page === "main") {
 			const { initGeneral } = await import("../../init-general.js");
 			const { lightMenuHeader, lightMenuFooter } = await import("../../utils/light-current-page.js");
+			const { controlBannerVideo } = await import("../../controllers/control-banner-video.js");
 
 			await initGeneral();
 			lightMenuHeader();
 			lightMenuFooter();
+			// controllers
+			controlBannerVideo();
 		}
 
 		preloader.classList.add("preloader_hide");

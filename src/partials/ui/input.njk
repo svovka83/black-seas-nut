@@ -1,0 +1,9 @@
+{# classInput - 1: input_error #}
+{# classValidation - 1: validation_error #}
+
+{% macro input( inputId, inputType, inputPlaceholder ) %}
+  <div class="input-wrapper">
+    <input class="input" type="{{ inputType }}" id="{{ inputId }}" placeholder="{{ inputPlaceholder }}" />
+    <p class="validation"></p>
+  </div>
+{% endmacro %}

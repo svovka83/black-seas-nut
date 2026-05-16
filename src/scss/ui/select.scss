@@ -1,0 +1,76 @@
+@use "../settings/variables.scss" as *;
+
+.select {
+	position: relative;
+	&__control {
+		width: 100%;
+		height: 48px;
+		padding-left: 16px;
+		padding-right: 16px;
+		background-color: $white;
+		border: 1px solid $color_border;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		cursor: pointer;
+		&:hover {
+			background-color: $color_hover;
+		}
+		&_active {
+			border: 2px solid $color_primary;
+		}
+	}
+	&__text {
+		font-family: "Montserrat", sans-serif;
+		font-size: 14px;
+		line-height: 17px;
+		color: $text_primary;
+	}
+	&__icon {
+		width: 11px;
+		height: 7px;
+		fill: $color_secondary;
+		transition: transform 0.3s ease;
+		&_open {
+			transform: rotate(180deg);
+		}
+	}
+	&__list {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		background-color: $white;
+		border: 1px solid $color_border;
+		z-index: 700;
+		&_open {
+			display: block;
+		}
+	}
+	&__option {
+		height: 45px;
+		padding-left: 16px;
+		padding-right: 16px;
+		cursor: pointer;
+		&:hover {
+			background-color: $color_primary;
+			.select__value {
+				color: $white;
+			}
+		}
+	}
+	&__value {
+		display: block;
+		width: 100%;
+		font-family: "Montserrat", sans-serif;
+		font-size: 14px;
+		line-height: 17px;
+		color: $text_primary;
+		padding-top: 12px;
+	}
+}
+
+.select__option:not(:first-of-type) .select__value {
+	border-top: 1px solid $color_border;
+}

@@ -1,0 +1,17 @@
+@use "../settings/variables.scss" as *;
+
+.text {
+	font-family: "Raleway", sans-serif;
+	color: $white;
+	&_top {
+		font-weight: 600;
+		font-size: 25px;
+		letter-spacing: 1%;
+		@media (max-width: 768px) {
+			font-size: 21px;
+		}
+		@media (max-width: 420px) {
+			font-size: 17px;
+		}
+	}
+}

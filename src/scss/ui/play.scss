@@ -1,0 +1,29 @@
+@use "../settings/variables.scss" as *;
+
+.play {
+	display: inline-block;
+	width: 61px;
+	height: 61px;
+	border: 2px solid $white;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+	&:hover {
+		background-color: $color_primary;
+		border: 2px solid $color_primary;
+	}
+	@media (max-width: 768px) {
+		width: 45px;
+		height: 45px;
+	}
+	&__icon {
+		width: 16px;
+		height: 16px;
+		fill: $white;
+		transform: translate(1px, 2px);
+		@media (max-width: 768px) {
+			width: 12px;
+			height: 12px;
+		}
+	}
+}

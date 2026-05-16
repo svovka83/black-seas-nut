@@ -97,10 +97,12 @@
       </div>
     </div>
 
-    <div class="header-bottom-desktop container">
-      <!-- menuHeader() -->
-      {% from "src/partials/components/layouts/menu-header.njk" import menuHeader %}
-      {{ menuHeader() }}
+    <div class="header-bottom-desktop">
+      <div class="header-bottom-desktop__inner container">
+        <!-- menuHeader() -->
+        {% from "src/partials/components/layouts/menu-header.njk" import menuHeader %}
+        {{ menuHeader() }}
+      </div>
     </div>
 
     <div class="header-bottom-mobile">
