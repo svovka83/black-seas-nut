@@ -1,0 +1,131 @@
+@use "../../settings/variables.scss" as *;
+
+.product-card {
+	position: relative;
+	max-width: 410px;
+	border: 2px solid $color_border_8;
+	// overflow: hidden;
+	&:hover {
+		border: 2px solid $color_secondary;
+	}
+	&__slider {
+		height: 278px;
+		background-color: #fcfcfc;
+	}
+	&__content {
+		padding: 20px 22px 14px 21px;
+		letter-spacing: 1%;
+	}
+	&__title {
+		font-weight: 700;
+		font-size: 18px;
+		letter-spacing: -1%;
+		margin-bottom: 6px;
+	}
+	&__art {
+		font-family: "Montserrat", sans-serif;
+		font-size: 15px;
+		color: $text_secondary;
+		margin-bottom: 11px;
+	}
+	&__tags {
+		max-width: 300px;
+		font-weight: 600;
+		line-height: 20px;
+		margin-bottom: 14px;
+	}
+	&__info {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-right: 10px;
+		&-item {
+			display: flex;
+			align-items: center;
+		}
+		&-icon {
+			width: 18px;
+			height: 18px;
+			fill: $color_primary;
+			margin-right: 9px;
+		}
+		&-list {
+			font-family: "Montserrat", sans-serif;
+			font-size: 14px;
+			letter-spacing: 1%;
+		}
+		&-term {
+			font-weight: 500;
+			color: $text_secondary;
+		}
+		&-definition {
+			font-weight: 600;
+			color: $color_primary;
+		}
+	}
+	&__hr {
+		width: 112%;
+		margin-top: 20px;
+		margin-bottom: 13px;
+		border: 1px solid $color_border_8;
+		transform: translate(-21px, 0px);
+	}
+	&__bottom {
+		font-family: "Montserrat", sans-serif;
+		letter-spacing: 1%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&-price {
+			font-weight: 600;
+			font-size: 15px;
+		}
+		&-cost {
+			font-size: 20px;
+			color: $color_primary;
+			margin-left: 4px;
+		}
+		&-cost-ua {
+			font-size: 13px;
+		}
+		&-discount {
+			font-weight: 500;
+			font-size: 16px;
+			margin-left: 8px;
+			color: $text_secondary;
+			text-decoration: line-through;
+		}
+		&-discount-ua {
+			font-size: 13px;
+		}
+		&-button {
+			width: 124px;
+		}
+	}
+	&__promotion-new {
+		position: absolute;
+		top: 20px;
+		left: 0px;
+		z-index: 100;
+		&-icon {
+			width: 82px;
+			height: 32px;
+			&_red {
+				fill: #dd133b;
+			}
+			&_orange {
+				fill: #e1843e;
+			}
+		}
+		&-text {
+			font-weight: 800;
+			font-size: 10px;
+			letter-spacing: 6%;
+			color: $white;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-56%, -83%);
+		}
+	}
+}
