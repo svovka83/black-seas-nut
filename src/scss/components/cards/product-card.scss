@@ -2,11 +2,16 @@
 
 .product-card {
 	position: relative;
-	max-width: 410px;
+	width: 100%;
 	border: 2px solid $color_border_8;
+	overflow: hidden;
 	transition: border 0.2s ease-out;
+	@media (max-width: 768px) {
+		width: unset;
+		max-width: 410px;
+	}
 	&__slider {
-		max-width: 406px;
+		width: 100%;
 		height: 278px;
 		background-color: #fcfcfc;
 		overflow: hidden;
@@ -46,22 +51,9 @@
 		visibility: hidden;
 		opacity: 0;
 		transition: background-color 0.2s ease-out, visibility 0.2s ease-out, opacity 0.2s ease-out;
-		width: 45px;
-		height: 45px;
-		background-color: $color_secondary;
-		border-radius: 50%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
 		z-index: 300;
-		cursor: pointer;
-		&:hover {
-			background-color: $color_primary;
-		}
-		&-icon {
-			width: 19px;
-			height: 19px;
-			fill: $white;
+		@media (max-width: 768px) {
+			display: none;
 		}
 	}
 	&__content {
@@ -116,7 +108,7 @@
 		}
 	}
 	&__hr {
-		width: 112%;
+		width: 116%;
 		margin-top: 19px;
 		margin-bottom: 13px;
 		border: 1px solid $color_border_8;

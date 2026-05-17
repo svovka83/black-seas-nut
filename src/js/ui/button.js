@@ -8,7 +8,7 @@ export function getButton() {
 	productButton.innerHTML = button(false, "Купить");
 }
 
-function button(isActive = false, titleNormal = "Заказать звонок", titleActive = "") {
+export function button(isActive = false, titleNormal = "Заказать звонок", titleActive = "") {
 	return `
     <button class="button ${!isActive ? "button_normal" : "button_active"}">
       <span class="button__title">${!isActive ? titleNormal : titleActive}</span>

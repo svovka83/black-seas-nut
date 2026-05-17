@@ -8,16 +8,23 @@ async function initApp() {
 		if (page === "main") {
 			const { initGeneral } = await import("../../init-general.js");
 			const { lightMenuHeader, lightMenuFooter } = await import("../../utils/light-current-page.js");
-			const { initSliderInProduct } = await import("../../swipers/slider-in-product.js");
+			const { getProductsMain, getProductsSlider } = await import("./init-document/get-product-main.js");
+			const { productsSlider } = await import("../../swipers/products-slider.js");
 			const { controlBannerVideo } = await import("../../controllers/control-banner-video.js");
+			const { controlModalProductSlider } = await import("../../controllers/control-modal-product-slider.js");
 
 			await initGeneral();
 			lightMenuHeader();
 			lightMenuFooter();
+
 			// slider
-			initSliderInProduct();
+			productsSlider();
+			// firestore
+			getProductsMain();
+			getProductsSlider();
 			// controllers
 			controlBannerVideo();
+			controlModalProductSlider();
 		}
 
 		preloader.classList.add("preloader_hide");

@@ -1,0 +1,87 @@
+@use "../../settings/variables.scss" as *;
+
+.modal-product-slider {
+	position: fixed;
+	inset: 0;
+	background-color: $color_border;
+	z-index: 2000;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0.4s ease-in, opacity 0.4s ease-in;
+	@media (max-width: 768px) {
+		display: none;
+	}
+	&__outer {
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__inner {
+		position: relative;
+		width: max(360px, 70%);
+		padding: 32px;
+		background-color: $white;
+		border-radius: 8px;
+		z-index: 2100;
+		transform: scale(0.5);
+		transition: transform 0.4s ease-in;
+		&_open {
+			transform: scale(1);
+		}
+	}
+	&__slider {
+		width: 100%;
+		height: 417px;
+		background-color: #fcfcfc;
+		overflow: hidden;
+		@media (max-width: 1024px) {
+			height: 278px;
+		}
+		.swiper-slide {
+			display: grid;
+			place-items: center;
+		}
+	}
+	&__img {
+		transform: scale(1.5);
+		@media (max-width: 1024px) {
+			transform: scale(1);
+		}
+	}
+	&__nav-button {
+		position: absolute;
+		top: 48%;
+		cursor: pointer;
+		z-index: 2300;
+		&.swiper-button-disabled .modal-product-slider__nav-button-icon {
+			fill: #c4c4c4;
+		}
+		&-icon {
+			width: 23px;
+			height: 20px;
+			fill: $color_primary;
+		}
+		&_prev {
+			left: 64px;
+		}
+		&_next {
+			right: 64px;
+		}
+	}
+	&__close-btn {
+		position: absolute;
+		top: 16px;
+		right: 16px;
+		cursor: pointer;
+		&-icon {
+			width: 12px;
+			height: 12px;
+			fill: $text_primary;
+		}
+	}
+	&_open {
+		visibility: visible;
+		opacity: 1;
+	}
+}

@@ -1,0 +1,21 @@
+@use "../settings/variables.scss" as *;
+
+.search {
+	width: 45px;
+	height: 45px;
+	background-color: $color_secondary;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: background-color 0.2s ease-out;
+	&:hover {
+		background-color: $color_primary;
+	}
+	&__icon {
+		width: 19px;
+		height: 19px;
+		fill: $white;
+	}
+}

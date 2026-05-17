@@ -1,0 +1,43 @@
+@use "../../settings/variables.scss" as *;
+
+.main-products {
+	text-align: center;
+	padding-top: 83px;
+	padding-bottom: 32px;
+	&__title {
+		margin-bottom: 28px;
+	}
+	&__text {
+		max-width: 610px;
+		margin-inline: auto;
+		margin-bottom: 62px;
+	}
+	&__cards {
+		text-align: start;
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 48px 32px;
+		margin-bottom: 72px;
+		@media (max-width: 1200px) {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			gap: 24px 16px;
+		}
+		@media (max-width: 768px) {
+			display: none;
+		}
+	}
+	&__slider {
+		text-align: start;
+		max-width: 414px;
+		overflow: hidden;
+		margin-inline: auto;
+		margin-bottom: 72px;
+		@media (min-width: 769px) {
+			display: none;
+		}
+	}
+	&__link {
+		margin-inline: auto;
+		width: 200px;
+	}
+}

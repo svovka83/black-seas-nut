@@ -11,6 +11,8 @@
 @use "./ui/input.scss";
 @use "./ui/select.scss";
 @use "./ui/play.scss";
+@use "./ui/search.scss";
+@use "./ui/link.scss";
 
 // components/preloader
 @use "./components/preloader/preloader.scss";
@@ -39,3 +41,7 @@
 
 // main page
 @use "./pages/main/main-top.scss";
+@use "./pages/main/main-products.scss";
+
+// modals
+@use "./components/modals/modal-product-slider.scss";

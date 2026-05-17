@@ -1,0 +1,34 @@
+{% macro modalProductSlider() %}
+  <div class="modal-product-slider">
+    <div class="modal-product-slider__outer container">
+      <div class="modal-product-slider__inner">
+        <div class="modal-product-slider__slider">
+
+          <div class="swiper-wrapper modal-product-slider__slides">
+            <!-- getModalProductSlider(id) -->
+          </div>
+
+          <button class="modal-product-slider__nav-button modal-product-slider__nav-button_prev">
+            <svg class="modal-product-slider__nav-button-icon">
+              <use href="/images/sprites.svg#arrow-left-icon"></use>
+            </svg>
+          </button>
+
+          <button class="modal-product-slider__nav-button modal-product-slider__nav-button_next">
+            <svg class="modal-product-slider__nav-button-icon">
+              <use href="/images/sprites.svg#arrow-right-icon"></use>
+            </svg>
+          </button>
+  
+        </div>
+
+        <button class="modal-product-slider__close-btn">
+          <svg class="modal-product-slider__close-btn-icon">
+            <use href="/images/sprites.svg#close-icon"></use>
+          </svg>
+        </button>
+
+      </div>
+    </div>
+  </div>
+{% endmacro %}
