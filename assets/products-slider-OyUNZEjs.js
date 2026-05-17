@@ -1,1 +1,0 @@
-import{t as e}from"./swiper-C9THp1Lp.js";function t(){console.log(`init products swiper`);let t=new e(`.main-products__slider`,{slidesPerView:1,spaceBetween:4,speed:500});console.log(t)}export{t as productsSlider};

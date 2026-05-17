@@ -1,53 +1,39 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/slider-in-product-9OsqVAqe.js","assets/swiper-C9THp1Lp.js","assets/swiper-Bdbi0viN.css"])))=>i.map(i=>d[i]);
-import{t as e}from"./preload-helper-B7ggkqts.js";import{n as t,r as n,t as r}from"./firebase-Dt862HSq.js";import{t as i}from"./button-tjxm2zXF.js";function a(){return`
+import{t as e}from"./button-CblPrkm0.js";import{i as t,r as n,t as r}from"./firebase-9hkZBNZe.js";import{t as i}from"./swiper-Zp1-yGGI.js";import{t as a}from"./navigation-YiU2q7mb.js";function o(){return`
     <div class="search">
       <svg class="search__icon">
         <use href="/black-seas-nut/images/sprites.svg#search-icon"></use>
       </svg>
     </div>
-  `}function o(e,t,n){let r=`/black-seas-nut/`;return`
-    <div class="product-card">
+  `}function s(t,n,r,i,a){let s=`/black-seas-nut/`;return`
+    <div class="product-card" data-id=${t}>
       <div class="product-card__slider">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img class="product-card__img" src="${r}images/png/product_1.png" alt="product" />
-          </div>
-          <div class="swiper-slide">
-            <img class="product-card__img" src="${r}images/png/product_2.png" alt="product" />
-          </div>
-          <div class="swiper-slide">
-            <img class="product-card__img" src="${r}images/png/product_3.png" alt="product" />
-          </div>
-          <div class="swiper-slide">
-            <img class="product-card__img" src="${r}images/png/product_4.png" alt="product" />
-          </div>
-          <div class="swiper-slide">
-            <img class="product-card__img" src="${r}images/png/product_5.png" alt="product" />
-          </div>
-          <div class="swiper-slide">
-            <img class="product-card__img" src="${r}images/png/product_6.png" alt="product" />
-          </div>
+        ${r.map(e=>`              
+            <div class="swiper-slide">
+              <img class="product-card__img" src="${e}" alt="product" />
+            </div>
+            `).join(``)}
         </div>
 
         <button class="product-card__nav-button product-card__nav-button_prev">
           <svg class="product-card__nav-button-icon">
-            <use href="${r}images/sprites.svg#arrow-left-icon"></use>
+            <use href="${s}images/sprites.svg#arrow-left-icon"></use>
           </svg>
         </button>
 
         <button class="product-card__nav-button product-card__nav-button_next">
           <svg class="product-card__nav-button-icon">
-            <use href="${r}images/sprites.svg#arrow-right-icon"></use>
+            <use href="${s}images/sprites.svg#arrow-right-icon"></use>
           </svg>
         </button>
 
         <div class="product-card__search">
-          ${a()}
+          ${o()}
         </div>
       </div>
 
       <div class="product-card__content">
-        <h4 class="product-card__title">${e}</h4>
+        <h4 class="product-card__title">${n}</h4>
 
         <p class="product-card__art">Арт: <span>0091</span></p>
 
@@ -56,7 +42,7 @@ import{t as e}from"./preload-helper-B7ggkqts.js";import{n as t,r as n,t as r}fro
         <div class="product-card__info">
           <div class="product-card__info-item">
             <svg class="product-card__info-icon">
-              <use href="${r}images/sprites.svg#scale-icon"></use>
+              <use href="${s}images/sprites.svg#scale-icon"></use>
             </svg>
             <dl class="product-card__info-list">
               <dt class="product-card__info-term">Масса:</dt>
@@ -65,7 +51,7 @@ import{t as e}from"./preload-helper-B7ggkqts.js";import{n as t,r as n,t as r}fro
           </div>
           <div class="product-card__info-item">
             <svg class="product-card__info-icon">
-              <use href="${r}images/sprites.svg#product-bag-icon"></use>
+              <use href="${s}images/sprites.svg#product-bag-icon"></use>
             </svg>
             <dl class="product-card__info-list">
               <dt class="product-card__info-term">Упаковка</dt>
@@ -77,7 +63,7 @@ import{t as e}from"./preload-helper-B7ggkqts.js";import{n as t,r as n,t as r}fro
         <hr class="product-card__hr" />
 
         <div class="product-card__bottom">
-          ${t?`<p class="product-card__bottom-price">
+          ${i?`<p class="product-card__bottom-price">
               Цена:
               <span class="product-card__bottom-cost">
                 19 
@@ -97,27 +83,27 @@ import{t as e}from"./preload-helper-B7ggkqts.js";import{n as t,r as n,t as r}fro
             </p>`}
 
           <div class="product-card__bottom-button">
-            ${i(!1,`Купить`)}
+            ${e(!1,`Купить`)}
           </div>
         </div>
       </div>
 
-      ${n===`promotion`?`<div class="product-card__promotion-new">
+      ${a===`promotion`?`<div class="product-card__promotion-new">
             <svg class="product-card__promotion-new-icon product-card__promotion-new-icon_red">
-              <use href="${r}images/sprites.svg#prmotion-new-icon"></use>
+              <use href="${s}images/sprites.svg#prmotion-new-icon"></use>
             </svg>
             <span class="product-card__promotion-new-text">АКЦИЯ</span>
           </div>`:``}
 
-      ${n===`new`?`<div class="product-card__promotion-new">
+      ${a===`new`?`<div class="product-card__promotion-new">
             <svg class="product-card__promotion-new-icon product-card__promotion-new-icon_orange">
-              <use href="${r}images/sprites.svg#prmotion-new-icon"></use>
+              <use href="${s}images/sprites.svg#prmotion-new-icon"></use>
             </svg>
             <span class="product-card__promotion-new-text">НОВИНКА</span>
           </div>`:``}
     </div>
-  `}var{initSliderInProduct:s}=await e(async()=>{let{initSliderInProduct:e}=await import(`./slider-in-product-9OsqVAqe.js`);return{initSliderInProduct:e}},__vite__mapDeps([0,1,2]));async function c(){let e=document.querySelector(`.main-products__cards`);if(e)try{let i=await t(n(r,`products`)),a=``;i.forEach(e=>{a+=o(e.data().name,e.data().discount,e.data().sales)}),e.innerHTML=a,s()}catch(e){console.error(`Error getting products:`,e)}}async function l(){let e=document.querySelector(`.main-products__slider-wrapper`);if(e)try{let i=await t(n(r,`products`)),a=``;i.forEach(e=>{a+=`
+  `}function c(){let e=document.querySelectorAll(`.product-card__img`);e&&(new i(`.product-card__slider`,{slidesPerView:1,speed:500,modules:[a],navigation:{nextEl:`.product-card__nav-button_next`,prevEl:`.product-card__nav-button_prev`}}),e.forEach(e=>{e.addEventListener(`mouseover`,e=>{let t=e.target.closest(`.product-card__slider`).querySelector(`.product-card__search`);t.style.visibility=`visible`,t.style.opacity=`1`,t.addEventListener(`click`,()=>{t.style.visibility=`hidden`,t.style.opacity=`0`})})}),e.forEach(e=>{e.addEventListener(`mouseout`,e=>{let t=e.target.closest(`.product-card__slider`).querySelector(`.product-card__search`);t.contains(e.relatedTarget)||(t.style.visibility=`hidden`,t.style.opacity=`0`)})}))}async function l(){let e=document.querySelector(`.main-products__cards`);if(e)try{let i=await n(t(r,`products`)),a=``;i.forEach(e=>{a+=s(e.id,e.data().name,e.data().imagesUrl,e.data().discount,e.data().sales)}),e.innerHTML=a,c()}catch(e){console.error(`Error getting products:`,e)}}async function u(){let e=document.querySelector(`.main-products__slider-wrapper`);if(e)try{let i=await n(t(r,`products`)),a=``;i.forEach(e=>{a+=`
         <div class="swiper-slide">
-          ${o(e.data().name,e.data().discount,e.data().sales)}
+          ${s(e.id,e.data().name,e.data().imagesUrl,e.data().discount,e.data().sales)}
         </div>
-      `}),e.innerHTML=a,s()}catch(e){console.error(`Error getting products:`,e)}}export{c as getProductsMain,l as getProductsSlider};
+      `}),e.innerHTML=a,c()}catch(e){console.error(`Error getting products:`,e)}}export{l as getProductsMain,u as getProductsSlider};
