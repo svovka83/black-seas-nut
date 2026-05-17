@@ -2,4 +2,4 @@ function e(){let e=document.querySelector(`.header-middle__button`),n=document.q
     <button class="button ${e?`button_active`:`button_normal`}">
       <span class="button__title">${e?n:t}</span>
     </button>
-  `}export{e as getButton};
+  `}export{e as n,t};

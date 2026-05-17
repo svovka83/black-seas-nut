@@ -5,8 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Главная страница</title>
 		<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-		<script type="module" crossorigin src="/black-seas-nut/assets/main-EED9uuMw.js"></script>
-		<link rel="stylesheet" crossorigin href="/black-seas-nut/assets/main-BCJzhX60.css">
+		<script type="module" crossorigin src="/black-seas-nut/assets/main-ZXoUYkLI.js"></script>
+		<link rel="modulepreload" crossorigin href="/black-seas-nut/assets/preload-helper-B7ggkqts.js">
+		<link rel="stylesheet" crossorigin href="/black-seas-nut/assets/main-Z8WmCZZJ.css">
 	</head>
 	<body data-page="main">
 		<!-- preloader -->
@@ -229,7 +230,7 @@
       <!-- text( classText, text ) -->
       
       
-  <p class="text text_top">Единственный в Украине сад совместного выращивание фундука и грецкого ореха</p>
+  <p class="text text_top text_white">Единственный в Украине сад совместного выращивание фундука и грецкого ореха</p>
 
     </div>
     <div class="banner-content__button">
@@ -253,115 +254,45 @@
 
 			</section>
 
-			<div class="container" style="margin-top: 40px">
-				<div class="product-card">
-					<div class="product-card__slider">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<img class="product-card__img" src="/black-seas-nut/images/png/product_1.png" alt="product" />
-							</div>
-							<div class="swiper-slide">
-								<img class="product-card__img" src="/black-seas-nut/images/png/product_2.png" alt="product" />
-							</div>
-							<div class="swiper-slide">
-								<img class="product-card__img" src="/black-seas-nut/images/png/product_3.png" alt="product" />
-							</div>
-							<div class="swiper-slide">
-								<img class="product-card__img" src="/black-seas-nut/images/png/product_4.png" alt="product" />
-							</div>
-							<div class="swiper-slide">
-								<img class="product-card__img" src="/black-seas-nut/images/png/product_5.png" alt="product" />
-							</div>
-							<div class="swiper-slide">
-								<img class="product-card__img" src="/black-seas-nut/images/png/product_6.png" alt="product" />
-							</div>
-						</div>
+			<!-- main-products -->
+			<section class="main-products container">
+				<div class="main-products__title">
+					<!-- title( heading, classTitle, title ) -->
+					<!-- prettier-ignore -->
+					
+					
+  <h2 class="title title_h2">Продукция</h2>
 
-						<button class="product-card__nav-button product-card__nav-button_prev">
-							<svg class="product-card__nav-button-icon">
-								<use href="/black-seas-nut/images/sprites.svg#arrow-left-icon"></use>
-							</svg>
-						</button>
-
-						<button class="product-card__nav-button product-card__nav-button_next">
-							<svg class="product-card__nav-button-icon">
-								<use href="/black-seas-nut/images/sprites.svg#arrow-right-icon"></use>
-							</svg>
-						</button>
-
-						<div class="product-card__search">
-							<svg class="product-card__search-icon">
-								<use href="/black-seas-nut/images/sprites.svg#search-icon"></use>
-							</svg>
-						</div>
-					</div>
-					<div class="product-card__content">
-						<h4 class="product-card__title">Грецкий орех</h4>
-						<p class="product-card__art">Арт: <span>0091</span></p>
-						<p class="product-card__tags">Орех <span>сладкий, классический, очищенный</span></p>
-						<div class="product-card__info">
-							<div class="product-card__info-item">
-								<svg class="product-card__info-icon">
-									<use href="/black-seas-nut/images/sprites.svg#scale-icon"></use>
-								</svg>
-								<dl class="product-card__info-list">
-									<dt class="product-card__info-term">Масса:</dt>
-									<dd class="product-card__info-definition">40г.</dd>
-								</dl>
-							</div>
-							<div class="product-card__info-item">
-								<svg class="product-card__info-icon">
-									<use href="/black-seas-nut/images/sprites.svg#product-bag-icon"></use>
-								</svg>
-								<dl class="product-card__info-list">
-									<dt class="product-card__info-term">Упаковка</dt>
-									<dd class="product-card__info-definition">вакуумная</dd>
-								</dl>
-							</div>
-						</div>
-
-						<hr class="product-card__hr" />
-
-						<div class="product-card__bottom">
-							<p class="product-card__bottom-price">
-								Цена:
-								<span class="product-card__bottom-cost"
-									>19 <span class="product-card__bottom-cost-ua">грн.</span></span
-								>
-								<span class="product-card__bottom-discount"
-									>21 <span class="product-card__bottom-discount-ua">грн.</span></span
-								>
-							</p>
-
-							<!-- <p class="product-card__bottom-price">
-								Цена:
-								<span class="product-card__bottom-cost"
-									><span class="product-card__bottom-cost-ua">от</span> 21
-									<span class="product-card__bottom-cost-ua">грн.</span></span
-								>
-							</p> -->
-
-							<div class="product-card__bottom-button">
-								<!-- getButton() -->
-							</div>
-						</div>
-					</div>
-
-					<!-- <div class="product-card__promotion-new">
-						<svg class="product-card__promotion-new-icon product-card__promotion-new-icon_red">
-							<use href="/images/sprites.svg#prmotion-new-icon"></use>
-						</svg>
-						<span class="product-card__promotion-new-text">АКЦИЯ</span>
-					</div> -->
-
-					<!-- <div class="product-card__promotion-new">
-						<svg class="product-card__promotion-new-icon product-card__promotion-new-icon_orange">
-							<use href="images/sprites.svg#prmotion-new-icon"></use>
-						</svg>
-						<span class="product-card__promotion-new-text">НОВИНКА</span>
-					</div> -->
 				</div>
-			</div>
+				<div class="main-products__text">
+					<!-- text( classText, text ) -->
+					<!-- prettier-ignore -->
+					
+					
+  <p class="text text_content">Экологически чистые, качественные ядра грецкого ореха и фундука, 
+					а также плоды шиповника в удобной, надежной, вакуумной упаковке 
+					разного объема</p>
+
+				</div>
+				<div class="main-products__cards">
+					<!-- getProductsMain() -->
+				</div>
+				<div class="main-products__slider">
+					<div class="swiper-wrapper main-products__slider-wrapper">
+						<!-- getProductsSlider() -->
+					</div>
+				</div>
+				<div class="main-products__link">
+					<!-- link( title, linkPath ) -->
+					<!-- prettier-ignore -->
+					
+					
+  <a class="link" href="#!">
+    <span class="link__title">Перейти в магазин</span>
+  </a>
+
+				</div>
+			</section>
 		</main>
 
 		<!-- footer() -->
