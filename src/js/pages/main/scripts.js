@@ -13,6 +13,7 @@ async function initApp() {
 			const { manufacturerSlider } = await import("../../swipers/manufacturer-slider.js");
 			const { controlBannerVideo } = await import("../../controllers/control-banner-video.js");
 			const { controlModalProductSlider } = await import("../../controllers/control-modal-product-slider.js");
+			const { controlManufacturerVideos } = await import("../../controllers/control-manufacturer-videos.js");
 
 			await initGeneral();
 			lightMenuHeader();
@@ -27,6 +28,7 @@ async function initApp() {
 			// controllers
 			controlBannerVideo();
 			controlModalProductSlider();
+			controlManufacturerVideos();
 		}
 
 		preloader.classList.add("preloader_hide");

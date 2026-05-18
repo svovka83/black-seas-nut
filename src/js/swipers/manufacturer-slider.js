@@ -11,5 +11,13 @@ export function manufacturerSlider() {
 			nextEl: ".manufacturer-slider__nav-button_next",
 			prevEl: ".manufacturer-slider__nav-button_prev",
 		},
+		breakpoints: {
+			321: {
+				allowTouchMove: true,
+			},
+			769: {
+				allowTouchMove: false,
+			},
+		},
 	});
 }

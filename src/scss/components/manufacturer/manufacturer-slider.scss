@@ -5,19 +5,24 @@
 	max-width: 700px;
 	margin: 0 auto;
 	overflow: hidden;
-	@media (max-width: 1120px) {
+	& .swiper-wrapper {
+		align-items: center;
 	}
 	&__slide {
 		width: 100%;
+		overflow: hidden;
 	}
 	&__nav-button {
 		position: absolute;
-		bottom: 4px;
+		bottom: 6px;
 		width: 70px;
 		height: 56px;
 		background-color: $color_primary;
 		z-index: 300;
 		cursor: pointer;
+		@media (max-width: 1200px) {
+			bottom: 4px;
+		}
 		@media (max-width: 768px) {
 			display: none;
 		}
@@ -46,5 +51,32 @@
 		left: 50%;
 		transform: translate(-44%, -41%);
 		z-index: 300;
+		visibility: visible;
+		opacity: 1;
+		transition: visibility 0.2s ease-in-out, opacity 0.2s ease-in-out;
+		@media (max-width: 768px) {
+			display: none;
+		}
+		&_onplay {
+			visibility: hidden;
+			opacity: 0;
+		}
+	}
+	&__eclipse {
+		position: absolute;
+		top: 8.4%;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 82.5%;
+		object-fit: cover;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.2), transparent, rgba(0, 0, 0, 0.4));
+		opacity: 0;
+		transition: opacity 0.3s ease;
+		pointer-events: none;
+		&_onplay {
+			opacity: 1;
+			z-index: 250;
+		}
 	}
 }

@@ -10,7 +10,7 @@
           poster="/images/jpg/manufacturer/manufacturer_1.jpg"
           muted
           loop>
-          <source src="" type="video/mp4" />
+          <source src="/public/videos/manufacturer_1.mp4" type="video/mp4" />
         </video>
       </div>
 
@@ -21,7 +21,7 @@
           poster="/images/jpg/manufacturer/manufacturer_2.jpg"
           muted
           loop>
-          <source src="" type="video/mp4" />
+          <source src="/public/videos/manufacturer_2.mp4" type="video/mp4" />
         </video>
       </div>
 
@@ -32,7 +32,7 @@
           poster="/images/jpg/manufacturer/manufacturer_3.jpg"
           muted
           loop>
-          <source src="" type="video/mp4" />
+          <source src="/public/videos/manufacturer_3.mp4" type="video/mp4" />
         </video>
       </div>
     </div>
@@ -50,9 +50,11 @@
     </button>
 
     <div class="manufacturer-slider__play">
-      <!-- play() -->
+      <!-- play( playId ) -->
       {% from "src/partials/ui/play.njk" import play %}
-      {{ play() }}
+      {{ play( "play_manufacturer" ) }}
     </div>
+
+    <div class="manufacturer-slider__eclipse"></div>
   </div>
 {% endmacro %}

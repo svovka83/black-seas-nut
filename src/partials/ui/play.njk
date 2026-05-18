@@ -1,5 +1,7 @@
-{% macro play() %}
-  <button class="play">
+{# playId - 1: play_banner 2: play_manufacturer #}
+
+{% macro play( playId ) %}
+  <button class="play" id="{{ playId }}">
     <svg class="play__icon">
       <use
         class="play__use"

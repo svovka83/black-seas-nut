@@ -8,7 +8,7 @@ export function controlBannerVideo() {
 	const content = document.querySelector(".banner-content");
 	const title = document.querySelector(".banner-content__title");
 	const text = document.querySelector(".banner-content__text");
-	const btn = document.querySelector(".play");
+	const btn = document.getElementById("play_banner");
 	const icon = document.querySelector(".play__use");
 
 	btn.addEventListener("click", () => {
