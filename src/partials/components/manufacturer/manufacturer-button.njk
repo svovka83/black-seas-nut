@@ -1,0 +1,29 @@
+{# class - 1:  #}
+
+{% macro manufacturerButton() %}
+  <div class="manufacturer-button">
+    <div class="manufacturer-button__title">
+      <!-- title( heading, classTitle, title ) -->
+      {% from "src/partials/ui/title.njk" import title %}
+      {{ title( "h2", "title_h2", "О производителе") }}
+    </div>
+
+    <p class="manufacturer-button__text-top">
+      <span class="manufacturer-button__text-green">
+        Сельскохозяйственный обслуживающий кооператив “Орех Причерноморья” </span
+      >выращивает смешанные сады ореха грецкого с фундуком, а также ореха грецкого с
+      шиповником, на площади более 150 гектаров.
+    </p>
+
+    <p class="manufacturer-button__text-bottom">
+      Помимо этого кооператив занимается выращиванием посадочного материала, саженцов
+      привитого и непривитого грецкого ореха, фундука и шиповника.
+    </p>
+
+    <div class="manufacturer-button__link">
+      <!-- link( title, classLink, pathLink ) -->
+      {% from "src/partials/ui/link.njk" import link %}
+      {{ link( "Подробнее", "link_fs14", "#!" ) }}
+    </div>
+  </div>
+{% endmacro %}

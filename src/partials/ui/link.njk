@@ -1,5 +1,5 @@
-{% macro link( title, linkPath ) %}
-  <a class="link" href="{{ linkPath }}">
+{% macro link( title, classLink, pathLink ) %}
+  <a class="link {{ classLink }}" href="{{ pathLink }}">
     <span class="link__title">{{ title }}</span>
   </a>
 {% endmacro %}

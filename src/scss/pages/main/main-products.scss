@@ -3,7 +3,11 @@
 .main-products {
 	text-align: center;
 	padding-top: 83px;
-	padding-bottom: 32px;
+	padding-bottom: 90px;
+	@media (max-width: 768px) {
+		padding-top: 45px;
+		padding-bottom: 45px;
+	}
 	&__title {
 		margin-bottom: 28px;
 	}
@@ -11,6 +15,9 @@
 		max-width: 610px;
 		margin-inline: auto;
 		margin-bottom: 62px;
+		@media (max-width: 768px) {
+			margin-bottom: 31px;
+		}
 	}
 	&__cards {
 		text-align: start;
@@ -31,7 +38,7 @@
 		max-width: 414px;
 		overflow: hidden;
 		margin-inline: auto;
-		margin-bottom: 72px;
+		margin-bottom: 36px;
 		@media (min-width: 769px) {
 			display: none;
 		}

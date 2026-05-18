@@ -52,12 +52,24 @@
 					</div>
 				</div>
 				<div class="main-products__link">
-					<!-- link( title, linkPath ) -->
+					<!-- link( title, classLink, pathLink ) -->
 					<!-- prettier-ignore -->
 					{% from "src/partials/ui/link.njk" import link %}
-					{{ link( "Перейти в магазин", "#!") }}
+					{{ link( "Перейти в магазин", "link_fs15", "#!") }}
 				</div>
 			</section>
+
+			<!-- manufacturer( classManufacturer ) -->
+			<!-- prettier-ignore -->
+			{% from "src/partials/modules/manufacturer.njk" import manufacturer %}
+			{% from "src/partials/components/manufacturer/manufacturer-button.njk" import manufacturerButton %}
+			{% from "src/partials/components/manufacturer/manufacturer-slider.njk" import manufacturerSlider %}
+			{{ manufacturer( "manufacturer_gray-bg", manufacturerButton, manufacturerSlider ) }}
+
+			<!-- tags() -->
+			<!-- prettier-ignore -->
+			{% from "src/partials/components/common/tags.njk" import tags %}
+			{{ tags() }}
 		</main>
 
 		<!-- footer() -->

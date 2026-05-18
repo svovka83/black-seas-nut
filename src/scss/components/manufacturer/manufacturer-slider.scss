@@ -1,0 +1,50 @@
+@use "../../settings/variables.scss" as *;
+
+.manufacturer-slider {
+	position: relative;
+	max-width: 700px;
+	margin: 0 auto;
+	overflow: hidden;
+	@media (max-width: 1120px) {
+	}
+	&__slide {
+		width: 100%;
+	}
+	&__nav-button {
+		position: absolute;
+		bottom: 4px;
+		width: 70px;
+		height: 56px;
+		background-color: $color_primary;
+		z-index: 300;
+		cursor: pointer;
+		@media (max-width: 768px) {
+			display: none;
+		}
+		&:active {
+			background-color: $color_secondary;
+		}
+		&.swiper-button-disabled .manufacturer-slider__nav-button-icon {
+			fill: #c4c4c4;
+		}
+		&-icon {
+			width: 22px;
+			height: 19px;
+			fill: $white;
+			transform: translate(0, 2px);
+		}
+		&_prev {
+			left: 0px;
+		}
+		&_next {
+			left: 70px;
+		}
+	}
+	&__play {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-44%, -41%);
+		z-index: 300;
+	}
+}

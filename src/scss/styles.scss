@@ -29,8 +29,12 @@
 // components/banner
 @use "./components/banner/banner-video.scss";
 
-// components/banner
+// components/cards
 @use "./components/cards/product-card.scss";
+
+// components/manufacturer
+@use "./components/manufacturer/manufacturer-button.scss";
+@use "./components/manufacturer/manufacturer-slider.scss";
 
 // components/common
 @use "./components/common/tags.scss";
@@ -38,6 +42,7 @@
 // modules
 @use "./modules/header.scss";
 @use "./modules/footer.scss";
+@use "./modules/manufacturer.scss";
 
 // main page
 @use "./pages/main/main-top.scss";

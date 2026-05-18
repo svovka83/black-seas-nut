@@ -19,8 +19,11 @@
 	&_h2 {
 		font-weight: 800;
 		font-size: 45px;
+		@media (max-width: 1024px) {
+			font-size: 38px;
+		}
 		@media (max-width: 768px) {
-			font-size: 35px;
+			font-size: 32px;
 		}
 		@media (max-width: 420px) {
 			font-size: 25px;

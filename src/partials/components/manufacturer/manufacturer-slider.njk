@@ -1,0 +1,58 @@
+{# class - 1:  #}
+
+{% macro manufacturerSlider() %}
+  <div class="manufacturer-slider">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <video
+          class="manufacturer-slider__slide"
+          preload="metadata"
+          poster="/images/jpg/manufacturer/manufacturer_1.jpg"
+          muted
+          loop>
+          <source src="" type="video/mp4" />
+        </video>
+      </div>
+
+      <div class="swiper-slide">
+        <video
+          class="manufacturer-slider__slide"
+          preload="metadata"
+          poster="/images/jpg/manufacturer/manufacturer_2.jpg"
+          muted
+          loop>
+          <source src="" type="video/mp4" />
+        </video>
+      </div>
+
+      <div class="swiper-slide">
+        <video
+          class="manufacturer-slider__slide"
+          preload="metadata"
+          poster="/images/jpg/manufacturer/manufacturer_3.jpg"
+          muted
+          loop>
+          <source src="" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+
+    <button class="manufacturer-slider__nav-button manufacturer-slider__nav-button_prev">
+      <svg class="manufacturer-slider__nav-button-icon">
+        <use href="/images/sprites.svg#arrow-left-icon"></use>
+      </svg>
+    </button>
+
+    <button class="manufacturer-slider__nav-button manufacturer-slider__nav-button_next">
+      <svg class="manufacturer-slider__nav-button-icon">
+        <use href="/images/sprites.svg#arrow-right-icon"></use>
+      </svg>
+    </button>
+
+    <div class="manufacturer-slider__play">
+      <!-- play() -->
+      {% from "src/partials/ui/play.njk" import play %}
+      {{ play() }}
+    </div>
+  </div>
+{% endmacro %}

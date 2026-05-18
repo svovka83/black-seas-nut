@@ -1,0 +1,18 @@
+{# classManufacturer - 1: manufacturer_white-bg  2: manufacturer_gray-bg #}
+
+{% macro manufacturer( classManufacturer, manufacturerContent, manufacturerSlider ) %}
+  <section class="manufacturer {{ classManufacturer }}">
+    <div class="manufacturer__inner container">
+      <div class="manufacturer__content">
+
+        {{ manufacturerContent() }}
+
+      </div>
+      <div class="manufacturer__slider">
+
+        {{ manufacturerSlider() }}
+        
+      </div>
+    </div>
+  </section>
+{% endmacro %}
