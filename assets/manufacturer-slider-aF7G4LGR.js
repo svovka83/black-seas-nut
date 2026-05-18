@@ -1,1 +1,0 @@
-import{t as e}from"./swiper-Zp1-yGGI.js";import{t}from"./navigation-YiU2q7mb.js";function n(){new e(`.manufacturer-slider`,{slidesPerView:1,speed:500,modules:[t],navigation:{nextEl:`.manufacturer-slider__nav-button_next`,prevEl:`.manufacturer-slider__nav-button_prev`}})}export{n as manufacturerSlider};
