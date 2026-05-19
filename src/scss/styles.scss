@@ -31,9 +31,11 @@
 
 // components/produce
 @use "./components/produce/produce-video.scss";
+@use "./components/produce/produce-image.scss";
 
 // components/cards
 @use "./components/cards/product-card.scss";
+@use "./components/cards/galery-card.scss";
 
 // components/manufacturer
 @use "./components/manufacturer/manufacturer-button.scss";
@@ -50,6 +52,7 @@
 // main page
 @use "./pages/main/main-top.scss";
 @use "./pages/main/main-products.scss";
+@use "./pages/main/main-useful.scss";
 
 // modals
 @use "./components/modals/modal-product-slider.scss";

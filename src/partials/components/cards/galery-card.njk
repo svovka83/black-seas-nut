@@ -1,0 +1,47 @@
+{# classGalary - 1: normal - galery-card_normal - imagePath, title, iconId #}
+{# classGalary - 2: small - galery-card_small - imagePath #}
+{# classGalary - 3: small-video - galery-card_small-video - imagePath, title #}
+{# classGalary - 4: medium - galery-card_medium - imagePath #}
+{# classGalary - 5: large - galery-card_large - imagePath, title #}
+
+{# needs refactoring - add props text #}
+{# small-video -> small #}
+
+{% macro galeryCard( classGalary, imagePath, title, iconId ) %}
+  <div class="galery-card {{ classGalary }}">
+    <div class="galery-card__content">
+
+      <div class="galery-card__content-play">
+        <!-- play( playId ) -->
+        {% from "src/partials/ui/play.njk" import play %}
+        {{ play( "" ) }}
+      </div>
+
+      <svg class="galery-card__content-icon">
+        <use href="/images/sprites.svg#{{ iconId }}"></use>
+      </svg>
+
+      <h3 class="galery-card__content-title">{{ title }}</h3>
+
+      <p class="galery-card__content-text-normal">
+        Дерево жизни - так часто величают грецкий орех, поскольку с давних пор он кормил,
+        восстанавливал силы и лечил человека.
+      </p>
+      <p class="galery-card__content-text-normal">
+        Даже небольшая горсть грецких орехов - это кладезь витаминов и хорошая профилактика многих
+        заболеваний
+      </p>
+
+      <p class="galery-card__content-text">
+        В этом Году при поддержке проекта International Trade Centre Ukraine, и финансировании правительства Швеции, мы побывали на крупнейшей продовольственной выставке Европы SIAL Paris 2018
+      </p>
+
+    </div>
+
+    <img class="galery-card__img" src="{{ imagePath }}" alt="walnut" />
+    <img class="galery-card__img-icon" src="/images/png/galery-bg-icon.png" alt="walnut-icon" />
+
+    <div class="galery-card__green-bg"></div>
+    <div class="galery-card__gray-bg"></div>
+  </div>
+{% endmacro %}

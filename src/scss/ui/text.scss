@@ -34,6 +34,17 @@
 			font-size: 16px;
 		}
 	}
+	&_eco {
+		font-size: 22px;
+		line-height: 28px;
+		letter-spacing: 0%;
+		@media (max-width: 768px) {
+			font-size: 18px;
+		}
+		@media (max-width: 420px) {
+			font-size: 14px;
+		}
+	}
 	&_white {
 		color: $white;
 	}
