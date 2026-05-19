@@ -14,6 +14,7 @@ async function initApp() {
 			const { controlBannerVideo } = await import("../../controllers/control-banner-video.js");
 			const { controlModalProductSlider } = await import("../../controllers/control-modal-product-slider.js");
 			const { controlManufacturerVideos } = await import("../../controllers/control-manufacturer-videos.js");
+			const { controlProduceVideo } = await import("../../controllers/control-produce-video.js");
 
 			await initGeneral();
 			lightMenuHeader();
@@ -29,6 +30,7 @@ async function initApp() {
 			controlBannerVideo();
 			controlModalProductSlider();
 			controlManufacturerVideos();
+			controlProduceVideo();
 		}
 
 		preloader.classList.add("preloader_hide");

@@ -1,0 +1,76 @@
+@use "../../settings/variables.scss" as *;
+
+.produce-video {
+	position: relative;
+	height: 740px;
+	@media (max-width: 1920px) {
+		height: unset;
+		width: 100%;
+		aspect-ratio: 16 / 9;
+		max-height: 740px;
+		overflow: hidden;
+	}
+	&__video {
+		display: block;
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	&__content {
+		text-align: center;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		transform: translate(-0.35%, -43.5%);
+		display: flex;
+		flex-direction: column;
+		row-gap: 28px;
+		z-index: 200;
+		visibility: visible;
+		opacity: 1;
+		transition: visibility 0.2s ease-in-out, opacity 0.2s ease-in-out;
+		@media (max-width: 768px) {
+			transform: translate(-0.35%, -55%);
+		}
+		&_onplay {
+			visibility: hidden;
+			opacity: 0;
+		}
+		@media (max-width: 768px) {
+			row-gap: 16px;
+		}
+	}
+	&__title {
+		max-width: 1185px;
+		padding-inline: 12px;
+		margin-inline: auto;
+		margin-bottom: 38px;
+		@media (max-width: 1024px) {
+			margin-bottom: 0px;
+		}
+	}
+	&__button {
+	}
+	&__text {
+		max-width: 430px;
+		margin-inline: auto;
+	}
+	&__eclipse {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		background-image: $eclipse;
+		opacity: 0;
+		transition: opacity 0.3s ease;
+		pointer-events: none;
+		&_onplay {
+			opacity: 1;
+			z-index: 100;
+		}
+	}
+}

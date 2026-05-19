@@ -1,0 +1,34 @@
+{% macro produceVideo() %}
+  <section class="produce-video">
+    <video
+      class="produce-video__video"
+      preload="metadata"
+      poster="/images/jpg/produce/produce-video.jpg"
+      muted
+      loop>
+      <source src="/public/videos/produce-video.mp4" type="video/mp4" />
+    </video>
+
+    <div class="produce-video__content">
+      <div class="produce-video__title">
+        <!-- title( heading, classTitle, title ) -->
+        {% from "src/partials/ui/title.njk" import title %}
+        {{ title( "h2", "title_h2 title_white", "Наша главная цель - получить максимальную прибыль с одного гектара") }}
+      </div>
+
+      <div class="produce-video__button">
+        <!-- play( playId ) -->
+        {% from "src/partials/ui/play.njk" import play %}
+        {{ play( "play_produce" ) }}
+      </div>
+
+      <div class="produce-video__text">
+        <!-- text( classText, text ) -->
+        {% from "src/partials/ui/text.njk" import text %}
+        {{ text( "text_italic text_white", "Cмотреть видео о производстве") }}
+      </div>
+    </div>
+
+    <div class="produce-video__eclipse"></div>
+  </section>
+{% endmacro %}
