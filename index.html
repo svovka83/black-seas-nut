@@ -5,8 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Главная страница</title>
 		<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-		<script type="module" crossorigin src="/black-seas-nut/assets/main-DhNzduKw.js"></script>
-		<link rel="stylesheet" crossorigin href="/black-seas-nut/assets/main-YwPVW5KG.css">
+		<script type="module" crossorigin src="/black-seas-nut/assets/main-xL9eEr80.js"></script>
+		<link rel="stylesheet" crossorigin href="/black-seas-nut/assets/main-C0gGxQ6C.css">
 	</head>
 	<body data-page="main">
 		<!-- preloader -->
@@ -453,7 +453,7 @@
       poster="/black-seas-nut/images/jpg/produce/produce-video.jpg"
       muted
       loop>
-      <source src="/black-seas-nut/assets/produce-video-BM7F8Zqm.mp4" type="video/mp4" />
+      <source src="/black-seas-nut/videos/produce-video.mp4" type="video/mp4" />
     </video>
 
     <div class="produce-video__content">
@@ -698,102 +698,273 @@
   </section>
 
 
-			<!-- news-slider -->
-			<section class="news-slider">
-				<div class="news-slider__inner container">
-					<div class="news-slider__top">
-						<div class="news-slider__top-title-block">
-							<div class="news-slider__top-title-block-title">
-								<!-- title( heading, classTitle, title ) -->
-								<!-- prettier-ignore -->
-								
-								
+			<!-- newsSlider() -->
+			<!-- prettier-ignore -->
+			
+			
+  <section class="news-slider">
+    <div class="news-slider__inner container">
+      <div class="news-slider__top">
+
+        <div class="news-slider__top-title-block">
+          <div class="news-slider__top-title-block-title">
+            <!-- title( heading, classTitle, title ) -->
+            
+            
   <h2 class="title title_h2">Новости</h2>
 
-							</div>
-							<div class="news-slider__top-title-block-text">
-								<!-- text( classText, text ) -->
-								<!-- prettier-ignore -->
-								
-								
+          </div>
+          <div class="news-slider__top-title-block-text">
+            <!-- text( classText, text ) -->
+            
+            
   <p class="text text_content">Свежие новости и полезная информация</p>
 
-							</div>
-						</div>
+          </div>
+        </div>
 
-						<button class="news-slider__top-nav-button news-slider__top-nav-button_prev">
-							<svg class="news-slider__top-nav-button-icon">
-								<use href="/black-seas-nut/images/sprites.svg#arrow-left-icon"></use>
-							</svg>
-						</button>
+        <button class="news-slider__top-nav-button news-slider__top-nav-button_prev">
+          <svg class="news-slider__top-nav-button-icon">
+            <use href="/black-seas-nut/images/sprites.svg#arrow-left-icon"></use>
+          </svg>
+        </button>
+        <button class="news-slider__top-nav-button news-slider__top-nav-button_next">
+          <svg class="news-slider__top-nav-button-icon">
+            <use href="/black-seas-nut/images/sprites.svg#arrow-right-icon"></use>
+          </svg>
+        </button>
+      </div>
 
-						<button class="news-slider__top-nav-button news-slider__top-nav-button_next">
-							<svg class="news-slider__top-nav-button-icon">
-								<use href="/black-seas-nut/images/sprites.svg#arrow-right-icon"></use>
-							</svg>
-						</button>
-					</div>
+      <div class="news-slider__slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="news-card">
+              <video
+                class="news-card__video"
+                preload="metadata"
+                poster="/black-seas-nut/images/jpg/news/news_1.jpg">
+                <source src="" type="video/mp4" />
+              </video>
 
-					<div class="news-slider__slider">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide" style="max-width: 410px; height: 532px">
-								<div class="news-card">
-									<video
-										class="news-card__video"
-										preload="metadata"
-										poster="/black-seas-nut/images/jpg/news/news_1.jpg">
-										<source src="" type="video/mp4" />
-									</video>
+              <div class="news-card__content">
+                <p class="news-card__date">12.04.2019</p>
+                <h4 class="news-card__title">Центр поддержки экспорта, в студии Павел Тулба</h4>
+                <p class="news-card__text">
+                  Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень
+                  недооценена среди наших садоводов, не смотря на большой спрос в Европе и
+                  отличную...
+                </p>
+                <div class="news-card__link">
+                  <!-- getRead() -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="news-card">
+              <video
+                class="news-card__video"
+                preload="metadata"
+                poster="/black-seas-nut/images/jpg/news/news_2.jpg">
+                <source src="" type="video/mp4" />
+              </video>
 
-									<div class="news-card__content">
-										<p class="news-card__date">12.04.2019</p>
-										<h4 class="news-card__title">Центр поддержки экспорта, в студии Павел Тулба</h4>
-										<p class="news-card__text">
-											Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень
-											недооценена среди наших садоводов, не смотря на большой спрос в Европе и
-											отличную...
-										</p>
-										<div class="news-card__link">
-											<!-- <a class="read" href="#!">
-												<span class="read__text">Читать</span>
-												<svg class="read__icon">
-													<use href="/images/sprites.svg#arrow-link-icon"></use>
-												</svg>
-											</a> -->
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide" style="max-width: 410px; height: 532px; background-color: black">
-								Slide 2
-							</div>
-							<div class="swiper-slide" style="max-width: 410px; height: 532px; background-color: black">
-								Slide 3
-							</div>
-							<div class="swiper-slide" style="max-width: 410px; height: 532px; background-color: black">
-								Slide 1
-							</div>
-							<div class="swiper-slide" style="max-width: 410px; height: 532px; background-color: black">
-								Slide 2
-							</div>
-							<div class="swiper-slide" style="max-width: 410px; height: 532px; background-color: black">
-								Slide 3
-							</div>
-						</div>
-					</div>
+              <div class="news-card__content">
+                <p class="news-card__date">12.04.2019</p>
+                <h4 class="news-card__title">
+                  В Одесской области состоялся масштабный торгово - экспортный форум
+                </h4>
+                <p class="news-card__text">
+                  Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень
+                  недооценена среди наших садоводов, не смотря на большой спрос в Европе и
+                  отличную...
+                </p>
+                <div class="news-card__link">
+                  <!-- getRead() -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="news-card">
+              <video
+                class="news-card__video"
+                preload="metadata"
+                poster="/black-seas-nut/images/jpg/news/news_3.jpg">
+                <source src="" type="video/mp4" />
+              </video>
 
-					<div class="news-slider__link">
-						<!-- link( title, classLink, pathLink ) -->
-						<!-- prettier-ignore -->
-						
-						
+              <div class="news-card__content">
+                <p class="news-card__date">12.04.2019</p>
+                <h4 class="news-card__title">Сертификация органического производителя</h4>
+                <p class="news-card__text">
+                  Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень
+                  недооценена среди наших садоводов, не смотря на большой спрос в Европе и
+                  отличную...
+                </p>
+                <div class="news-card__link">
+                  <!-- getRead() -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="news-card">
+              <video
+                class="news-card__video"
+                preload="metadata"
+                poster="/black-seas-nut/images/jpg/news/news_1.jpg">
+                <source src="" type="video/mp4" />
+              </video>
+
+              <div class="news-card__content">
+                <p class="news-card__date">12.04.2019</p>
+                <h4 class="news-card__title">Центр поддержки экспорта, в студии Павел Тулба</h4>
+                <p class="news-card__text">
+                  Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень
+                  недооценена среди наших садоводов, не смотря на большой спрос в Европе и
+                  отличную...
+                </p>
+                <div class="news-card__link">
+                  <!-- getRead() -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="news-card">
+              <video
+                class="news-card__video"
+                preload="metadata"
+                poster="/black-seas-nut/images/jpg/news/news_2.jpg">
+                <source src="" type="video/mp4" />
+              </video>
+
+              <div class="news-card__content">
+                <p class="news-card__date">12.04.2019</p>
+                <h4 class="news-card__title">
+                  В Одесской области состоялся масштабный торгово - экспортный форум
+                </h4>
+                <p class="news-card__text">
+                  Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень
+                  недооценена среди наших садоводов, не смотря на большой спрос в Европе и
+                  отличную...
+                </p>
+                <div class="news-card__link">
+                  <!-- getRead() -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="news-card">
+              <video
+                class="news-card__video"
+                preload="metadata"
+                poster="/black-seas-nut/images/jpg/news/news_3.jpg">
+                <source src="" type="video/mp4" />
+              </video>
+
+              <div class="news-card__content">
+                <p class="news-card__date">12.04.2019</p>
+                <h4 class="news-card__title">Сертификация органического производителя</h4>
+                <p class="news-card__text">
+                  Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень
+                  недооценена среди наших садоводов, не смотря на большой спрос в Европе и
+                  отличную...
+                </p>
+                <div class="news-card__link">
+                  <!-- getRead() -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="news-card">
+              <video
+                class="news-card__video"
+                preload="metadata"
+                poster="/black-seas-nut/images/jpg/news/news_1.jpg">
+                <source src="" type="video/mp4" />
+              </video>
+
+              <div class="news-card__content">
+                <p class="news-card__date">12.04.2019</p>
+                <h4 class="news-card__title">Центр поддержки экспорта, в студии Павел Тулба</h4>
+                <p class="news-card__text">
+                  Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень
+                  недооценена среди наших садоводов, не смотря на большой спрос в Европе и
+                  отличную...
+                </p>
+                <div class="news-card__link">
+                  <!-- getRead() -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="news-card">
+              <video
+                class="news-card__video"
+                preload="metadata"
+                poster="/black-seas-nut/images/jpg/news/news_2.jpg">
+                <source src="" type="video/mp4" />
+              </video>
+
+              <div class="news-card__content">
+                <p class="news-card__date">12.04.2019</p>
+                <h4 class="news-card__title">
+                  В Одесской области состоялся масштабный торгово - экспортный форум
+                </h4>
+                <p class="news-card__text">
+                  Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень
+                  недооценена среди наших садоводов, не смотря на большой спрос в Европе и
+                  отличную...
+                </p>
+                <div class="news-card__link">
+                  <!-- getRead() -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="news-card">
+              <video
+                class="news-card__video"
+                preload="metadata"
+                poster="/black-seas-nut/images/jpg/news/news_3.jpg">
+                <source src="" type="video/mp4" />
+              </video>
+
+              <div class="news-card__content">
+                <p class="news-card__date">12.04.2019</p>
+                <h4 class="news-card__title">Сертификация органического производителя</h4>
+                <p class="news-card__text">
+                  Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень
+                  недооценена среди наших садоводов, не смотря на большой спрос в Европе и
+                  отличную...
+                </p>
+                <div class="news-card__link">
+                  <!-- getRead() -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="news-slider__link">
+        <!-- link( title, classLink, pathLink ) -->
+        
+        
   <a class="link link_fs15" href="#!">
     <span class="link__title">Смотреть все новости</span>
   </a>
 
-					</div>
-				</div>
-			</section>
+      </div>
+    </div>
+  </section>
+
 		</main>
 
 		<!-- footer() -->
