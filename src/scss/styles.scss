@@ -44,6 +44,7 @@
 @use "./components/manufacturer/manufacturer-slider.scss";
 
 // components/common
+@use "./components/common/breadcrumbs.scss";
 @use "./components/common/tags.scss";
 
 // modules
@@ -56,6 +57,9 @@
 @use "./pages/main/main-top.scss";
 @use "./pages/main/main-products.scss";
 @use "./pages/main/main-useful.scss";
+
+// about page
+@use "./pages/about/about-top.scss";
 
 // modals
 @use "./components/modals/modal-product-slider.scss";

@@ -21,7 +21,7 @@
         <div class="header-top-desktop__language">
           <span class="header-top-desktop__language-title">Ru</span>
           <svg class="header-top-desktop__language-icon">
-            <use href="images/sprites.svg#chevron-icon"></use>
+            <use href="/images/sprites.svg#chevron-icon"></use>
           </svg>
         </div>
       </div>
@@ -65,9 +65,9 @@
         </button>
 
         <div class="header-middle__logo">
-          <!-- logo( classLogo ) -->
+          <!-- logo( logoPath, classLogo ) -->
           {% from "src/partials/components/layouts/logo.njk" import logo %}
-          {{ logo( "" ) }}
+          {{ logo( "/black-seas-nut/", "" ) }}
         </div>
 
         <div class="header-middle__contacts">

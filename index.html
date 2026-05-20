@@ -18,7 +18,7 @@
 		{% from "src/partials/modules/header.njk" import header %}
     {{ header() }}
 
-		<main class="main-content">
+		<main class="main-content" id="go-to-top">
 			<!-- main-top -->
 			<section class="main-top">
 				<!-- bannerVideo( posterPath, videoPath ) -->
@@ -112,10 +112,10 @@
 				</div>
 			</section>
 
-			<!-- produceImage() -->
+			<!-- produceImage( imagePath ) -->
 			<!-- prettier-ignore -->
 			{% from "src/partials/components/produce/produce-image.njk" import produceImage %}
-			{{ produceImage() }}
+			{{ produceImage( "/images/jpg/produce/produce-image-main.jpg" ) }}
 
 			<!-- newsSlider() -->
 			<!-- prettier-ignore -->

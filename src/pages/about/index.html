@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>О компании</title>
+		<link rel="stylesheet" href="../../../src/scss/styles.scss" />
+		<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+	</head>
+	<body data-page="about">
+		<!-- preloader -->
+		<div class="preloader">
+			<div class="preloader__spinner"></div>
+		</div>
+
+		<!-- header() -->
+		<!-- prettier-ignore -->
+		{% from "src/partials/modules/header.njk" import header %}
+    {{ header() }}
+
+		<main class="about-content" id="go-to-top">
+			<!-- about-top -->
+			<section class="about-top">
+				<!-- breadcrumbs -->
+				<div class="about-breadcrumbs container">
+					<!-- getBreadcrumbs() -->
+				</div>
+
+				<!-- bannerVideo( posterPath, videoPath ) -->
+				<!-- prettier-ignore -->
+				{% from "src/partials/components/banner/banner-video.njk" import bannerVideo %}
+        {{ bannerVideo( "/images/jpg/top/about.jpg", "/videos/about-top.mp4" ) }}
+			</section>
+
+			<!-- manufacturer( classManufacturer ) -->
+			<!-- need to implement new component -->
+			<!-- prettier-ignore -->
+			{% from "src/partials/modules/manufacturer.njk" import manufacturer %}
+			{% from "src/partials/components/manufacturer/manufacturer-button.njk" import manufacturerButton %}
+      {% from "src/partials/components/manufacturer/manufacturer-slider.njk" import manufacturerSlider %}
+      {{ manufacturer( "manufacturer_gray-bg", manufacturerButton, manufacturerSlider ) }}
+
+			<!-- about-company -->
+			<section class="about-company">
+				<!-- need to implement -->
+			</section>
+
+			<!-- tags() -->
+			<!-- prettier-ignore -->
+			{% from "src/partials/components/common/tags.njk" import tags %}
+			{{ tags() }}
+
+			<!-- about-galery -->
+			<section class="about-galery">
+				<!-- need to implement -->
+			</section>
+
+			<!-- produceImage( imagePath ) -->
+			<!-- prettier-ignore -->
+			{% from "src/partials/components/produce/produce-image.njk" import produceImage %}
+			{{ produceImage( "/images/jpg/produce/produce-image-about.jpg" ) }}
+
+			<!-- newsSlider() -->
+			<!-- prettier-ignore -->
+			{% from "src/partials/modules/news-slider.njk" import newsSlider %}
+			{{ newsSlider() }}
+		</main>
+
+		<!-- footer() -->
+		<!-- prettier-ignore -->
+		{% from "src/partials/modules/footer.njk" import footer %}
+    {{ footer() }}
+
+		<script type="module" src="../../js/pages/about/scripts.js"></script>
+		<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+	</body>
+</html>

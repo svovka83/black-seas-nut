@@ -1,6 +1,6 @@
-{% macro produceImage() %}
+{% macro produceImage( imagePath ) %}
   <section class="produce-image">
-    <img class="produce-image__img" src="/images/jpg/produce/produce-image.jpg" alt="eco produce" />
+    <img class="produce-image__img" src="{{ imagePath }}" alt="eco produce" />
 
     <div class="produce-image__content">
       <svg class="produce-image__icon">

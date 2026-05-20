@@ -23,7 +23,7 @@ export function controlBannerVideo() {
 		} else {
 			video.pause();
 			video.currentTime = 0;
-			video.poster = `${base}images/jpg/top/main.jpg`;
+			// video.poster = `${base}images/jpg/top/main.jpg`;
 			video.load();
 
 			title.style.display = "block";

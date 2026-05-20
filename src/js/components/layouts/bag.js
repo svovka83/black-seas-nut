@@ -6,10 +6,12 @@ export function getBag() {
 }
 
 function bag(quantity) {
+	const base = import.meta.env.BASE_URL;
+
 	return `
     <div class="bag">
       <svg class="bag__icon">
-        <use href="images/sprites.svg#bag-icon"></use>
+        <use href="${base}images/sprites.svg#bag-icon"></use>
       </svg>
       <span class="bag__quantity">${quantity}</span>
     </div>

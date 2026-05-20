@@ -1,0 +1,39 @@
+@use "../../settings/variables.scss" as *;
+
+.breadcrumbs {
+	display: flex;
+	position: relative;
+	padding-top: 35px;
+	z-index: 400;
+	&__item {
+		margin-right: 6px;
+		&:first-of-type {
+			.breadcrumbs__icon {
+				display: none;
+			}
+		}
+		&:last-of-type {
+			.breadcrumbs__link {
+				pointer-events: none;
+			}
+		}
+	}
+	&__icon {
+		width: 12px;
+		height: 12px;
+		fill: $white;
+		margin-right: 4px;
+	}
+	&__link {
+		font-weight: 600;
+		font-size: 14px;
+		letter-spacing: 2%;
+		color: $white;
+		padding-bottom: 2px;
+		border-bottom: 1px solid transparent;
+		transition: border 0.3s ease;
+		&:hover {
+			border-bottom: 1px solid $white;
+		}
+	}
+}

@@ -1,4 +1,4 @@
-async function initApp() {
+async function initMainApp() {
 	const preloader = document.querySelector(".preloader");
 	const page = document.body.dataset.page;
 
@@ -7,7 +7,6 @@ async function initApp() {
 
 		if (page === "main") {
 			const { initGeneral } = await import("../../init-general.js");
-			const { lightMenuHeader, lightMenuFooter } = await import("../../utils/light-current-page.js");
 			const { getProductsMain, getProductsSlider } = await import("./init-document/get-product-main.js");
 			const { getRead } = await import("../../ui/read.js");
 			const { productsSlider } = await import("../../swipers/products-slider.js");
@@ -19,8 +18,6 @@ async function initApp() {
 			const { controlProduceVideo } = await import("../../controllers/control-produce-video.js");
 
 			await initGeneral();
-			lightMenuHeader();
-			lightMenuFooter();
 
 			// slider
 			productsSlider();
@@ -29,6 +26,7 @@ async function initApp() {
 			// firestore
 			getProductsMain();
 			getProductsSlider();
+			// ui and components
 			getRead();
 			// controllers
 			controlBannerVideo();
@@ -45,4 +43,4 @@ async function initApp() {
 	}
 }
 
-initApp();
+initMainApp();
