@@ -1,0 +1,258 @@
+{# class - 1:  #}
+
+{% macro newsSlider() %}
+  <section class="news-slider">
+    <div class="news-slider__inner container">
+      <div class="news-slider__top">
+
+        <div class="news-slider__top-title-block">
+          <div class="news-slider__top-title-block-title">
+            <!-- title( heading, classTitle, title ) -->
+            {% from "src/partials/ui/title.njk" import title %}
+            {{ title( "h2", "title_h2", "Новости") }}
+          </div>
+          <div class="news-slider__top-title-block-text">
+            <!-- text( classText, text ) -->
+            {% from "src/partials/ui/text.njk" import text %}
+            {{ text( "text_content", "Свежие новости и полезная информация" ) }}
+          </div>
+        </div>
+
+        <button class="news-slider__top-nav-button news-slider__top-nav-button_prev">
+          <svg class="news-slider__top-nav-button-icon">
+            <use href="/images/sprites.svg#arrow-left-icon"></use>
+          </svg>
+        </button>
+        <button class="news-slider__top-nav-button news-slider__top-nav-button_next">
+          <svg class="news-slider__top-nav-button-icon">
+            <use href="/images/sprites.svg#arrow-right-icon"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="news-slider__slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="news-card">
+              <video
+                class="news-card__video"
+                preload="metadata"
+                poster="/images/jpg/news/news_1.jpg">
+                <source src="" type="video/mp4" />
+              </video>
+
+              <div class="news-card__content">
+                <p class="news-card__date">12.04.2019</p>
+                <h4 class="news-card__title">Центр поддержки экспорта, в студии Павел Тулба</h4>
+                <p class="news-card__text">
+                  Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень
+                  недооценена среди наших садоводов, не смотря на большой спрос в Европе и
+                  отличную...
+                </p>
+                <div class="news-card__link">
+                  <!-- getRead() -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="news-card">
+              <video
+                class="news-card__video"
+                preload="metadata"
+                poster="/images/jpg/news/news_2.jpg">
+                <source src="" type="video/mp4" />
+              </video>
+
+              <div class="news-card__content">
+                <p class="news-card__date">12.04.2019</p>
+                <h4 class="news-card__title">
+                  В Одесской области состоялся масштабный торгово - экспортный форум
+                </h4>
+                <p class="news-card__text">
+                  Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень
+                  недооценена среди наших садоводов, не смотря на большой спрос в Европе и
+                  отличную...
+                </p>
+                <div class="news-card__link">
+                  <!-- getRead() -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="news-card">
+              <video
+                class="news-card__video"
+                preload="metadata"
+                poster="/images/jpg/news/news_3.jpg">
+                <source src="" type="video/mp4" />
+              </video>
+
+              <div class="news-card__content">
+                <p class="news-card__date">12.04.2019</p>
+                <h4 class="news-card__title">Сертификация органического производителя</h4>
+                <p class="news-card__text">
+                  Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень
+                  недооценена среди наших садоводов, не смотря на большой спрос в Европе и
+                  отличную...
+                </p>
+                <div class="news-card__link">
+                  <!-- getRead() -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="news-card">
+              <video
+                class="news-card__video"
+                preload="metadata"
+                poster="/images/jpg/news/news_1.jpg">
+                <source src="" type="video/mp4" />
+              </video>
+
+              <div class="news-card__content">
+                <p class="news-card__date">12.04.2019</p>
+                <h4 class="news-card__title">Центр поддержки экспорта, в студии Павел Тулба</h4>
+                <p class="news-card__text">
+                  Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень
+                  недооценена среди наших садоводов, не смотря на большой спрос в Европе и
+                  отличную...
+                </p>
+                <div class="news-card__link">
+                  <!-- getRead() -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="news-card">
+              <video
+                class="news-card__video"
+                preload="metadata"
+                poster="/images/jpg/news/news_2.jpg">
+                <source src="" type="video/mp4" />
+              </video>
+
+              <div class="news-card__content">
+                <p class="news-card__date">12.04.2019</p>
+                <h4 class="news-card__title">
+                  В Одесской области состоялся масштабный торгово - экспортный форум
+                </h4>
+                <p class="news-card__text">
+                  Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень
+                  недооценена среди наших садоводов, не смотря на большой спрос в Европе и
+                  отличную...
+                </p>
+                <div class="news-card__link">
+                  <!-- getRead() -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="news-card">
+              <video
+                class="news-card__video"
+                preload="metadata"
+                poster="/images/jpg/news/news_3.jpg">
+                <source src="" type="video/mp4" />
+              </video>
+
+              <div class="news-card__content">
+                <p class="news-card__date">12.04.2019</p>
+                <h4 class="news-card__title">Сертификация органического производителя</h4>
+                <p class="news-card__text">
+                  Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень
+                  недооценена среди наших садоводов, не смотря на большой спрос в Европе и
+                  отличную...
+                </p>
+                <div class="news-card__link">
+                  <!-- getRead() -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="news-card">
+              <video
+                class="news-card__video"
+                preload="metadata"
+                poster="/images/jpg/news/news_1.jpg">
+                <source src="" type="video/mp4" />
+              </video>
+
+              <div class="news-card__content">
+                <p class="news-card__date">12.04.2019</p>
+                <h4 class="news-card__title">Центр поддержки экспорта, в студии Павел Тулба</h4>
+                <p class="news-card__text">
+                  Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень
+                  недооценена среди наших садоводов, не смотря на большой спрос в Европе и
+                  отличную...
+                </p>
+                <div class="news-card__link">
+                  <!-- getRead() -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="news-card">
+              <video
+                class="news-card__video"
+                preload="metadata"
+                poster="/images/jpg/news/news_2.jpg">
+                <source src="" type="video/mp4" />
+              </video>
+
+              <div class="news-card__content">
+                <p class="news-card__date">12.04.2019</p>
+                <h4 class="news-card__title">
+                  В Одесской области состоялся масштабный торгово - экспортный форум
+                </h4>
+                <p class="news-card__text">
+                  Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень
+                  недооценена среди наших садоводов, не смотря на большой спрос в Европе и
+                  отличную...
+                </p>
+                <div class="news-card__link">
+                  <!-- getRead() -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="news-card">
+              <video
+                class="news-card__video"
+                preload="metadata"
+                poster="/images/jpg/news/news_3.jpg">
+                <source src="" type="video/mp4" />
+              </video>
+
+              <div class="news-card__content">
+                <p class="news-card__date">12.04.2019</p>
+                <h4 class="news-card__title">Сертификация органического производителя</h4>
+                <p class="news-card__text">
+                  Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень
+                  недооценена среди наших садоводов, не смотря на большой спрос в Европе и
+                  отличную...
+                </p>
+                <div class="news-card__link">
+                  <!-- getRead() -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="news-slider__link">
+        <!-- link( title, classLink, pathLink ) -->
+        {% from "src/partials/ui/link.njk" import link %}
+        {{ link( "Смотреть все новости", "link_fs15", "#!") }}
+      </div>
+    </div>
+  </section>
+{% endmacro %}

@@ -9,8 +9,10 @@ async function initApp() {
 			const { initGeneral } = await import("../../init-general.js");
 			const { lightMenuHeader, lightMenuFooter } = await import("../../utils/light-current-page.js");
 			const { getProductsMain, getProductsSlider } = await import("./init-document/get-product-main.js");
+			const { getRead } = await import("../../ui/read.js");
 			const { productsSlider } = await import("../../swipers/products-slider.js");
 			const { manufacturerSlider } = await import("../../swipers/manufacturer-slider.js");
+			const { newsSlider } = await import("../../swipers/news-slider.js");
 			const { controlBannerVideo } = await import("../../controllers/control-banner-video.js");
 			const { controlModalProductSlider } = await import("../../controllers/control-modal-product-slider.js");
 			const { controlManufacturerVideos } = await import("../../controllers/control-manufacturer-videos.js");
@@ -23,9 +25,11 @@ async function initApp() {
 			// slider
 			productsSlider();
 			manufacturerSlider();
+			newsSlider();
 			// firestore
 			getProductsMain();
 			getProductsSlider();
+			getRead();
 			// controllers
 			controlBannerVideo();
 			controlModalProductSlider();

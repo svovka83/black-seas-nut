@@ -13,6 +13,7 @@
 @use "./ui/play.scss";
 @use "./ui/search.scss";
 @use "./ui/link.scss";
+@use "./ui/read.scss";
 
 // components/preloader
 @use "./components/preloader/preloader.scss";
@@ -36,6 +37,7 @@
 // components/cards
 @use "./components/cards/product-card.scss";
 @use "./components/cards/galery-card.scss";
+@use "./components/cards/news-card.scss";
 
 // components/manufacturer
 @use "./components/manufacturer/manufacturer-button.scss";
@@ -48,6 +50,7 @@
 @use "./modules/header.scss";
 @use "./modules/footer.scss";
 @use "./modules/manufacturer.scss";
+@use "./modules/news-slider.scss";
 
 // main page
 @use "./pages/main/main-top.scss";

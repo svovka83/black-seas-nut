@@ -1,0 +1,27 @@
+@use "../settings/variables.scss" as *;
+
+.read {
+	display: flex;
+	align-items: center;
+	&__text {
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 20px;
+		letter-spacing: 1%;
+		transition: color 0.3s ease;
+		margin-right: 8px;
+	}
+	&__icon {
+		width: 18px;
+		height: 18px;
+		fill: $text_primary;
+		transition: transform 0.3s ease, fill 0.3s ease;
+	}
+	&:hover {
+		color: $color_primary;
+		.read__icon {
+			transform: translate(3px, 0);
+			fill: $color_primary;
+		}
+	}
+}
