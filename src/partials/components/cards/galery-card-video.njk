@@ -1,0 +1,38 @@
+{# classLogo - 1:logo_menu #}
+
+{% macro galeryCardVideo() %}
+  <div class="galery-card-video">
+    <video
+      class="galery-card-video__video"
+      preload="metadata"
+      poster="/images/jpg/galery/galery-poster.png"
+      muted
+      loop>
+      <source src="/videos/galary-video.mp4" type="video/mp4" />
+    </video>
+
+    <div class="galery-card-video__content">
+      <div class="galery-card-video__play">
+        <!-- play( playId ) -->
+        {% from "src/partials/ui/play.njk" import play %}
+        {{ play( "galery-big-play" ) }}
+      </div>
+
+      <div class="galery-card-video__title">
+        <!-- title( heading, classTitle, title ) -->
+        {% from "src/partials/ui/title.njk" import title %}
+        {{ title( "h4", "title_h4 title_white", "Проект UBHDP ") }}
+      </div>
+
+      <div class="galery-card-video__text">
+        <!-- text( classText, text ) -->
+        {% from "src/partials/ui/text.njk" import text %}
+        {{ text( "text_galery text_white", "Вчера к нам приезжал американский агроном Рон , спасибо Мельнику Евгению и проекту UBHDP за возможность получить консультацию 
+        от мировых специалистов!" ) }}
+      </div>
+
+    </div>
+
+    <div class="galery-card-video__eclipse"></div>
+  </div>
+{% endmacro %}

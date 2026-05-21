@@ -1,0 +1,98 @@
+@use "../../settings/variables.scss" as *;
+
+.about-company {
+	padding-top: 100px;
+	padding-bottom: 93px;
+	background-color: $background_gray;
+	@media (max-width: 768px) {
+		padding-top: 50px;
+		padding-bottom: 24px;
+	}
+	&__inner {
+		display: grid;
+		grid-template-columns: 342px 1fr 453px;
+		@media (max-width: 1120px) {
+			grid-template-columns: repeat(2, 1fr);
+			justify-items: center;
+			row-gap: 32px;
+		}
+		@media (max-width: 570px) {
+			grid-template-columns: 1fr;
+		}
+	}
+	&__img {
+	}
+	&__content {
+		padding: 32px 44px 32px 44px;
+		@media (max-width: 570px) {
+			padding-top: 16px;
+		}
+		&-title {
+			margin-bottom: 11px;
+		}
+		&-text {
+			line-height: 21px;
+			letter-spacing: -1%;
+			text-wrap: balance;
+			margin-bottom: 32px;
+		}
+		&-quotation {
+			display: grid;
+			grid-template-columns: 42px 1fr;
+			&-icon {
+				width: 26px;
+				height: 18px;
+				fill: $color_primary;
+			}
+			&-text {
+				font-size: 15px;
+				font-style: italic;
+				line-height: 21px;
+				letter-spacing: -1%;
+				padding-top: 3px;
+				margin-bottom: 57px;
+				@media (max-width: 570px) {
+					padding-top: 16px;
+				}
+			}
+		}
+		&-link {
+			width: 188px;
+		}
+	}
+	&__history {
+		position: relative;
+		padding: 32px 28px 32px 47px;
+		background-color: $color_primary;
+		overflow: hidden;
+		@media (max-width: 1120px) {
+			grid-column: 1 / 3;
+			grid-row: 2 / 3;
+		}
+		@media (max-width: 570px) {
+			grid-column: 1 / 2;
+			grid-row: 1 / 2;
+			padding-left: 24px;
+		}
+		&-title {
+			margin-bottom: 29px;
+		}
+		&-text {
+			font-family: "Montserrat", sans-serif;
+			font-size: 14px;
+			line-height: 22px;
+			letter-spacing: 0%;
+			color: #fcfcfc;
+			margin-bottom: 15px;
+			text-wrap: balance;
+		}
+		&-eclipse {
+		}
+		&-bg-icon {
+			position: absolute;
+			right: -88px;
+			bottom: -23px;
+			z-index: 50;
+		}
+	}
+}

@@ -10,7 +10,7 @@
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
-		z-index: -100;
+		z-index: -150;
 	}
 	&__green-bg {
 		position: absolute;
@@ -19,7 +19,7 @@
 		height: 100%;
 		object-fit: cover;
 		background-color: $background_green;
-		z-index: -50;
+		z-index: -100;
 		visibility: hidden;
 		opacity: 0;
 		transition: visibility 0.4s ease-in-out, opacity 0.4s ease-in-out;
@@ -31,7 +31,7 @@
 		height: 100%;
 		object-fit: cover;
 		background-color: #00000059;
-		z-index: -50;
+		z-index: -100;
 		visibility: hidden;
 		opacity: 0;
 		transition: visibility 0.4s ease-in-out, opacity 0.4s ease-in-out;
@@ -41,7 +41,7 @@
 		position: absolute;
 		right: -118px;
 		bottom: -56px;
-		z-index: 50;
+		z-index: -100;
 	}
 	&_normal {
 		max-width: 410px;
@@ -113,10 +113,15 @@
 	&_small {
 		width: 409px;
 		height: 404px;
+		@media (max-width: 1024px) {
+			max-width: 739px;
+			width: 100%;
+		}
 		.galery-card__content {
 			width: 100%;
 			height: 100%;
 			padding-top: 18px;
+			padding-inline: 12px;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -165,6 +170,10 @@
 	&_small-video {
 		width: 409px;
 		height: 404px;
+		@media (max-width: 1024px) {
+			max-width: 739px;
+			width: 100%;
+		}
 		.galery-card__content {
 			text-align: center;
 			width: 100%;
@@ -236,6 +245,11 @@
 	&_medium {
 		width: 520px;
 		height: 556px;
+		@media (max-width: 1024px) {
+			max-width: 739px;
+			width: 100%;
+			height: 404px;
+		}
 		.galery-card__img-icon {
 			display: block;
 			visibility: hidden;
@@ -247,6 +261,7 @@
 			height: 100%;
 			padding-top: 78px;
 			padding-left: 39px;
+			padding-right: 12px;
 			display: flex;
 			flex-direction: column;
 			justify-content: start;
@@ -311,11 +326,17 @@
 	&_large {
 		width: 739px;
 		height: 556px;
+		@media (max-width: 1024px) {
+			max-width: 739px;
+			width: 100%;
+			height: 404px;
+		}
 		.galery-card__content {
 			width: 100%;
 			height: 100%;
 			padding-top: 78px;
 			padding-left: 39px;
+			padding-right: 12px;
 			display: flex;
 			flex-direction: column;
 			justify-content: start;

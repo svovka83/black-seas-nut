@@ -33,16 +33,69 @@
 			</section>
 
 			<!-- manufacturer( classManufacturer ) -->
-			<!-- need to implement new component -->
 			<!-- prettier-ignore -->
 			{% from "src/partials/modules/manufacturer.njk" import manufacturer %}
-			{% from "src/partials/components/manufacturer/manufacturer-button.njk" import manufacturerButton %}
+			{% from "src/partials/components/manufacturer/manufacturer-simple.njk" import manufacturerSimple %}
       {% from "src/partials/components/manufacturer/manufacturer-slider.njk" import manufacturerSlider %}
-      {{ manufacturer( "manufacturer_gray-bg", manufacturerButton, manufacturerSlider ) }}
+      {{ manufacturer( "manufacturer_white-bg", manufacturerSimple, manufacturerSlider ) }}
 
 			<!-- about-company -->
 			<section class="about-company">
-				<!-- need to implement -->
+				<div class="about-company__inner container">
+					<img class="about-company__img" src="/images/png/manager.png" alt="avatar" />
+
+					<div class="about-company__content">
+						<div class="about-company__content-title">
+							<!-- title( heading, classTitle, title ) -->
+							<!-- prettier-ignore -->
+							{% from "src/partials/ui/title.njk" import title %}
+							{{ title( "h3", "title_h3", "Павел Тулба") }}
+						</div>
+						<p class="about-company__content-text">
+							Учередитель и владелец предприятия “Орех Причерноморья”
+						</p>
+						<div class="about-company__content-quotation">
+							<svg class="about-company__content-quotation-icon">
+								<use href="/images/sprites.svg#quotes-icon"></use>
+							</svg>
+							<p class="about-company__content-quotation-text">
+								Главная наша цель – получить максимальную прибыль с одного гектара.
+							</p>
+						</div>
+						<div class="about-company__content-link">
+							<!-- link( title, classLink, pathLink ) -->
+							<!-- prettier-ignore -->
+							{% from "src/partials/ui/link.njk" import link %}
+							{{ link( "Написать нам", "link_fs14", "#!") }}
+						</div>
+					</div>
+
+					<div class="about-company__history">
+						<div class="about-company__history-title">
+							<!-- title( heading, classTitle, title ) -->
+							<!-- prettier-ignore -->
+							{% from "src/partials/ui/title.njk" import title %}
+							{{ title( "h3", "title_h3 title_white", "История предприятия") }}
+						</div>
+						<p class="about-company__history-text">
+							Наше предприятие основано в 2012 году для закладки смешанного сада грецкого ореха и фундука.
+						</p>
+						<p class="about-company__history-text">
+							На сегодня мы уже заложили более 100 гектаров сада и продолжаем расширять свои насаждения.
+							Кроме выращивания грецкого ореха и фундука, мы занимаемся выращиванием саженцев, разведением
+							и выращиванием овец, а также являемся первой в Украине компанией, приступившей к
+							промышленному выращиванию трюфелей на корнях фундука.
+						</p>
+						<p class="about-company__history-text">
+							Земля, которой пользуется кооператив, является собственностью членов нашего кооператива.
+						</p>
+						<div class="about-company__history-eclipse"></div>
+						<img
+							class="about-company__history-bg-icon"
+							src="/images/png/galery-bg-icon.png"
+							alt="background icon" />
+					</div>
+				</div>
 			</section>
 
 			<!-- tags() -->
@@ -52,13 +105,40 @@
 
 			<!-- about-galery -->
 			<section class="about-galery">
-				<!-- need to implement -->
+				<div class="about-galery__inner container">
+					<div class="about-galery__title">
+						<!-- title( heading, classTitle, title ) -->
+						<!-- prettier-ignore -->
+						{% from "src/partials/ui/title.njk" import title %}
+						{{ title( "h2", "title_h2", "Галерея") }}
+					</div>
+					<div class="about-galery__text">
+						<!-- text( classText, text ) -->
+						<!-- prettier-ignore -->
+						{% from "src/partials/ui/text.njk" import text %}
+						{{ text( "text_content", "Кадры социальной активности компании" ) }}
+					</div>
+
+					<div class="about-galery__content">
+						<!-- galleries( classGalleriesTop ) -->
+						<!-- prettier-ignore -->
+						{% from "src/partials/modules/galleries.njk" import galleries %}
+						{{ galleries( "" ) }}
+					</div>
+
+					<div class="about-galery__link">
+						<!-- link( title, classLink, pathLink ) -->
+						<!-- prettier-ignore -->
+						{% from "src/partials/ui/link.njk" import link %}
+						{{ link( "Смотреть всю галерею", "link_fs14", "/black-seas-nut/src/pages/galery/index.html") }}
+					</div>
+				</div>
 			</section>
 
-			<!-- produceImage( imagePath ) -->
+			<!-- produceImage( imagePath, classContent ) -->
 			<!-- prettier-ignore -->
 			{% from "src/partials/components/produce/produce-image.njk" import produceImage %}
-			{{ produceImage( "/images/jpg/produce/produce-image-about.jpg" ) }}
+			{{ produceImage( "/images/jpg/produce/produce-image-about.jpg", "produce-image__content_about" ) }}
 
 			<!-- newsSlider() -->
 			<!-- prettier-ignore -->

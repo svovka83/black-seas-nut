@@ -1,8 +1,10 @@
-{% macro produceImage( imagePath ) %}
+{# classContent - 1: produce-image__content_about #}
+
+{% macro produceImage( imagePath, classContent ) %}
   <section class="produce-image">
     <img class="produce-image__img" src="{{ imagePath }}" alt="eco produce" />
 
-    <div class="produce-image__content">
+    <div class="produce-image__content {{ classContent }}">
       <svg class="produce-image__icon">
         <use href="/images/sprites.svg#eco-icon"></use>
       </svg>

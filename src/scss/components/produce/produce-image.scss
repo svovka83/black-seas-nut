@@ -29,6 +29,9 @@
 		flex-direction: column;
 		row-gap: 20px;
 		z-index: 200;
+		&_about {
+			top: 54%;
+		}
 		@media (max-width: 768px) {
 			row-gap: 8px;
 			transform: translate(-8px, -52%);

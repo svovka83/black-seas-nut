@@ -14,6 +14,7 @@ async function initAboutApp() {
 			const { newsSlider } = await import("../../swipers/news-slider.js");
 			const { controlBannerVideo } = await import("../../controllers/control-banner-video.js");
 			const { controlManufacturerVideos } = await import("../../controllers/control-manufacturer-videos.js");
+			const { controlGaleryVideo } = await import("../../controllers/control-galery-video.js");
 
 			await initGeneral();
 
@@ -34,6 +35,7 @@ async function initAboutApp() {
 			// controllers
 			controlBannerVideo();
 			controlManufacturerVideos();
+			controlGaleryVideo();
 		}
 
 		preloader.classList.add("preloader_hide");

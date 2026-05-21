@@ -1,3 +1,4 @@
+import { disablePageScroll, enablePageScroll } from "@fluejs/noscroll";
 import { getModalProductSlider } from "../init-document/modals/get-modal-product-slides";
 
 export function controlModalProductSlider() {
@@ -15,6 +16,7 @@ export function controlModalProductSlider() {
 			await getModalProductSlider(id);
 			modal.classList.add("modal-product-slider_open");
 			inner.classList.add("modal-product-slider__inner_open");
+			disablePageScroll();
 		}
 	});
 
@@ -22,6 +24,7 @@ export function controlModalProductSlider() {
 		if (modal.classList.contains("modal-product-slider_open") && !inner.contains(e.target)) {
 			modal.classList.remove("modal-product-slider_open");
 			inner.classList.remove("modal-product-slider__inner_open");
+			enablePageScroll();
 		}
 	});
 
@@ -29,6 +32,7 @@ export function controlModalProductSlider() {
 		if (modal.classList.contains("modal-product-slider_open")) {
 			modal.classList.remove("modal-product-slider_open");
 			inner.classList.remove("modal-product-slider__inner_open");
+			enablePageScroll();
 		}
 	});
 
@@ -36,6 +40,7 @@ export function controlModalProductSlider() {
 		if (modal.classList.contains("modal-product-slider_open")) {
 			modal.classList.remove("modal-product-slider_open");
 			inner.classList.remove("modal-product-slider__inner_open");
+			enablePageScroll();
 		}
 	});
 }

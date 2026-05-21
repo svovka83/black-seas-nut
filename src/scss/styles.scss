@@ -36,10 +36,12 @@
 
 // components/cards
 @use "./components/cards/product-card.scss";
-@use "./components/cards/galery-card.scss";
 @use "./components/cards/news-card.scss";
+@use "./components/cards/galery-card.scss";
+@use "./components/cards/galery-card-video.scss";
 
 // components/manufacturer
+@use "./components/manufacturer/manufacturer-simple.scss";
 @use "./components/manufacturer/manufacturer-button.scss";
 @use "./components/manufacturer/manufacturer-slider.scss";
 
@@ -52,6 +54,7 @@
 @use "./modules/footer.scss";
 @use "./modules/manufacturer.scss";
 @use "./modules/news-slider.scss";
+@use "./modules/galleries.scss";
 
 // main page
 @use "./pages/main/main-top.scss";
@@ -60,6 +63,8 @@
 
 // about page
 @use "./pages/about/about-top.scss";
+@use "./pages/about/about-company.scss";
+@use "./pages/about/about-galery.scss";
 
 // modals
 @use "./components/modals/modal-product-slider.scss";

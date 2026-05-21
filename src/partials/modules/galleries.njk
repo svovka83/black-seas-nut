@@ -1,0 +1,25 @@
+{# classGalleriesTop - 1: galleries__top_reverse #}
+
+{% macro galleries( classGalleriesTop ) %}
+  <div class="galleries">
+    <div class="galleries__top {{ classGalleriesTop }}">
+      <!-- galeryCard( classGalary, imagePath, title, iconId ) -->
+      {% from "src/partials/components/cards/galery-card.njk" import galeryCard %}
+      {{ galeryCard( "galery-card_large", "/images/jpg/galery/galery-large.jpg", "SIAL Paris 2018") }}
+      {{ galeryCard( "galery-card_medium", "/images/jpg/galery/galery-medium.jpg", "SIAL Paris 2018") }}
+    </div>
+
+    <div class="galleries__middle">
+      <!-- galeryCardVideo() -->
+      {% from "src/partials/components/cards/galery-card-video.njk" import galeryCardVideo %}
+      {{ galeryCardVideo() }}
+    </div>
+
+    <div class="galleries__bottom">
+
+      {{ galeryCard( "galery-card_small", "/images/jpg/galery/galery-small_1.jpg") }}
+      {{ galeryCard( "galery-card_small", "/images/jpg/galery/galery-small_2.jpg") }}
+      {{ galeryCard( "galery-card_small-video", "/images/jpg/galery/galery-small_3.jpg", "Проект UBHDP") }}
+    </div>
+  </div>
+{% endmacro %}
