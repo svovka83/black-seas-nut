@@ -1,1 +1,0 @@
-function e(e,t=300){let n;return(...r)=>{clearTimeout(n),n=setTimeout(()=>{e(...r)},t)}}export{e as t};
