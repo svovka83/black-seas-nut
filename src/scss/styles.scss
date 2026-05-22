@@ -62,6 +62,10 @@
 @use "./pages/main/main-products.scss";
 @use "./pages/main/main-useful.scss";
 
+// news page
+@use "./pages/news/news-content.scss";
+@use "./pages/news/news-article.scss";
+
 // about page
 @use "./pages/about/about-top.scss";
 @use "./pages/about/about-company.scss";

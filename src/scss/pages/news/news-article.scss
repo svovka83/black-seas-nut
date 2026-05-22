@@ -1,0 +1,30 @@
+@use "../../settings/variables.scss" as *;
+
+.news-article {
+	display: flex;
+	justify-content: space-between;
+	column-gap: 50px;
+	&__img {
+	}
+	&__content {
+		text-align: start;
+	}
+	&__date {
+		font-family: "Montserrat", sans-serif;
+		font-size: 13px;
+		line-height: 22px;
+		letter-spacing: 1%;
+		color: $text_secondary;
+	}
+	&__title {
+		font-weight: 700;
+		font-size: 22px;
+		line-height: 26px;
+		letter-spacing: 1%;
+	}
+	&__text {
+		line-height: 25px;
+	}
+	&__read {
+	}
+}

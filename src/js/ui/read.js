@@ -1,7 +1,15 @@
 export function getRead() {
 	const mainReads = document.querySelectorAll(".news-card__link");
+	const newsReads = document.querySelectorAll(".news-article__read");
+
 	if (mainReads) {
 		mainReads.forEach((link) => {
+			link.innerHTML = read();
+		});
+	}
+
+	if (newsReads) {
+		newsReads.forEach((link) => {
 			link.innerHTML = read();
 		});
 	}

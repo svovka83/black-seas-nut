@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Новости и статьи</title>
+		<link rel="stylesheet" href="../../../src/scss/styles.scss" />
+		<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+	</head>
+	<body data-page="news">
+		<!-- preloader -->
+		<div class="preloader">
+			<div class="preloader__spinner"></div>
+		</div>
+
+		<!-- header() -->
+		<!-- prettier-ignore -->
+		{% from "src/partials/modules/header.njk" import header %}
+    {{ header() }}
+
+		<main class="news-main" id="go-to-top">
+			<div class="news-breadcrumbs container">
+				<!-- getBreadcrumbs(links, className) -->
+			</div>
+
+			<section class="news-content container">
+				<div class="news-content__title">
+					<!-- title( heading, classTitle, title ) -->
+					<!-- prettier-ignore -->
+					{% from "src/partials/ui/title.njk" import title %}
+					{{ title( "h2", "title_h2", "Новости и статьи") }}
+				</div>
+				<div class="news-content__text">
+					<!-- text( classText, text ) -->
+					<!-- prettier-ignore -->
+					{% from "src/partials/ui/text.njk" import text %}
+					{{ text( "text_content", "Свежие новости и полезная информация" ) }}
+				</div>
+				<!-- news-article -->
+				<div class="news-article">
+					<img class="news-article__img" src="/public/images/jpg/news/news-article.jpg" alt="news article" />
+					<div class="news-article__content">
+						<p class="news-article__date">12.04.2019</p>
+						<h3 class="news-article__title">Центр поддержки экспорта, в студии Павел Тулба</h3>
+						<p class="news-article__text">
+							Сельскохозяйственный обслуживающий кооператив “Орех Причерноморья” предлагает своим клиентам
+							выгодные условия сотрудничества.
+						</p>
+						<p class="news-article__text">
+							Ореховый бизнес – один из наиболее перспективных в Украине. Ежегодная нехватка продукта в
+							Европе составляет 100 000 тонн. У Вас есть возможность зарабатывать десятки тысяч долларов в
+							год всего на нескольких гектарах земли.
+						</p>
+						<p class="news-article__read"></p>
+					</div>
+				</div>
+				<div class="news-content__articles">
+					<div class="news-card">
+						<video class="news-card__video" preload="metadata" poster="/images/jpg/news/news_1.jpg">
+							<source src="" type="video/mp4" />
+						</video>
+
+						<div class="news-card__content">
+							<p class="news-card__date">12.04.2019</p>
+							<h4 class="news-card__title">Центр поддержки экспорта, в студии Павел Тулба</h4>
+							<p class="news-card__text">
+								Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди
+								наших садоводов, не смотря на большой спрос в Европе и отличную...
+							</p>
+							<div class="news-card__link">
+								<!-- getRead() -->
+							</div>
+						</div>
+					</div>
+					<div class="news-card">
+						<video class="news-card__video" preload="metadata" poster="/images/jpg/news/news_2.jpg">
+							<source src="" type="video/mp4" />
+						</video>
+
+						<div class="news-card__content">
+							<p class="news-card__date">12.04.2019</p>
+							<h4 class="news-card__title">
+								В Одесской области состоялся масштабный торгово - экспортный форум
+							</h4>
+							<p class="news-card__text">
+								Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди
+								наших садоводов, не смотря на большой спрос в Европе и отличную...
+							</p>
+							<div class="news-card__link">
+								<!-- getRead() -->
+							</div>
+						</div>
+					</div>
+					<div class="news-card">
+						<video class="news-card__video" preload="metadata" poster="/images/jpg/news/news_3.jpg">
+							<source src="" type="video/mp4" />
+						</video>
+
+						<div class="news-card__content">
+							<p class="news-card__date">12.04.2019</p>
+							<h4 class="news-card__title">Сертификация органического производителя</h4>
+							<p class="news-card__text">
+								Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди
+								наших садоводов, не смотря на большой спрос в Европе и отличную...
+							</p>
+							<div class="news-card__link">
+								<!-- getRead() -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="news-content__gallery">
+					<!-- galleryCardVideo() -->
+					<!-- prettier-ignore -->
+					{% from "src/partials/components/cards/gallery-card-video.njk" import galleryCardVideo %}
+					{{ galleryCardVideo() }}
+				</div>
+				<div class="news-content__link">
+					<!-- link( title, classLink, pathLink ) -->
+					<!-- prettier-ignore -->
+					{% from "src/partials/ui/link.njk" import link %}
+					{{ link( "Посмотреть еще", "link_fs14", "#!") }}
+				</div>
+			</section>
+		</main>
+
+		<!-- macro footer( classTopBg, classMiddle ) -->
+		<!-- prettier-ignore -->
+		{% from "src/partials/modules/footer.njk" import footer %}
+    {{ footer( "footer-top_bg-gray", "footer-middle_gray" ) }}
+
+		<script type="module" src="../../js/pages/news/scripts.js"></script>
+		<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+	</body>
+</html>
