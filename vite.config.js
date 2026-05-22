@@ -20,6 +20,7 @@ export default defineConfig({
 			input: {
 				main: resolve(__dirname, "index.html"),
 				about: resolve(__dirname, "src/pages/about/index.html"),
+				gallery: resolve(__dirname, "src/pages/gallery/index.html"),
 			},
 		},
 	},

@@ -1,8 +1,9 @@
-{# some class - 1: #}
+{# classTopBg - 1: footer-top_bg-white  2: footer-top_bg-gray #}
+{# classMiddle - 1: footer-middle_white  2: footer-middle_gray #}
 
-{% macro footer() %}
+{% macro footer( classTopBg, classMiddle ) %}
   <footer class="footer">
-    <section class="footer-top">
+    <section class="footer-top {{ classTopBg }}">
       <div class="footer-top__inner container">
         <div class="footer-top__content">
           <div class="footer-top__content-title">
@@ -74,7 +75,7 @@
       </div>
     </section>
 
-    <div class="footer-middle">
+    <div class="footer-middle {{ classMiddle }}">
       <div class="footer-middle__inner container">
         <div class="footer-middle__logo">
           <!-- logo( logoPath, classLogo ) -->

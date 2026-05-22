@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Галерея</title>
+		<link rel="stylesheet" href="../../../src/scss/styles.scss" />
+		<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+	</head>
+	<body data-page="gallery">
+		<!-- preloader -->
+		<div class="preloader">
+			<div class="preloader__spinner"></div>
+		</div>
+
+		<!-- header() -->
+		<!-- prettier-ignore -->
+		{% from "src/partials/modules/header.njk" import header %}
+    {{ header() }}
+
+		<main class="gallery-main" id="go-to-top">
+			<!-- gallery-top -->
+			<section class="gallery-top">
+				<!-- breadcrumbs -->
+				<div class="gallery-breadcrumbs container">
+					<!-- getBreadcrumbs() -->
+				</div>
+
+				<!-- bannerTitleText( titleBanner, textBanner, imgPath ) -->
+				<!-- prettier-ignore -->
+				{% from "src/partials/components/banner/banner-title-text.njk" import bannerTitleText %}
+        {{ bannerTitleText( "Галерея", "Кадры социальной активности компании", "/images/jpg/top/gallery.jpg" ) }}
+			</section>
+
+			<!-- gallery-content -->
+			<section class="gallery-content container">
+				<!-- galleries( classGalleriesTop ) -->
+				<!-- prettier-ignore -->
+				{% from "src/partials/modules/galleries.njk" import galleries %}
+						{{ galleries( "" ) }}
+						{{ galleries( "galleries__top_reverse" ) }}
+
+				<div class="gallery-content__link">
+					<!-- link( title, classLink, pathLink ) -->
+					<!-- prettier-ignore -->
+					{% from "src/partials/ui/link.njk" import link %}
+						{{ link( "Посмотреть еще", "link_fs14", "#!") }}
+				</div>
+			</section>
+		</main>
+
+		<!-- macro footer( classTopBg, classMiddle ) -->
+		<!-- prettier-ignore -->
+		{% from "src/partials/modules/footer.njk" import footer %}
+    {{ footer( "footer-top_bg-gray", "footer-middle_gray" ) }}
+
+		<script type="module" src="../../js/pages/gallery/scripts.js"></script>
+		<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+	</body>
+</html>

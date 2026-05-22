@@ -130,7 +130,7 @@
 						<!-- link( title, classLink, pathLink ) -->
 						<!-- prettier-ignore -->
 						{% from "src/partials/ui/link.njk" import link %}
-						{{ link( "Смотреть всю галерею", "link_fs14", "/black-seas-nut/src/pages/galery/index.html") }}
+						{{ link( "Смотреть всю галерею", "link_fs14", "/black-seas-nut/src/pages/gallery/index.html") }}
 					</div>
 				</div>
 			</section>
@@ -146,10 +146,10 @@
 			{{ newsSlider() }}
 		</main>
 
-		<!-- footer() -->
+		<!-- footer( classTopBg, classMiddle ) -->
 		<!-- prettier-ignore -->
 		{% from "src/partials/modules/footer.njk" import footer %}
-    {{ footer() }}
+    {{ footer( "footer-top_bg-white", "footer-middle_white" ) }}
 
 		<script type="module" src="../../js/pages/about/scripts.js"></script>
 		<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>

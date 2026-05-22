@@ -29,6 +29,7 @@
 
 // components/banner
 @use "./components/banner/banner-video.scss";
+@use "./components/banner/banner-title-text.scss";
 
 // components/produce
 @use "./components/produce/produce-video.scss";
@@ -65,6 +66,10 @@
 @use "./pages/about/about-top.scss";
 @use "./pages/about/about-company.scss";
 @use "./pages/about/about-galery.scss";
+
+// gallery page
+@use "./pages/gallery/gallery-top.scss";
+@use "./pages/gallery/gallery-content.scss";
 
 // modals
 @use "./components/modals/modal-product-slider.scss";

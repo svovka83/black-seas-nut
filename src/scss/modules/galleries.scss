@@ -6,14 +6,14 @@
 		justify-content: space-between;
 		column-gap: 31px;
 		margin-bottom: 31px;
+		&_reverse {
+			flex-direction: row-reverse;
+		}
 		@media (max-width: 1024px) {
 			flex-direction: column;
 			align-items: center;
 			row-gap: 16px;
 			margin-bottom: 16px;
-		}
-		&_reverse {
-			flex-direction: row-reverse;
 		}
 	}
 	&__middle {

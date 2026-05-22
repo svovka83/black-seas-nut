@@ -1,16 +1,14 @@
 @use "../settings/variables.scss" as *;
 
 .footer {
-	padding-top: 100px;
-	@media (max-width: 768px) {
-		padding-top: 32px;
-	}
 }
 
 .footer-top {
-	margin-bottom: 86px;
+	padding-top: 100px;
+	padding-bottom: 92px;
 	@media (max-width: 768px) {
-		margin-bottom: 32px;
+		padding-top: 32px;
+		padding-bottom: 32px;
 	}
 	&__inner {
 		display: flex;
@@ -122,13 +120,22 @@
 			z-index: 10;
 		}
 	}
+	&_bg-white {
+		background-color: $white;
+	}
+	&_bg-gray {
+		background-color: $background_gray;
+	}
 }
 
 .footer-middle {
 	padding-bottom: 8px;
 	border-bottom: 1px solid #00000014;
-	@media (max-width: 1240px) {
-		padding-bottom: 24px;
+	&_white {
+		padding-top: 0px;
+	}
+	&_gray {
+		padding-top: 49px;
 	}
 	&__inner {
 		height: 64px;
@@ -149,6 +156,9 @@
 		@media (max-width: 1240px) {
 			display: none;
 		}
+	}
+	@media (max-width: 768px) {
+		padding-top: 24px;
 	}
 }
 

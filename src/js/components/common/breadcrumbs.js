@@ -1,10 +1,18 @@
 export function getBreadcrumbs() {
 	const about = document.querySelector(".about-breadcrumbs");
+	const gallery = document.querySelector(".gallery-breadcrumbs");
 
 	if (about) {
 		about.innerHTML = breadcrumbs([
 			{ name: "Главная", path: "/black-seas-nut/" },
 			{ name: "О производстве", path: "" },
+		]);
+	}
+
+	if (gallery) {
+		gallery.innerHTML = breadcrumbs([
+			{ name: "Главная", path: "/black-seas-nut/" },
+			{ name: "Галерея", path: "" },
 		]);
 	}
 }
