@@ -1,1 +1,0 @@
-import{t as e}from"./swiper-DDhM3IGn.js";function t(){new e(`.main-products__slider`,{slidesPerView:1,spaceBetween:4,speed:500})}export{t as productsSlider};
