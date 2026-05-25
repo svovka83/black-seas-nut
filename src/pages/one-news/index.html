@@ -35,25 +35,83 @@
 				<div class="one-news-content__block">
 					<div class="one-news-article">
 						<img class="one-news-article__img" src="/images/jpg/one-news/big_1.jpg" alt="one news image" />
-						<p class="one-news-article__text"></p>
-						<p class="one-news-article__text"></p>
-						<p class="one-news-article__text"></p>
-						<h4 class="one-news-article__title"></h4>
-						<p class="one-news-article__text"></p>
-						<h5 class="one-news-article__title-small"></h5>
+						<p class="one-news-article__text">
+							Сельскохозяйственный обслуживающий кооператив “Орех Причерноморья” предлагает своим клиентам
+							выгодные условия сотрудничества. Ореховый бизнес – один из наиболее перспективных в Украине.
+							Ежегодная нехватка продукта в Европе составляет 100 000 тонн. У Вас есть возможность
+							зарабатывать десятки тысяч долларов в год всего на нескольких гектарах земли.
+						</p>
+						<p class="one-news-article__text">
+							Предприятие основано в 2012 году для закладки смешанного сада грецкого ореха и фундука в
+							Одесской области. На сегодня уже заложено более 200 гектаров сада и этот процесс
+							продолжается. Кооператив предоставляет полный цикл сопровождения: от выращивания до сбыта.
+						</p>
+						<p class="one-news-article__text">
+							Кроме выращивания грецкого ореха и фундука, компания занимается выращиванием саженцев,
+							разведением и выращиванием овец, а также является первой в Украине компанией, приступившей к
+							промышленному выращиванию трюфелей на корнях фундука.
+						</p>
+						<h4 class="one-news-article__title">
+							В Украине появится первое насаждение органического шиповника
+						</h4>
+						<p class="one-news-article__text">
+							Наш сельскохозяйственный обслуживающий кооператив «Орех Причерноморья» был основан в 2012-ом
+							году для закладки смешанного сада грецкого ореха и фундука. На данный момент во владении
+							нашей компании находится 1 гектар тепличной площади и 270 гектар садовой площади, которую мы
+							планируем расширять. «Орех Причерноморья» включен в реестр Министерства Аграрной Политики
+							Украины.
+						</p>
+						<h5 class="one-news-article__title-small">Смешанный сад грецкий орех+шиповник</h5>
 						<ul class="one-news-article__list">
-							<li class="one-news-article__item"></li>
-							<li class="one-news-article__item"></li>
-							<li class="one-news-article__item"></li>
-							<li class="one-news-article__item"></li>
+							<li class="one-news-article__item">Возможность полной механизации всех работ по саду</li>
+							<li class="one-news-article__item">Невысокая стоимость смешанного сада при закладке</li>
+							<li class="one-news-article__item">
+								Необходимость в интенсивном поливе только первые четыре года
+							</li>
+							<li class="one-news-article__item">
+								Долгий срок хранения готовой продукции и унификация сушильных камер и складов для
+								хранения
+							</li>
 						</ul>
 						<img class="one-news-article__img" src="/images/jpg/one-news/big_2.jpg" alt="one news image" />
-						<h4 class="one-news-article__title"></h4>
-						<p class="one-news-article__text"></p>
-						<p class="one-news-article__text"></p>
+						<h4 class="one-news-article__title">
+							В Украине появится первое насаждение органического шиповника
+						</h4>
+						<p class="one-news-article__text">
+							Сельскохозяйственный обслуживающий кооператив “Орех Причерноморья” предлагает своим клиентам
+							выгодные условия сотрудничества. Ореховый бизнес – один из наиболее перспективных в Украине.
+							Ежегодная нехватка продукта в Европе составляет 100 000 тонн. У Вас есть возможность
+							зарабатывать десятки тысяч долларов в год всего на нескольких гектарах земли.
+						</p>
+						<p class="one-news-article__text">
+							Нами разработано и опробовано на собственной практике предложение для закладки многолетних
+							насаждений шиповника, на земельных участках не пригодных к традиционному земледелию. Первых
+							5 гектар промышленной плантации шиповника, были высажены на месте бывшей сельской свалки и
+							остатков разрушенной молочно товарной фермы.
+						</p>
 					</div>
 					<div class="one-news-last">
-						<!-- one-news-last -->
+						<h4 class="one-news-last__title">Последние публикации</h4>
+						<div class="one-news-last__cards-wrapper">
+							<div class="one-news-last__cards">
+								<!-- oneNewsCard( imgPath ) -->
+								<!-- prettier-ignore -->
+								{% from "src/partials/components/cards/one-news-card.njk" import oneNewsCard %}
+                {{ oneNewsCard( "/images/jpg/one-news/small_1.jpg" ) }}
+                {{ oneNewsCard( "/images/jpg/one-news/small_2.jpg" ) }}
+                {{ oneNewsCard( "/images/jpg/one-news/small_3.jpg" ) }}
+								<div class="one-news-last__green-card">
+									<h4 class="one-news-last__green-card-title">ОРЕХ ПРИЧЕРНОМОРЬЯ</h4>
+									<p class="one-news-last__green-card-text">Присоединяйтесь к нам в соц. сетях</p>
+									<div class="one-news-last__green-card-socials">
+										<!-- socialIcons( classIcon ) -->
+										<!-- prettier-ignore -->
+										{% from "src/partials/components/layouts/social-icons.njk" import socialIcons %}
+                  {{ socialIcons( "social-icons__icon_white" ) }}
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -62,7 +120,7 @@
 		<!-- macro footer( classTopBg, classMiddle ) -->
 		<!-- prettier-ignore -->
 		{% from "src/partials/modules/footer.njk" import footer %}
-    {{ footer( "footer-top_bg-white", "footer-middle_white" ) }}
+    {{ footer( "footer-top_bg-gray", "footer-middle_gray" ) }}
 
 		<script type="module" src="../../js/pages/one-news/scripts.js"></script>
 		<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>

@@ -1,8 +1,10 @@
-{% macro socialIcons() %}
+{# classIcon - 2: "social-icons__icon_white" #}
+
+{% macro socialIcons( classIcon ) %}
   <ul class="social-icons">
     <li class="social-icons__item">
       <a class="social-icons__link" href="#!">
-        <svg class="social-icons__icon">
+        <svg class="social-icons__icon {{ classIcon }}">
           <use href="/images/sprites.svg#facebook-icon"></use>
         </svg>
       </a>
@@ -10,7 +12,7 @@
 
     <li class="social-icons__item">
       <a class="social-icons__link" href="#!">
-        <svg class="social-icons__icon">
+        <svg class="social-icons__icon {{ classIcon }}">
           <use href="/images/sprites.svg#instagram-icon"></use>
         </svg>
       </a>
@@ -18,7 +20,7 @@
 
     <li class="social-icons__item">
       <a class="social-icons__link" href="#!">
-        <svg class="social-icons__icon">
+        <svg class="social-icons__icon {{ classIcon }}">
           <use href="/images/sprites.svg#youtube-icon"></use>
         </svg>
       </a>

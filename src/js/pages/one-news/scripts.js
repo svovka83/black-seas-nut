@@ -9,6 +9,7 @@ async function initOneNewsApp() {
 			const { initGeneral } = await import("../../init-general.js");
 			const { lightMenuHeader, lightMenuFooter } = await import("../../utils/light-current-page.js");
 			const { getBreadcrumbs } = await import("../../components/common/breadcrumbs.js");
+			const { getRead } = await import("../../ui/read.js");
 
 			await initGeneral();
 
@@ -18,6 +19,9 @@ async function initOneNewsApp() {
 			// light current page
 			lightMenuHeader();
 			lightMenuFooter();
+
+			// ui and components
+			getRead();
 		}
 
 		preloader.classList.add("preloader_hide");

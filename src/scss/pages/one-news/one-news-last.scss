@@ -1,4 +1,60 @@
 @use "../../settings/variables.scss" as *;
 
 .one-news-last {
+	padding-top: 24px;
+	&__title {
+		width: 220px;
+		text-align: center;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 26px;
+		letter-spacing: 1%;
+		margin-bottom: 16px;
+	}
+	&__cards-wrapper {
+		@media (max-width: 768px) {
+			display: block;
+			overflow-x: auto;
+			scrollbar-width: none;
+			-webkit-overflow-scrolling: touch;
+		}
+	}
+	&__cards {
+		display: flex;
+		flex-direction: column;
+		row-gap: 30px;
+		@media (max-width: 768px) {
+			width: max-content;
+			flex-direction: row;
+			column-gap: 16px;
+		}
+	}
+	&__green-card {
+		text-align: center;
+		padding: 24px;
+		width: 260px;
+		height: 226px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		row-gap: 16px;
+		background-color: $color_primary;
+		&-title {
+			font-weight: 800;
+			font-size: 20px;
+			letter-spacing: 2%;
+			color: $white;
+		}
+		&-text {
+			font-weight: 600;
+			font-size: 17px;
+			letter-spacing: 2%;
+			color: $white;
+		}
+		&-socials {
+			display: flex;
+			justify-content: center;
+		}
+	}
 }

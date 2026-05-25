@@ -2,7 +2,7 @@
 
 .one-news-content {
 	padding-top: 50px;
-	padding-bottom: 16px;
+	padding-bottom: 65px;
 	&__title {
 		max-width: 470px;
 		letter-spacing: -1%;
@@ -13,8 +13,15 @@
 		font-size: 15px;
 		line-height: 22px;
 		letter-spacing: 1%;
-		margin-bottom: 16px;
+		margin-bottom: 28px;
+		color: $text_secondary;
 	}
 	&__block {
+		display: grid;
+		grid-template-columns: minmax(0px, 990px) 1fr;
+		column-gap: 40px;
+		@media (max-width: 768px) {
+			display: block;
+		}
 	}
 }

@@ -1,17 +1,40 @@
 @use "../../settings/variables.scss" as *;
 
 .one-news-article {
-	width: 990px;
 	&__img {
+		margin-bottom: 28px;
 	}
 	&__text {
+		line-height: 25px;
+		letter-spacing: 0%;
+		margin-bottom: 14px;
 	}
 	&__title {
+		max-width: 520px;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 28px;
+		letter-spacing: 1%;
+		margin-top: 36px;
+		margin-bottom: 24px;
 	}
 	&__title-small {
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 28px;
+		letter-spacing: 1%;
+		margin-top: 18px;
+		margin-bottom: 8px;
 	}
 	&__list {
+		list-style-type: initial;
+		padding-left: 16px;
+		margin-bottom: 28px;
 	}
 	&__item {
+		line-height: 25px;
+		letter-spacing: 0%;
+		padding-left: 16px;
+		margin-bottom: 4px;
 	}
 }

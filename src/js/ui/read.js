@@ -1,6 +1,7 @@
 export function getRead() {
 	const mainReads = document.querySelectorAll(".news-card__link");
 	const newsReads = document.querySelectorAll(".news-article__read");
+	const oneNewsReads = document.querySelectorAll(".one-news-card__read");
 
 	if (mainReads) {
 		mainReads.forEach((link) => {
@@ -10,6 +11,12 @@ export function getRead() {
 
 	if (newsReads) {
 		newsReads.forEach((link) => {
+			link.innerHTML = read();
+		});
+	}
+
+	if (oneNewsReads) {
+		oneNewsReads.forEach((link) => {
 			link.innerHTML = read();
 		});
 	}

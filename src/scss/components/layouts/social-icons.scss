@@ -15,5 +15,8 @@
 		width: 16px;
 		height: 16px;
 		fill: #323232;
+		&_white {
+			fill: $white;
+		}
 	}
 }
