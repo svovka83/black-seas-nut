@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Оплата и доставка</title>
+		<link rel="stylesheet" href="../../../src/scss/styles.scss" />
+		<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+	</head>
+	<body data-page="payment">
+		<!-- preloader -->
+		<div class="preloader">
+			<div class="preloader__spinner"></div>
+		</div>
+
+		<!-- header() -->
+		<!-- prettier-ignore -->
+		{% from "src/partials/modules/header.njk" import header %}
+    {{ header() }}
+
+		<main class="payment-main" id="go-to-top">
+			<!-- payment-top -->
+			<section class="gallery-top">
+				<!-- breadcrumbs -->
+				<div class="gallery-breadcrumbs container">
+					<!-- getBreadcrumbs() -->
+				</div>
+
+				<!-- bannerTitleText( titleBanner, textBanner, imgPath ) -->
+				<!-- prettier-ignore -->
+				{% from "src/partials/components/banner/banner-title-text.njk" import bannerTitleText %}
+        {{ bannerTitleText( "Галерея", "Кадры социальной активности компании", "/images/jpg/top/gallery.jpg" ) }}
+			</section>
+
+			<!-- tags( classTags ) -->
+			<!-- prettier-ignore -->
+			{% from "src/partials/components/common/tags.njk" import tags %}
+			{{ tags( "tags_bg-gray" ) }}
+
+			<!-- produceVideo() -->
+			<!-- prettier-ignore -->
+			{% from "src/partials/components/produce/produce-video.njk" import produceVideo %}
+			{{ produceVideo() }}
+		</main>
+
+		<!-- macro footer( classTopBg, classMiddle ) -->
+		<!-- prettier-ignore -->
+		{% from "src/partials/modules/footer.njk" import footer %}
+    {{ footer( "footer-top_bg-white", "footer-middle_white" ) }}
+
+		<script type="module" src="../../js/pages/payment/scripts.js"></script>
+		<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+	</body>
+</html>

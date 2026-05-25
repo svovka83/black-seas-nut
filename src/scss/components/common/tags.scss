@@ -3,12 +3,20 @@
 .tags {
 	padding-top: 70px;
 	padding-bottom: 86px;
-	display: grid;
-	grid-template-columns: 322px 332px 330px 323px;
-	padding-inline: 14px;
-	@media (max-width: 1440px) {
-		display: flex;
-		justify-content: space-evenly;
+	&_bg-white {
+		background-color: $white;
+	}
+	&_bg-gray {
+		background-color: $background_gray;
+	}
+	&__inner {
+		display: grid;
+		grid-template-columns: 322px 332px 330px 323px;
+		padding-inline: 14px;
+		@media (max-width: 1440px) {
+			display: flex;
+			justify-content: space-evenly;
+		}
 	}
 	@media (max-width: 768px) {
 		display: none;

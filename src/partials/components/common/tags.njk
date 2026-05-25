@@ -1,24 +1,29 @@
-{% macro tags() %}
-  <div class="tags container">
-    <div class="tags__item">
-      <p class="tags__title">240<sup class="tags__mark">Га</sup></p>
-      <p class="tags__text">Cмешанных</p>
-      <p class="tags__text">садов</p>
-    </div>
-    <div class="tags__item">
-      <p class="tags__title">1<sup class="tags__mark">Га</sup></p>
-      <p class="tags__text">Тепличного</p>
-      <p class="tags__text">комплекса</p>
-    </div>
-    <div class="tags__item">
-      <p class="tags__title">10<sup class="tags__mark">Га</sup></p>
-      <p class="tags__text">Первая промышленная плантация</p>
-      <p class="tags__text">шиповника в Украине</p>
-    </div>
-    <div class="tags__item">
-      <p class="tags__title">80<sup class="tags__mark">%</sup></p>
-      <p class="tags__text">Приживаемости</p>
-      <p class="tags__text">саженцев</p>
+{# classTags - 1: "tags_bg-white"  #}
+{# classTags - 2: "tags_bg-gray"  #}
+
+{% macro tags( classTags ) %}
+  <div class="tags {{ classTags }}">
+    <div class="tags__inner container">
+      <div class="tags__item">
+        <p class="tags__title">240<sup class="tags__mark">Га</sup></p>
+        <p class="tags__text">Cмешанных</p>
+        <p class="tags__text">садов</p>
+      </div>
+      <div class="tags__item">
+        <p class="tags__title">1<sup class="tags__mark">Га</sup></p>
+        <p class="tags__text">Тепличного</p>
+        <p class="tags__text">комплекса</p>
+      </div>
+      <div class="tags__item">
+        <p class="tags__title">10<sup class="tags__mark">Га</sup></p>
+        <p class="tags__text">Первая промышленная плантация</p>
+        <p class="tags__text">шиповника в Украине</p>
+      </div>
+      <div class="tags__item">
+        <p class="tags__title">80<sup class="tags__mark">%</sup></p>
+        <p class="tags__text">Приживаемости</p>
+        <p class="tags__text">саженцев</p>
+      </div>
     </div>
   </div>
 {% endmacro %}

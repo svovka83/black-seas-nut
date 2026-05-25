@@ -3,11 +3,26 @@
 .news-article {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	column-gap: 50px;
+	@media (max-width: 1140px) {
+		flex-direction: column-reverse;
+		row-gap: 50px;
+	}
 	&__img {
+		min-width: 0;
 	}
 	&__content {
+		width: 391px;
+		flex-shrink: 0;
 		text-align: start;
+		display: flex;
+		flex-direction: column;
+		row-gap: 16px;
+		@media (max-width: 768px) {
+			width: unset;
+			max-width: 391px;
+		}
 	}
 	&__date {
 		font-family: "Montserrat", sans-serif;

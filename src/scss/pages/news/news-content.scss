@@ -16,6 +16,10 @@
 		column-gap: 31px;
 		margin-top: 61px;
 		margin-bottom: 25px;
+		@media (max-width: 1024px) {
+			flex-direction: column;
+			row-gap: 32px;
+		}
 	}
 	&__gallery {
 		margin-bottom: 69px;

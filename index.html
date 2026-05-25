@@ -66,10 +66,10 @@
 			{% from "src/partials/components/manufacturer/manufacturer-slider.njk" import manufacturerSlider %}
 			{{ manufacturer( "manufacturer_gray-bg", manufacturerButton, manufacturerSlider ) }}
 
-			<!-- tags() -->
+			<!-- tags( classTags ) -->
 			<!-- prettier-ignore -->
 			{% from "src/partials/components/common/tags.njk" import tags %}
-			{{ tags() }}
+			{{ tags( "tags_bg-white" ) }}
 
 			<!-- produceVideo() -->
 			<!-- prettier-ignore -->
