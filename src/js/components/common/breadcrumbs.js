@@ -1,17 +1,9 @@
 export function getBreadcrumbs() {
-	const news = document.querySelector(".news-breadcrumbs");
 	const about = document.querySelector(".about-breadcrumbs");
+	const payment = document.querySelector(".payment-breadcrumbs");
+	const wholesales = document.querySelector(".wholesales-breadcrumbs");
+	const news = document.querySelector(".news-breadcrumbs");
 	const gallery = document.querySelector(".gallery-breadcrumbs");
-
-	if (news) {
-		news.innerHTML = breadcrumbs(
-			[
-				{ name: "Главная", path: "/black-seas-nut/" },
-				{ name: "Новости и статьи", path: "" },
-			],
-			"breadcrumbs_secondary"
-		);
-	}
 
 	if (about) {
 		about.innerHTML = breadcrumbs(
@@ -20,6 +12,36 @@ export function getBreadcrumbs() {
 				{ name: "О производстве", path: "" },
 			],
 			"breadcrumbs_white"
+		);
+	}
+
+	if (payment) {
+		payment.innerHTML = breadcrumbs(
+			[
+				{ name: "Главная", path: "/black-seas-nut/" },
+				{ name: "Оплата и доставка", path: "" },
+			],
+			"breadcrumbs_white"
+		);
+	}
+
+	if (wholesales) {
+		wholesales.innerHTML = breadcrumbs(
+			[
+				{ name: "Главная", path: "/black-seas-nut/" },
+				{ name: "Оптовым и корпоративным клиентам", path: "" },
+			],
+			"breadcrumbs_white"
+		);
+	}
+
+	if (news) {
+		news.innerHTML = breadcrumbs(
+			[
+				{ name: "Главная", path: "/black-seas-nut/" },
+				{ name: "Новости и статьи", path: "" },
+			],
+			"breadcrumbs_secondary"
 		);
 	}
 

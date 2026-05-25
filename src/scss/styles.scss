@@ -14,6 +14,7 @@
 @use "./ui/search.scss";
 @use "./ui/link.scss";
 @use "./ui/read.scss";
+@use "./ui/tab.scss";
 
 // components/preloader
 @use "./components/preloader/preloader.scss";
@@ -30,6 +31,7 @@
 // components/banner
 @use "./components/banner/banner-video.scss";
 @use "./components/banner/banner-title-text.scss";
+@use "./components/banner/banner-title.scss";
 
 // components/produce
 @use "./components/produce/produce-video.scss";
@@ -62,14 +64,28 @@
 @use "./pages/main/main-products.scss";
 @use "./pages/main/main-useful.scss";
 
-// news page
-@use "./pages/news/news-content.scss";
-@use "./pages/news/news-article.scss";
-
 // about page
 @use "./pages/about/about-top.scss";
 @use "./pages/about/about-company.scss";
 @use "./pages/about/about-galery.scss";
+
+// payment page
+@use "./pages/payment/payment-top.scss";
+@use "./pages/payment/payment-tabs.scss";
+
+// wholesales page
+@use "./pages/wholesales/wholesales-top.scss";
+@use "./pages/wholesales/wholesale-info.scss";
+@use "./pages/wholesales/wholesale-tabs.scss";
+
+// news page
+@use "./pages/news/news-content.scss";
+@use "./pages/news/news-article.scss";
+
+// one-news page
+@use "./pages/one-news/one-news-content.scss";
+@use "./pages/one-news/one-news-article.scss";
+@use "./pages/one-news/one-news-last.scss";
 
 // gallery page
 @use "./pages/gallery/gallery-top.scss";

@@ -19,7 +19,7 @@ function read() {
 	const base = import.meta.env.BASE_URL;
 
 	return `
-    <a class="read" href="#!">
+    <a class="read" href="${base}src/pages/one-news/index.html">
       <span class="read__text">Читать</span>
       <svg class="read__icon">
         <use href="${base}images/sprites.svg#arrow-link-icon"></use>

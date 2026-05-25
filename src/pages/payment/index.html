@@ -20,17 +20,82 @@
 
 		<main class="payment-main" id="go-to-top">
 			<!-- payment-top -->
-			<section class="gallery-top">
+			<section class="payment-top">
 				<!-- breadcrumbs -->
-				<div class="gallery-breadcrumbs container">
+				<div class="payment-breadcrumbs container">
 					<!-- getBreadcrumbs() -->
 				</div>
 
-				<!-- bannerTitleText( titleBanner, textBanner, imgPath ) -->
+				<!-- bannerTitle( titleBanner, imgPath ) -->
 				<!-- prettier-ignore -->
-				{% from "src/partials/components/banner/banner-title-text.njk" import bannerTitleText %}
-        {{ bannerTitleText( "Галерея", "Кадры социальной активности компании", "/images/jpg/top/gallery.jpg" ) }}
+				{% from "src/partials/components/banner/banner-title.njk" import bannerTitle %}
+        {{ bannerTitle( "Оплата и доставка", "/images/jpg/top/payment.jpg" ) }}
 			</section>
+
+			<!-- payment-tabs -->
+			<div class="payment-tabs">
+				<div class="payment-tabs__buttons-wrapper">
+					<div class="payment-tabs__buttons container">
+						<!-- tab( title, iconId ) -->
+						<!-- prettier-ignore -->
+						{% from "src/partials/ui/tab.njk" import tab %}
+						{{ tab( "Оплата заказа", "payment-tab-icon-1" ) }}
+						{{ tab( "Доставка партии", "payment-tab-icon-2" ) }}
+						{{ tab( "Возврат товара", "payment-tab-icon-3" ) }}
+					</div>
+				</div>
+
+				<hr class="payment-tabs__hr" />
+
+				<div class="payment-tabs__content container">
+					<div class="payment-panel">
+						<div class="payment-panel__content">
+							<h5 class="payment-panel__content-title">Способы оплаты</h5>
+
+							<div class="payment-panel__content-middle">
+								<div class="payment-panel__content-middle-wrapper">
+									<svg class="payment-panel__content-middle-wrapper-icon">
+										<use href="/images/sprites.svg#payment-panel-icon-1"></use>
+									</svg>
+								</div>
+								<span class="payment-panel__content-middle-text">Безналичный расчет</span>
+							</div>
+							<p class="payment-panel__content-text">
+								Вы можете выбрать “получить реквизиты” для дальнейшей оплаты на карту, или в терминалах.
+							</p>
+
+							<div class="payment-panel__content-middle">
+								<div class="payment-panel__content-middle-wrapper">
+									<svg class="payment-panel__content-middle-wrapper-icon">
+										<use href="/images/sprites.svg#payment-panel-icon-2"></use>
+									</svg>
+								</div>
+								<span class="payment-panel__content-middle-text"
+									>Оплата с помощью банковской карты</span
+								>
+							</div>
+							<p class="payment-panel__content-text">
+								Оплатите Ваш заказ картой любого банка онлайн (LiqPay/Приват24)
+							</p>
+
+							<div class="payment-panel__content-middle">
+								<div class="payment-panel__content-middle-wrapper">
+									<svg class="payment-panel__content-middle-wrapper-icon">
+										<use href="/images/sprites.svg#payment-panel-icon-3"></use>
+									</svg>
+								</div>
+								<span class="payment-panel__content-middle-text">Наличный расчет</span>
+							</div>
+							<p class="payment-panel__content-text">
+								Оплата заказов наложенным платежом в отделении Новой Почты, или наличными курьерами
+							</p>
+						</div>
+						<img class="payment-panel__img" src="/images/jpg/tabs/payment.jpg" alt="panel image" />
+					</div>
+					<div class="panel"></div>
+					<div class="panel"></div>
+				</div>
+			</div>
 
 			<!-- tags( classTags ) -->
 			<!-- prettier-ignore -->

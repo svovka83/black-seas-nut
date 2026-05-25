@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Оптовым и корпоративным клиентам</title>
+		<link rel="stylesheet" href="../../../src/scss/styles.scss" />
+		<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+	</head>
+	<body data-page="wholesales">
+		<!-- preloader -->
+		<div class="preloader">
+			<div class="preloader__spinner"></div>
+		</div>
+
+		<!-- header() -->
+		<!-- prettier-ignore -->
+		{% from "src/partials/modules/header.njk" import header %}
+    {{ header() }}
+
+		<main class="wholesales-main" id="go-to-top">
+			<!-- wholesales-top -->
+			<section class="wholesales-top">
+				<!-- breadcrumbs -->
+				<div class="wholesales-breadcrumbs container">
+					<!-- getBreadcrumbs() -->
+				</div>
+
+				<!-- bannerTitleText( titleBanner, textBanner, imgPath ) -->
+				<!-- prettier-ignore -->
+				{% from "src/partials/components/banner/banner-title-text.njk" import bannerTitleText %}
+        {{ bannerTitleText( "Орех Причерноморья", "Единственный в Украине сад совместного выращивание фундука и грецкого ореха", "/images/jpg/top/wholesales.jpg" ) }}
+			</section>
+
+			<!-- wholesale-info -->
+			<section class="wholesale-info container">
+				<div class="wholesale-info__title">
+					<!-- title( heading, classTitle, title ) -->
+					<!-- prettier-ignore -->
+					{% from "src/partials/ui/title.njk" import title %}
+          {{ title( "h2", "title_h2", "Оптовым и корпоративным клиентам") }}
+				</div>
+
+				<div class="wholesale-info__block1">
+					<p class="wholesale-info__text">
+						Сельскохозяйственный обслуживающий кооператив “Орех Причерноморья” предлагает своим клиентам
+						выгодные условия сотрудничества.
+					</p>
+					<p class="wholesale-info__text">
+						Особые условия подготовлены для розничных магазинов, компаний HoReCa, спорт - клубов.
+					</p>
+				</div>
+
+				<div class="wholesale-info__block2">
+					<p class="wholesale-info__text">
+						Мы готовы рассмотреть особые условия для оптовых покупателей, с готовностью идем на встречу
+						любому предложению.
+					</p>
+					<p class="wholesale-info__text">
+						Если вы заинтересованы в нашей продукции, пишите, или звоните в наш главный офис - мы всегда
+						пойдем вам на встречу!
+					</p>
+				</div>
+			</section>
+
+			<!-- wholesale-tabs -->
+			<div class="wholesale-tabs">
+				<div class="wholesale-tabs__buttons-wrapper">
+					<div class="wholesale-tabs__buttons container">
+						<!-- tab( title, iconId ) -->
+						<!-- prettier-ignore -->
+						{% from "src/partials/ui/tab.njk" import tab %}
+						{{ tab( "Крупные супермаркеты", "wholesales-tab-icon-1" ) }}
+						{{ tab( "Розничные магазины", "wholesales-tab-icon-2" ) }}
+						{{ tab( "Компании HoReCa", "wholesales-tab-icon-3" ) }}
+						{{ tab( "Фитнес и спорт клубы", "wholesales-tab-icon-4" ) }}
+						{{ tab( "Кондитерские и пекарни", "wholesales-tab-icon-5" ) }}
+					</div>
+				</div>
+
+				<hr class="wholesale-tabs__hr" />
+
+				<div class="wholesale-tabs__content container">
+					<div class="wholesale-panel">
+						<div class="wholesale-panel__content">
+							<p class="wholesale-panel__text">
+								СОК "Орех Причерноморья" предлагает своим клиентам выгодные условия сорудничества.
+							</p>
+							<p class="wholesale-panel__text">
+								Мы готовы рассмотреть особые условия для оптовых покупателей, с готовностью идем на
+								встречу к любому предложению.
+							</p>
+							<p class="wholesale-panel__text">
+								Особые условия подготовленны для розничных магазинов. компаний HoReCa, спорт-клубов.
+							</p>
+							<p class="wholesale-panel__text">
+								Если вы заинтересованы в нашей продукции, пишите или звоните в наш главный офис, мы
+								всегда пойдем вам на встречу.
+							</p>
+							<div class="wholesale-panel__button">
+								<!-- button( titleBtn, classBtn ) -->
+								<!-- prettier-ignore -->
+								{% from "src/partials/ui/button.njk" import button %}
+                {{ button( "Написать нам", "button_normal" ) }}
+							</div>
+						</div>
+						<img class="wholesale-panel__img" src="/images/jpg/tabs/wholesales.jpg" alt="panel image" />
+					</div>
+					<div class="panel"></div>
+					<div class="panel"></div>
+					<div class="panel"></div>
+					<div class="panel"></div>
+				</div>
+			</div>
+
+			<!-- tags( classTags ) -->
+			<!-- prettier-ignore -->
+			{% from "src/partials/components/common/tags.njk" import tags %}
+			{{ tags( "tags_bg-gray" ) }}
+
+			<!-- produceImage( imagePath, classContent ) -->
+			<!-- prettier-ignore -->
+			{% from "src/partials/components/produce/produce-image.njk" import produceImage %}
+			{{ produceImage( "/images/jpg/produce/produce-image-wholesales.jpg", "produce-image__content_about" ) }}
+		</main>
+
+		<!-- macro footer( classTopBg, classMiddle ) -->
+		<!-- prettier-ignore -->
+		{% from "src/partials/modules/footer.njk" import footer %}
+    {{ footer( "footer-top_bg-white", "footer-middle_white" ) }}
+
+		<script type="module" src="../../js/pages/wholesales/scripts.js"></script>
+		<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+	</body>
+</html>

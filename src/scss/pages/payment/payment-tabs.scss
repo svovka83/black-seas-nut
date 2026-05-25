@@ -1,0 +1,97 @@
+@use "../../settings/variables.scss" as *;
+
+.payment-tabs {
+	padding-top: 86px;
+	padding-bottom: 75px;
+	@media (max-width: 768px) {
+		padding-bottom: 52px;
+	}
+	&__buttons-wrapper {
+		@media (max-width: 768px) {
+			overflow-x: auto;
+			scrollbar-width: none;
+			-webkit-overflow-scrolling: touch;
+		}
+	}
+	&__buttons {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		@media (max-width: 768px) {
+			width: max-content;
+			min-width: 768px;
+		}
+	}
+	&__hr {
+		margin-top: 0px;
+		margin-bottom: 52px;
+	}
+	&__content {
+	}
+}
+
+.payment-panel {
+	display: flex;
+	justify-content: space-between;
+	column-gap: 18px;
+	overflow: hidden;
+	@media (max-width: 1024px) {
+		flex-direction: column;
+		row-gap: 32px;
+		align-items: center;
+	}
+	&__content {
+		width: 450px;
+		padding-top: 8px;
+		@media (max-width: 768px) {
+			width: unset;
+			max-width: 450px;
+		}
+		&-title {
+			font-weight: 800;
+			font-size: 18px;
+			line-height: 24px;
+			letter-spacing: 0%;
+			margin-bottom: 23px;
+		}
+		&-middle {
+			display: flex;
+			align-items: center;
+			column-gap: 14px;
+			margin-bottom: 10px;
+			&-wrapper {
+				width: 48px;
+				height: 48px;
+				background-color: $color_primary;
+				border: 6px solid #ffffff83;
+				border-radius: 50%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				&-icon {
+					width: 19px;
+					height: 19px;
+					fill: $white;
+				}
+			}
+			&-text {
+				font-weight: 600;
+				line-height: 24px;
+				letter-spacing: 2%;
+				font-style: italic;
+			}
+		}
+		&-text {
+			line-height: 24px;
+			letter-spacing: 0%;
+			margin-bottom: 12px;
+		}
+	}
+	&__img {
+		min-width: 0;
+	}
+	// display: none;
+	&.active {
+		display: block;
+	}
+}

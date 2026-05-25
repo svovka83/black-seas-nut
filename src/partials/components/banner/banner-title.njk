@@ -1,0 +1,14 @@
+{# payment imgPath - "/images/jpg/top/payment.jpg" #}
+
+{% macro bannerTitle( titleBanner, imgPath ) %}
+  <img class="banner-title" src="{{ imgPath }}" alt="gallery top banner"/>
+
+  <div class="banner-title-content">
+    <div class="banner-title-content__title">
+      <!-- title( heading, classTitle, title ) -->
+      {% from "src/partials/ui/title.njk" import title %}
+      {{ title( "h1", "title_h1 title_spacing title_white", titleBanner ) }}
+    </div>
+  </div>
+
+{% endmacro %}

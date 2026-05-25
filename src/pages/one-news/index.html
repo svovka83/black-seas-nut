@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Оплата и доставка</title>
+		<link rel="stylesheet" href="../../../src/scss/styles.scss" />
+		<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+	</head>
+	<body data-page="one-news">
+		<!-- preloader -->
+		<div class="preloader">
+			<div class="preloader__spinner"></div>
+		</div>
+
+		<!-- header() -->
+		<!-- prettier-ignore -->
+		{% from "src/partials/modules/header.njk" import header %}
+    {{ header() }}
+
+		<main class="one-news-main" id="go-to-top">
+			<div class="news-breadcrumbs container">
+				<!-- getBreadcrumbs(links, className) -->
+			</div>
+
+			<!-- one-news-content -->
+			<section class="one-news-content container">
+				<div class="one-news-content__title">
+					<!-- title( heading, classTitle, title ) -->
+					<!-- prettier-ignore -->
+					{% from "src/partials/ui/title.njk" import title %}
+          {{ title( "h3", "title_h3", "Центр поддержки экспорта, в студии Павел Тулба") }}
+				</div>
+				<p class="one-news-content__date">12.04.2019</p>
+				<div class="one-news-content__block">
+					<div class="one-news-article">
+						<img class="one-news-article__img" src="/images/jpg/one-news/big_1.jpg" alt="one news image" />
+						<p class="one-news-article__text"></p>
+						<p class="one-news-article__text"></p>
+						<p class="one-news-article__text"></p>
+						<h4 class="one-news-article__title"></h4>
+						<p class="one-news-article__text"></p>
+						<h5 class="one-news-article__title-small"></h5>
+						<ul class="one-news-article__list">
+							<li class="one-news-article__item"></li>
+							<li class="one-news-article__item"></li>
+							<li class="one-news-article__item"></li>
+							<li class="one-news-article__item"></li>
+						</ul>
+						<img class="one-news-article__img" src="/images/jpg/one-news/big_2.jpg" alt="one news image" />
+						<h4 class="one-news-article__title"></h4>
+						<p class="one-news-article__text"></p>
+						<p class="one-news-article__text"></p>
+					</div>
+					<div class="one-news-last">
+						<!-- one-news-last -->
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- macro footer( classTopBg, classMiddle ) -->
+		<!-- prettier-ignore -->
+		{% from "src/partials/modules/footer.njk" import footer %}
+    {{ footer( "footer-top_bg-white", "footer-middle_white" ) }}
+
+		<script type="module" src="../../js/pages/one-news/scripts.js"></script>
+		<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+	</body>
+</html>

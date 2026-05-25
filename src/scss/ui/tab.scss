@@ -1,0 +1,29 @@
+@use "../settings/variables.scss" as *;
+
+.tab {
+	display: inline-flex;
+	align-items: center;
+	column-gap: 16px;
+	padding-bottom: 8px;
+	border-bottom: 3px solid transparent;
+	cursor: pointer;
+	&__icon {
+		width: 37px;
+		height: 37px;
+		fill: $color_inactive;
+	}
+	&__name {
+		text-align: start;
+		font-weight: 800;
+		font-size: 20px;
+		line-height: 23px;
+		letter-spacing: 1%;
+		text-wrap: balance;
+	}
+	&.active {
+		border-bottom: 3px solid $color_primary;
+		.tab__icon {
+			fill: $color_primary;
+		}
+	}
+}

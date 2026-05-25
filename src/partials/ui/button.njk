@@ -1,0 +1,7 @@
+{# classBtn - 1: button_normal  1: button_active #}
+
+{% macro button( titleBtn, classBtn ) %}
+  <button class="button {{ classBtn }}">
+    <span class="button__title">{{ titleBtn }}</span>
+  </button>
+{% endmacro %}

@@ -1,16 +1,15 @@
-async function initPaymentApp() {
+async function initWholesalesApp() {
 	const preloader = document.querySelector(".preloader");
 	const page = document.body.dataset.page;
 
 	try {
 		document.body.style.overflow = "hidden";
 
-		if (page === "payment") {
+		if (page === "wholesales") {
 			const { initGeneral } = await import("../../init-general.js");
 			const { lightMenuHeader, lightMenuFooter } = await import("../../utils/light-current-page.js");
 			const { getBreadcrumbs } = await import("../../components/common/breadcrumbs.js");
 			const { controlTabs } = await import("../../controllers/control-tabs.js");
-			const { controlProduceVideo } = await import("../../controllers/control-produce-video.js");
 
 			await initGeneral();
 
@@ -23,7 +22,6 @@ async function initPaymentApp() {
 
 			// controllers
 			controlTabs();
-			controlProduceVideo();
 		}
 
 		preloader.classList.add("preloader_hide");
@@ -34,4 +32,4 @@ async function initPaymentApp() {
 	}
 }
 
-initPaymentApp();
+initWholesalesApp();

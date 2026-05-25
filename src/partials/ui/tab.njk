@@ -1,0 +1,8 @@
+{% macro tab( title, iconId ) %}
+  <button class="tab">
+    <svg class="tab__icon">
+      <use href="/images/sprites.svg#{{ iconId }}"></use>
+    </svg>
+    <span class="tab__name">{{ title }}</span>
+  </button>
+{% endmacro %}

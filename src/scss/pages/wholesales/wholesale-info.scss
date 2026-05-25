@@ -1,0 +1,32 @@
+@use "../../settings/variables.scss" as *;
+
+.wholesale-info {
+	padding-top: 81px;
+	padding-bottom: 51px;
+	display: flex;
+	justify-content: space-between;
+	@media (max-width: 1024px) {
+		flex-direction: column;
+	}
+	&__title {
+		flex: 1 0 520px;
+		@media (max-width: 1024px) {
+			flex: unset;
+		}
+	}
+	&__block1 {
+		margin-top: 12px;
+		margin-right: 64px;
+		@media (max-width: 1024px) {
+			margin-right: 0px;
+		}
+	}
+	&__block2 {
+		margin-top: 12px;
+	}
+	&__text {
+		line-height: 24px;
+		letter-spacing: 0%;
+		margin-bottom: 24px;
+	}
+}

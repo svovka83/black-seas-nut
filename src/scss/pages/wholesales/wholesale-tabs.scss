@@ -1,0 +1,67 @@
+@use "../../settings/variables.scss" as *;
+
+.wholesale-tabs {
+	padding-top: 58px;
+	padding-bottom: 92px;
+	@media (max-width: 768px) {
+		padding-bottom: 52px;
+	}
+	&__buttons-wrapper {
+		@media (max-width: 1200px) {
+			overflow-x: auto;
+			scrollbar-width: none;
+			-webkit-overflow-scrolling: touch;
+		}
+	}
+	&__buttons {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@media (max-width: 1200px) {
+			width: max-content;
+			min-width: 1200px;
+		}
+	}
+	&__hr {
+		margin-top: 0px;
+		margin-bottom: 44px;
+	}
+	&__content {
+	}
+}
+
+.wholesale-panel {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 18px;
+	overflow: hidden;
+	@media (max-width: 1024px) {
+		flex-direction: column;
+		row-gap: 32px;
+		align-items: center;
+	}
+	&__content {
+		width: 440px;
+		@media (max-width: 768px) {
+			width: unset;
+			max-width: 440px;
+		}
+	}
+	&__text {
+		line-height: 24px;
+		letter-spacing: 0%;
+		margin-bottom: 16px;
+	}
+	&__button {
+		width: 188px;
+		margin-top: 48px;
+	}
+	&__img {
+		min-width: 0;
+	}
+	// display: none;
+	&.active {
+		display: block;
+	}
+}

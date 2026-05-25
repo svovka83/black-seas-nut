@@ -1,0 +1,20 @@
+@use "../../settings/variables.scss" as *;
+
+.one-news-content {
+	padding-top: 50px;
+	padding-bottom: 16px;
+	&__title {
+		max-width: 470px;
+		letter-spacing: -1%;
+		margin-bottom: 8px;
+	}
+	&__date {
+		font-family: "Montserrat", sans-serif;
+		font-size: 15px;
+		line-height: 22px;
+		letter-spacing: 1%;
+		margin-bottom: 16px;
+	}
+	&__block {
+	}
+}
