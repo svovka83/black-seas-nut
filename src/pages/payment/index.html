@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Новости и статьи</title>
+		<title>Оплата и доставка</title>
 		<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-		<script type="module" crossorigin src="/black-seas-nut/assets/news-xsdLRwzC.js"></script>
+		<script type="module" crossorigin src="/black-seas-nut/assets/payment-BCxA2LZX.js"></script>
 		<link rel="modulepreload" crossorigin href="/black-seas-nut/assets/styles-D_g1ABej.js">
 		<link rel="modulepreload" crossorigin href="/black-seas-nut/assets/preload-helper-DGp9VVL3.js">
 		<link rel="stylesheet" crossorigin href="/black-seas-nut/assets/styles-CzVf-IYN.css">
 	</head>
-	<body data-page="news">
+	<body data-page="payment">
 		<!-- preloader -->
 		<div class="preloader">
 			<div class="preloader__spinner"></div>
@@ -208,125 +208,177 @@
   </header>
 
 
-		<main class="news-main" id="go-to-top">
-			<div class="news-breadcrumbs container">
-				<!-- getBreadcrumbs(links, className) -->
+		<main class="payment-main" id="go-to-top">
+			<!-- payment-top -->
+			<section class="payment-top">
+				<!-- breadcrumbs -->
+				<div class="payment-breadcrumbs container">
+					<!-- getBreadcrumbs() -->
+				</div>
+
+				<!-- bannerTitle( titleBanner, imgPath ) -->
+				<!-- prettier-ignore -->
+				
+        
+  <img class="banner-title" src="/black-seas-nut/images/jpg/top/payment.jpg" alt="gallery top banner"/>
+
+  <div class="banner-title-content">
+    <div class="banner-title-content__title">
+      <!-- title( heading, classTitle, title ) -->
+      
+      
+  <h1 class="title title_h1 title_spacing title_white">Оплата и доставка</h1>
+
+    </div>
+  </div>
+
+
+			</section>
+
+			<!-- payment-tabs -->
+			<div class="payment-tabs">
+				<div class="payment-tabs__buttons-wrapper">
+					<div class="payment-tabs__buttons container">
+						<!-- tab( title, iconId ) -->
+						<!-- prettier-ignore -->
+						
+						
+  <button class="tab">
+    <svg class="tab__icon">
+      <use href="/black-seas-nut/images/sprites.svg#payment-tab-icon-1"></use>
+    </svg>
+    <span class="tab__name">Оплата заказа</span>
+  </button>
+
+						
+  <button class="tab">
+    <svg class="tab__icon">
+      <use href="/black-seas-nut/images/sprites.svg#payment-tab-icon-2"></use>
+    </svg>
+    <span class="tab__name">Доставка партии</span>
+  </button>
+
+						
+  <button class="tab">
+    <svg class="tab__icon">
+      <use href="/black-seas-nut/images/sprites.svg#payment-tab-icon-3"></use>
+    </svg>
+    <span class="tab__name">Возврат товара</span>
+  </button>
+
+					</div>
+				</div>
+
+				<hr class="payment-tabs__hr" />
+
+				<div class="payment-tabs__content container">
+					<div class="payment-panel">
+						<div class="payment-panel__content">
+							<h5 class="payment-panel__content-title">Способы оплаты</h5>
+
+							<div class="payment-panel__content-middle">
+								<div class="payment-panel__content-middle-wrapper">
+									<svg class="payment-panel__content-middle-wrapper-icon">
+										<use href="/black-seas-nut/images/sprites.svg#payment-panel-icon-1"></use>
+									</svg>
+								</div>
+								<span class="payment-panel__content-middle-text">Безналичный расчет</span>
+							</div>
+							<p class="payment-panel__content-text">
+								Вы можете выбрать “получить реквизиты” для дальнейшей оплаты на карту, или в терминалах.
+							</p>
+
+							<div class="payment-panel__content-middle">
+								<div class="payment-panel__content-middle-wrapper">
+									<svg class="payment-panel__content-middle-wrapper-icon">
+										<use href="/black-seas-nut/images/sprites.svg#payment-panel-icon-2"></use>
+									</svg>
+								</div>
+								<span class="payment-panel__content-middle-text"
+									>Оплата с помощью банковской карты</span
+								>
+							</div>
+							<p class="payment-panel__content-text">
+								Оплатите Ваш заказ картой любого банка онлайн (LiqPay/Приват24)
+							</p>
+
+							<div class="payment-panel__content-middle">
+								<div class="payment-panel__content-middle-wrapper">
+									<svg class="payment-panel__content-middle-wrapper-icon">
+										<use href="/black-seas-nut/images/sprites.svg#payment-panel-icon-3"></use>
+									</svg>
+								</div>
+								<span class="payment-panel__content-middle-text">Наличный расчет</span>
+							</div>
+							<p class="payment-panel__content-text">
+								Оплата заказов наложенным платежом в отделении Новой Почты, или наличными курьерами
+							</p>
+						</div>
+						<img class="payment-panel__img" src="/black-seas-nut/images/jpg/tabs/payment.jpg" alt="panel image" />
+					</div>
+					<div class="panel"></div>
+					<div class="panel"></div>
+				</div>
 			</div>
 
-			<!-- news-content -->
-			<section class="news-content container">
-				<div class="news-content__title">
-					<!-- title( heading, classTitle, title ) -->
-					<!-- prettier-ignore -->
-					
-					
-  <h2 class="title title_h2">Новости и статьи</h2>
+			<!-- tags( classTags ) -->
+			<!-- prettier-ignore -->
+			
+			
+  <div class="tags tags_bg-gray">
+    <div class="tags__inner container">
+      <div class="tags__item">
+        <p class="tags__title">240<sup class="tags__mark">Га</sup></p>
+        <p class="tags__text">Cмешанных</p>
+        <p class="tags__text">садов</p>
+      </div>
+      <div class="tags__item">
+        <p class="tags__title">1<sup class="tags__mark">Га</sup></p>
+        <p class="tags__text">Тепличного</p>
+        <p class="tags__text">комплекса</p>
+      </div>
+      <div class="tags__item">
+        <p class="tags__title">10<sup class="tags__mark">Га</sup></p>
+        <p class="tags__text">Первая промышленная плантация</p>
+        <p class="tags__text">шиповника в Украине</p>
+      </div>
+      <div class="tags__item">
+        <p class="tags__title">80<sup class="tags__mark">%</sup></p>
+        <p class="tags__text">Приживаемости</p>
+        <p class="tags__text">саженцев</p>
+      </div>
+    </div>
+  </div>
 
-				</div>
-				<div class="news-content__text">
-					<!-- text( classText, text ) -->
-					<!-- prettier-ignore -->
-					
-					
-  <p class="text text_content">Свежие новости и полезная информация</p>
 
-				</div>
-				<!-- news-article -->
-				<div class="news-article">
-					<img class="news-article__img" src="/black-seas-nut/images/jpg/news/news-article.jpg" alt="news article" />
-					<div class="news-article__content">
-						<p class="news-article__date">12.04.2019</p>
-						<h3 class="news-article__title">Центр поддержки экспорта, в студии Павел Тулба</h3>
-						<p class="news-article__text">
-							Сельскохозяйственный обслуживающий кооператив “Орех Причерноморья” предлагает своим клиентам
-							выгодные условия сотрудничества.
-						</p>
-						<p class="news-article__text">
-							Ореховый бизнес – один из наиболее перспективных в Украине. Ежегодная нехватка продукта в
-							Европе составляет 100 000 тонн. У Вас есть возможность зарабатывать десятки тысяч долларов в
-							год всего на нескольких гектарах земли.
-						</p>
-						<div class="news-article__read">
-							<!-- read() -->
-						</div>
-					</div>
-				</div>
-				<div class="news-content__articles">
-					<div class="news-card">
-						<video class="news-card__video" preload="metadata" poster="/black-seas-nut/images/jpg/news/news_1.jpg">
-							<source src="" type="video/mp4" />
-						</video>
-
-						<div class="news-card__content">
-							<p class="news-card__date">12.04.2019</p>
-							<h4 class="news-card__title">Центр поддержки экспорта, в студии Павел Тулба</h4>
-							<p class="news-card__text">
-								Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди
-								наших садоводов, не смотря на большой спрос в Европе и отличную...
-							</p>
-							<div class="news-card__link">
-								<!-- getRead() -->
-							</div>
-						</div>
-					</div>
-					<div class="news-card">
-						<video class="news-card__video" preload="metadata" poster="/black-seas-nut/images/jpg/news/news_2.jpg">
-							<source src="" type="video/mp4" />
-						</video>
-
-						<div class="news-card__content">
-							<p class="news-card__date">12.04.2019</p>
-							<h4 class="news-card__title">
-								В Одесской области состоялся масштабный торгово - экспортный форум
-							</h4>
-							<p class="news-card__text">
-								Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди
-								наших садоводов, не смотря на большой спрос в Европе и отличную...
-							</p>
-							<div class="news-card__link">
-								<!-- getRead() -->
-							</div>
-						</div>
-					</div>
-					<div class="news-card">
-						<video class="news-card__video" preload="metadata" poster="/black-seas-nut/images/jpg/news/news_3.jpg">
-							<source src="" type="video/mp4" />
-						</video>
-
-						<div class="news-card__content">
-							<p class="news-card__date">12.04.2019</p>
-							<h4 class="news-card__title">Сертификация органического производителя</h4>
-							<p class="news-card__text">
-								Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди
-								наших садоводов, не смотря на большой спрос в Европе и отличную...
-							</p>
-							<div class="news-card__link">
-								<!-- getRead() -->
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="news-content__gallery">
-					<!-- galleryCardVideo() -->
-					<!-- prettier-ignore -->
-					
-					
-  <div class="galery-card-video">
+			<!-- produceVideo() -->
+			<!-- prettier-ignore -->
+			
+			
+  <section class="produce-video">
     <video
-      class="galery-card-video__video"
+      class="produce-video__video"
       preload="metadata"
-      poster="/black-seas-nut/images/jpg/galery/galery-poster.png"
+      poster="/black-seas-nut/images/jpg/produce/produce-video.jpg"
       muted
       loop>
-      <source src="/black-seas-nut/videos/galary-video.mp4" type="video/mp4" />
+      <source src="/black-seas-nut/videos/produce-video.mp4" type="video/mp4" />
     </video>
 
-    <div class="galery-card-video__content">
-      <div class="galery-card-video__play">
+    <div class="produce-video__content">
+      <div class="produce-video__title">
+        <!-- title( heading, classTitle, title ) -->
+        
+        
+  <h2 class="title title_h2 title_white">Наша главная цель - получить максимальную прибыль с одного гектара</h2>
+
+      </div>
+
+      <div class="produce-video__button">
         <!-- play( playId ) -->
         
         
-  <button class="play" id="galery-big-play">
+  <button class="play" id="play_produce">
     <svg class="play__icon">
       <use
         class="play__use"
@@ -338,40 +390,18 @@
 
       </div>
 
-      <div class="galery-card-video__title">
-        <!-- title( heading, classTitle, title ) -->
-        
-        
-  <h4 class="title title_h4 title_white">Проект UBHDP </h4>
-
-      </div>
-
-      <div class="galery-card-video__text">
+      <div class="produce-video__text">
         <!-- text( classText, text ) -->
         
         
-  <p class="text text_galery text_white">Вчера к нам приезжал американский агроном Рон , спасибо Мельнику Евгению и проекту UBHDP за возможность получить консультацию 
-        от мировых специалистов!</p>
+  <p class="text text_italic text_white">Cмотреть видео о производстве</p>
 
       </div>
-
     </div>
 
-    <div class="galery-card-video__eclipse"></div>
-  </div>
+    <div class="produce-video__eclipse"></div>
+  </section>
 
-				</div>
-				<div class="news-content__link">
-					<!-- link( title, classLink, pathLink ) -->
-					<!-- prettier-ignore -->
-					
-					
-  <a class="link link_fs14" href="#!">
-    <span class="link__title">Посмотреть еще</span>
-  </a>
-
-				</div>
-			</section>
 		</main>
 
 		<!-- macro footer( classTopBg, classMiddle ) -->
@@ -379,7 +409,7 @@
 		
     
   <footer class="footer">
-    <section class="footer-top footer-top_bg-gray">
+    <section class="footer-top footer-top_bg-white">
       <div class="footer-top__inner container">
         <div class="footer-top__content">
           <div class="footer-top__content-title">
@@ -479,7 +509,7 @@
       </div>
     </section>
 
-    <div class="footer-middle footer-middle_gray">
+    <div class="footer-middle footer-middle_white">
       <div class="footer-middle__inner container">
         <div class="footer-middle__logo">
           <!-- logo( logoPath, classLogo ) -->
