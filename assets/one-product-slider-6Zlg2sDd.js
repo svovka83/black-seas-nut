@@ -1,0 +1,1 @@
+import{t as e}from"./swiper-B0zbuhPR.js";import{t}from"./navigation-CdonCi6B.js";function n(){new e(`.product-slider`,{slidesPerView:1,speed:500,modules:[t],navigation:{nextEl:`.product-slider__nav-button_next`,prevEl:`.product-slider__nav-button_prev`}})}export{n as initOneProductSlider};

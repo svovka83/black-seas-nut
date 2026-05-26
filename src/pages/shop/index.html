@@ -3,14 +3,14 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Оплата и доставка</title>
+		<title>Каталог продукции</title>
 		<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-		<script type="module" crossorigin src="/black-seas-nut/assets/oneNews-yPe7R6YL.js"></script>
+		<script type="module" crossorigin src="/black-seas-nut/assets/shop-BSDtkCDC.js"></script>
 		<link rel="modulepreload" crossorigin href="/black-seas-nut/assets/styles-CvLYp47I.js">
 		<link rel="modulepreload" crossorigin href="/black-seas-nut/assets/preload-helper-xz1M0zlR.js">
 		<link rel="stylesheet" crossorigin href="/black-seas-nut/assets/styles-ByXOqBAc.css">
 	</head>
-	<body data-page="one-news">
+	<body data-page="shop">
 		<!-- preloader -->
 		<div class="preloader">
 			<div class="preloader__spinner"></div>
@@ -208,167 +208,238 @@
   </header>
 
 
-		<main class="one-news-main" id="go-to-top">
-			<div class="news-breadcrumbs container">
-				<!-- getBreadcrumbs(links, className) -->
-			</div>
+		<main class="shop-main" id="go-to-top">
+			<!-- shop-top -->
+			<section class="shop-top">
+				<!-- breadcrumbs -->
+				<div class="shop-breadcrumbs container">
+					<!-- getBreadcrumbs() -->
+				</div>
 
-			<!-- one-news-content -->
-			<section class="one-news-content container">
-				<div class="one-news-content__title">
-					<!-- title( heading, classTitle, title ) -->
+				<!-- bannerTitle( titleBanner, imgPath ) -->
+				<!-- prettier-ignore -->
+				
+        
+  <img class="banner-title" src="/black-seas-nut/images/jpg/top/shop.jpg" alt="gallery top banner"/>
+
+  <div class="banner-title-content">
+    <div class="banner-title-content__title">
+      <!-- title( heading, classTitle, title ) -->
+      
+      
+  <h1 class="title title_h1 title_spacing title_white">Каталог продукции</h1>
+
+    </div>
+  </div>
+
+
+			</section>
+
+			<!-- shop-filter -->
+			<div class="shop-filter container">
+				<div class="shop-filter__main">
+					Фильтр
+					<svg class="shop-filter__main-icon">
+						<use href="/black-seas-nut/images/sprites.svg#filter-icon"></use>
+					</svg>
+				</div>
+				<div class="shop-filter__taste">
+					<!-- getSelect() -->
+				</div>
+				<div class="shop-filter__mass">
+					<!-- getSelect() -->
+				</div>
+				<div class="shop-filter__price">
+					<!-- it should be a component -->
+					<button class="arrow-price">
+						<span class="arrow-price__text">Стоимость</span>
+						<svg class="arrow-price__icon">
+							<use href="/black-seas-nut/images/sprites.svg#arrow-down-icon"></use>
+						</svg>
+						<svg class="arrow-price__icon">
+							<use href="/black-seas-nut/images/sprites.svg#arrow-up-icon"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="shop-filter__apply">
+					<!-- button( titleBtn, classBtn ) -->
 					<!-- prettier-ignore -->
 					
           
-  <h3 class="title title_h3">Центр поддержки экспорта, в студии Павел Тулба</h3>
+  <button class="button button_normal">
+    <span class="button__title">Применить</span>
+  </button>
 
 				</div>
-				<p class="one-news-content__date">12.04.2019</p>
-				<div class="one-news-content__block">
-					<div class="one-news-article">
-						<img class="one-news-article__img" src="/black-seas-nut/images/jpg/one-news/big_1.jpg" alt="one news image" />
-						<p class="one-news-article__text">
-							Сельскохозяйственный обслуживающий кооператив “Орех Причерноморья” предлагает своим клиентам
-							выгодные условия сотрудничества. Ореховый бизнес – один из наиболее перспективных в Украине.
-							Ежегодная нехватка продукта в Европе составляет 100 000 тонн. У Вас есть возможность
-							зарабатывать десятки тысяч долларов в год всего на нескольких гектарах земли.
-						</p>
-						<p class="one-news-article__text">
-							Предприятие основано в 2012 году для закладки смешанного сада грецкого ореха и фундука в
-							Одесской области. На сегодня уже заложено более 200 гектаров сада и этот процесс
-							продолжается. Кооператив предоставляет полный цикл сопровождения: от выращивания до сбыта.
-						</p>
-						<p class="one-news-article__text">
-							Кроме выращивания грецкого ореха и фундука, компания занимается выращиванием саженцев,
-							разведением и выращиванием овец, а также является первой в Украине компанией, приступившей к
-							промышленному выращиванию трюфелей на корнях фундука.
-						</p>
-						<h4 class="one-news-article__title">
-							В Украине появится первое насаждение органического шиповника
-						</h4>
-						<p class="one-news-article__text">
-							Наш сельскохозяйственный обслуживающий кооператив «Орех Причерноморья» был основан в 2012-ом
-							году для закладки смешанного сада грецкого ореха и фундука. На данный момент во владении
-							нашей компании находится 1 гектар тепличной площади и 270 гектар садовой площади, которую мы
-							планируем расширять. «Орех Причерноморья» включен в реестр Министерства Аграрной Политики
-							Украины.
-						</p>
-						<h5 class="one-news-article__title-small">Смешанный сад грецкий орех+шиповник</h5>
-						<ul class="one-news-article__list">
-							<li class="one-news-article__item">Возможность полной механизации всех работ по саду</li>
-							<li class="one-news-article__item">Невысокая стоимость смешанного сада при закладке</li>
-							<li class="one-news-article__item">
-								Необходимость в интенсивном поливе только первые четыре года
-							</li>
-							<li class="one-news-article__item">
-								Долгий срок хранения готовой продукции и унификация сушильных камер и складов для
-								хранения
-							</li>
-						</ul>
-						<img class="one-news-article__img" src="/black-seas-nut/images/jpg/one-news/big_2.jpg" alt="one news image" />
-						<h4 class="one-news-article__title">
-							В Украине появится первое насаждение органического шиповника
-						</h4>
-						<p class="one-news-article__text">
-							Сельскохозяйственный обслуживающий кооператив “Орех Причерноморья” предлагает своим клиентам
-							выгодные условия сотрудничества. Ореховый бизнес – один из наиболее перспективных в Украине.
-							Ежегодная нехватка продукта в Европе составляет 100 000 тонн. У Вас есть возможность
-							зарабатывать десятки тысяч долларов в год всего на нескольких гектарах земли.
-						</p>
-						<p class="one-news-article__text">
-							Нами разработано и опробовано на собственной практике предложение для закладки многолетних
-							насаждений шиповника, на земельных участках не пригодных к традиционному земледелию. Первых
-							5 гектар промышленной плантации шиповника, были высажены на месте бывшей сельской свалки и
-							остатков разрушенной молочно товарной фермы.
-						</p>
-					</div>
-					<div class="one-news-last">
-						<h4 class="one-news-last__title">Последние публикации</h4>
-						<div class="one-news-last__cards-wrapper">
-							<div class="one-news-last__cards">
-								<!-- oneNewsCard( imgPath ) -->
-								<!-- prettier-ignore -->
-								
-                
-  <div class="one-news-card">
-    <img
-      class="one-news-card__img"
-      src="/black-seas-nut/images/jpg/one-news/small_1.jpg"
-      alt="one news card" />
-    <p class="one-news-card__date">12.04.2019</p>
-    <h5 class="one-news-card__title">Центр поддержки экспорта, в студии Павел Тулба</h5>
-    <div class="one-news-card__read">
-      <!-- read() -->
-    </div>
-  </div>
-
-                
-  <div class="one-news-card">
-    <img
-      class="one-news-card__img"
-      src="/black-seas-nut/images/jpg/one-news/small_2.jpg"
-      alt="one news card" />
-    <p class="one-news-card__date">12.04.2019</p>
-    <h5 class="one-news-card__title">Центр поддержки экспорта, в студии Павел Тулба</h5>
-    <div class="one-news-card__read">
-      <!-- read() -->
-    </div>
-  </div>
-
-                
-  <div class="one-news-card">
-    <img
-      class="one-news-card__img"
-      src="/black-seas-nut/images/jpg/one-news/small_3.jpg"
-      alt="one news card" />
-    <p class="one-news-card__date">12.04.2019</p>
-    <h5 class="one-news-card__title">Центр поддержки экспорта, в студии Павел Тулба</h5>
-    <div class="one-news-card__read">
-      <!-- read() -->
-    </div>
-  </div>
-
-								<div class="one-news-last__green-card">
-									<h4 class="one-news-last__green-card-title">ОРЕХ ПРИЧЕРНОМОРЬЯ</h4>
-									<p class="one-news-last__green-card-text">Присоединяйтесь к нам в соц. сетях</p>
-									<div class="one-news-last__green-card-socials">
-										<!-- socialIcons( classIcon ) -->
-										<!-- prettier-ignore -->
-										
-                  
-  <ul class="social-icons">
-    <li class="social-icons__item">
-      <a class="social-icons__link" href="#!">
-        <svg class="social-icons__icon social-icons__icon_white">
-          <use href="/black-seas-nut/images/sprites.svg#facebook-icon"></use>
-        </svg>
-      </a>
-    </li>
-
-    <li class="social-icons__item">
-      <a class="social-icons__link" href="#!">
-        <svg class="social-icons__icon social-icons__icon_white">
-          <use href="/black-seas-nut/images/sprites.svg#instagram-icon"></use>
-        </svg>
-      </a>
-    </li>
-
-    <li class="social-icons__item">
-      <a class="social-icons__link" href="#!">
-        <svg class="social-icons__icon social-icons__icon_white">
-          <use href="/black-seas-nut/images/sprites.svg#youtube-icon"></use>
-        </svg>
-      </a>
-    </li>
-  </ul>
-
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+				<div class="shop-filter__reset">
+					<!-- it should be a component -->
+					<button class="reset">
+						<svg class="reset__icon">
+							<use href="/black-seas-nut/images/sprites.svg#reset-icon"></use>
+						</svg>
+						<span class="reset__text">Сбросить</span>
+					</button>
 				</div>
-			</section>
+			</div>
+
+			<!-- shop-products -->
+			<div class="shop-products container">
+				<div class="shop-products__products">
+					<!-- getProducts() -->
+				</div>
+				<div class="shop-products__link">
+					<!-- link( title, classLink, pathLink ) -->
+					<!-- prettier-ignore -->
+					
+          
+  <a class="link link_fs15" href="#!">
+    <span class="link__title">Загрузить еще</span>
+  </a>
+
+				</div>
+			</div>
+
+			<!-- manufacturer( classManufacturer ) -->
+			<!-- prettier-ignore -->
+			
+			
+			
+			
+  <section class="manufacturer manufacturer_gray-bg">
+    <div class="manufacturer__inner container">
+      <div class="manufacturer__content">
+
+        
+  <div class="manufacturer-scroll">
+    <div class="manufacturer-scroll__title">
+      <!-- title( heading, classTitle, title ) -->
+      
+      
+  <h2 class="title title_h2">Экологически чистый грецкий орех</h2>
+
+    </div>
+
+    <h4 class="manufacturer-scroll__subtitle">Оптом, и в розницу</h4>
+
+  <div class="manufacturer-scroll__block">
+    <p class="manufacturer-scroll__text">
+      Сельскохозяйственный обслуживающий кооператив 
+      “Орех Причерноморья” выращивает смешанные сады 
+      ореха грецкого с фундуком, а также ореха грецкого 
+      с шиповником, на площади более 150 гектаров. 
+    </p>
+
+    <p class="manufacturer-scroll__text">
+      Помимо этого кооператив занимается выращиванием 
+      посадочного материала, саженцов привитого и непривитого 
+      грецкого ореха, фундука и шиповника.
+    </p>
+
+    <p class="manufacturer-scroll__text">
+      Помимо этого кооператив занимается выращиванием 
+      посадочного материала, саженцов привитого и непривитого 
+      грецкого ореха, фундука и шиповника. 
+    </p>
+
+    <p class="manufacturer-scroll__text">
+      Сельскохозяйственный обслуживающий кооператив 
+      “Орех Причерноморья” выращивает смешанные сады 
+      ореха грецкого с фундуком, а также ореха грецкого 
+      с шиповником, на площади более 150 гектаров. 
+    </p>
+
+    <p class="manufacturer-scroll__text">
+      Помимо этого кооператив занимается выращиванием 
+      посадочного материала, саженцов привитого и непривитого 
+      грецкого ореха, фундука и шиповника.
+    </p>
+
+    <p class="manufacturer-scroll__text">
+      Помимо этого кооператив занимается выращиванием 
+      посадочного материала, саженцов привитого и непривитого 
+      грецкого ореха, фундука и шиповника. 
+    </p>
+  </div>
+
+  </div>
+
+
+      </div>
+      <div class="manufacturer__slider">
+
+        
+  <div class="manufacturer-slider">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <video
+          class="manufacturer-slider__slide"
+          preload="metadata"
+          poster="/black-seas-nut/images/jpg/manufacturer/manufacturer_1.jpg"
+          muted
+          loop>
+          <source src="/black-seas-nut/videos/manufacturer_1.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <div class="swiper-slide">
+        <video
+          class="manufacturer-slider__slide"
+          preload="metadata"
+          poster="/black-seas-nut/images/jpg/manufacturer/manufacturer_2.jpg"
+          muted
+          loop>
+          <source src="/black-seas-nut/videos/manufacturer_2.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <div class="swiper-slide">
+        <video
+          class="manufacturer-slider__slide"
+          preload="metadata"
+          poster="/black-seas-nut/images/jpg/manufacturer/manufacturer_3.jpg"
+          muted
+          loop>
+          <source src="/black-seas-nut/videos/manufacturer_3.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+
+    <button class="manufacturer-slider__nav-button manufacturer-slider__nav-button_prev">
+      <svg class="manufacturer-slider__nav-button-icon">
+        <use href="/black-seas-nut/images/sprites.svg#arrow-left-icon"></use>
+      </svg>
+    </button>
+
+    <button class="manufacturer-slider__nav-button manufacturer-slider__nav-button_next">
+      <svg class="manufacturer-slider__nav-button-icon">
+        <use href="/black-seas-nut/images/sprites.svg#arrow-right-icon"></use>
+      </svg>
+    </button>
+
+    <div class="manufacturer-slider__play">
+      <!-- play( playId ) -->
+      
+      
+  <button class="play" id="play_manufacturer">
+    <svg class="play__icon">
+      <use
+        class="play__use"
+        href="/black-seas-nut/images/sprites.svg#play-icon"
+        data-play="play-icon"
+        data-stop="stop-icon"></use>
+    </svg>
+  </button>
+
+    </div>
+
+    <div class="manufacturer-slider__eclipse"></div>
+  </div>
+
+        
+      </div>
+    </div>
+  </section>
+
 		</main>
 
 		<!-- macro footer( classTopBg, classMiddle ) -->
@@ -376,7 +447,7 @@
 		
     
   <footer class="footer">
-    <section class="footer-top footer-top_bg-gray">
+    <section class="footer-top footer-top_bg-white">
       <div class="footer-top__inner container">
         <div class="footer-top__content">
           <div class="footer-top__content-title">
@@ -476,7 +547,7 @@
       </div>
     </section>
 
-    <div class="footer-middle footer-middle_gray">
+    <div class="footer-middle footer-middle_white">
       <div class="footer-middle__inner container">
         <div class="footer-middle__logo">
           <!-- logo( logoPath, classLogo ) -->
@@ -559,6 +630,44 @@
       </div>
     </div>
   </footer>
+
+
+		<!-- modalProductSlider() modal-product-slider - it doest't works correctly -->
+		<!-- prettier-ignore -->
+		
+    
+  <div class="modal-product-slider">
+    <div class="modal-product-slider__outer container">
+      <div class="modal-product-slider__inner">
+        <div class="modal-product-slider__slider">
+
+          <div class="swiper-wrapper modal-product-slider__slides">
+            <!-- getModalProductSlider(id) -->
+          </div>
+
+          <button class="modal-product-slider__nav-button modal-product-slider__nav-button_prev">
+            <svg class="modal-product-slider__nav-button-icon">
+              <use href="/black-seas-nut/images/sprites.svg#arrow-left-icon"></use>
+            </svg>
+          </button>
+
+          <button class="modal-product-slider__nav-button modal-product-slider__nav-button_next">
+            <svg class="modal-product-slider__nav-button-icon">
+              <use href="/black-seas-nut/images/sprites.svg#arrow-right-icon"></use>
+            </svg>
+          </button>
+  
+        </div>
+
+        <button class="modal-product-slider__close-btn">
+          <svg class="modal-product-slider__close-btn-icon">
+            <use href="/black-seas-nut/images/sprites.svg#close-icon"></use>
+          </svg>
+        </button>
+
+      </div>
+    </div>
+  </div>
 
 
 		<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>

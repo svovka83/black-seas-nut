@@ -1,14 +1,16 @@
-import{t as e}from"./button-DRGWqKvT.js";import{i as t,r as n,t as r}from"./firebase-DeeIVKy_.js";import{t as i}from"./swiper-B0hluq9r.js";import{t as a}from"./navigation-B_vfpisG.js";function o(){return`
+import{t as e}from"./button-BzMveyJA.js";import{t}from"./swiper-B0zbuhPR.js";import{t as n}from"./navigation-CdonCi6B.js";function r(){return`
     <div class="search">
       <svg class="search__icon">
         <use href="/black-seas-nut/images/sprites.svg#search-icon"></use>
       </svg>
     </div>
-  `}function s(t,n,r,i,a){let s=`/black-seas-nut/`;return`
+  `}function i(t,n,i,a,o){let s=`/black-seas-nut/`;return`
     <div class="product-card" data-id=${t}>
+      <a class="product-card__link" href="${s}src/pages/product/index.html?id=${t}"></a>
+
       <div class="product-card__slider">
         <div class="swiper-wrapper">
-        ${r.map(e=>`              
+        ${i.map(e=>`              
             <div class="swiper-slide">
               <img class="product-card__img" src="${e}" alt="product" />
             </div>
@@ -28,7 +30,7 @@ import{t as e}from"./button-DRGWqKvT.js";import{i as t,r as n,t as r}from"./fire
         </button>
 
         <div class="product-card__search">
-          ${o()}
+          ${r()}
         </div>
       </div>
 
@@ -63,7 +65,7 @@ import{t as e}from"./button-DRGWqKvT.js";import{i as t,r as n,t as r}from"./fire
         <hr class="product-card__hr" />
 
         <div class="product-card__bottom">
-          ${i?`<p class="product-card__bottom-price">
+          ${a?`<p class="product-card__bottom-price">
               Цена:
               <span class="product-card__bottom-cost">
                 19 
@@ -88,22 +90,18 @@ import{t as e}from"./button-DRGWqKvT.js";import{i as t,r as n,t as r}from"./fire
         </div>
       </div>
 
-      ${a===`promotion`?`<div class="product-card__promotion-new">
+      ${o===`promotion`?`<div class="product-card__promotion-new">
             <svg class="product-card__promotion-new-icon product-card__promotion-new-icon_red">
               <use href="${s}images/sprites.svg#prmotion-new-icon"></use>
             </svg>
             <span class="product-card__promotion-new-text">АКЦИЯ</span>
           </div>`:``}
 
-      ${a===`new`?`<div class="product-card__promotion-new">
+      ${o===`new`?`<div class="product-card__promotion-new">
             <svg class="product-card__promotion-new-icon product-card__promotion-new-icon_orange">
               <use href="${s}images/sprites.svg#prmotion-new-icon"></use>
             </svg>
             <span class="product-card__promotion-new-text">НОВИНКА</span>
           </div>`:``}
     </div>
-  `}function c(){let e=document.querySelectorAll(`.product-card__img`);e&&(new i(`.product-card__slider`,{slidesPerView:1,speed:500,modules:[a],navigation:{nextEl:`.product-card__nav-button_next`,prevEl:`.product-card__nav-button_prev`}}),e.forEach(e=>{e.addEventListener(`mouseover`,e=>{let t=e.target.closest(`.product-card__slider`).querySelector(`.product-card__search`);t.style.visibility=`visible`,t.style.opacity=`1`,t.addEventListener(`click`,()=>{t.style.visibility=`hidden`,t.style.opacity=`0`})})}),e.forEach(e=>{e.addEventListener(`mouseout`,e=>{let t=e.target.closest(`.product-card__slider`).querySelector(`.product-card__search`);t.contains(e.relatedTarget)||(t.style.visibility=`hidden`,t.style.opacity=`0`)})}))}async function l(){let e=document.querySelector(`.main-products__cards`);if(e)try{let i=await n(t(r,`products`)),a=``;i.forEach(e=>{a+=s(e.id,e.data().name,e.data().imagesUrl,e.data().discount,e.data().sales)}),e.innerHTML=a,c()}catch(e){console.error(`Error getting products:`,e)}}async function u(){let e=document.querySelector(`.main-products__slider-wrapper`);if(e)try{let i=await n(t(r,`products`)),a=``;i.forEach(e=>{a+=`
-        <div class="swiper-slide">
-          ${s(e.id,e.data().name,e.data().imagesUrl,e.data().discount,e.data().sales)}
-        </div>
-      `}),e.innerHTML=a,c()}catch(e){console.error(`Error getting products:`,e)}}export{l as getProductsMain,u as getProductsSlider};
+  `}function a(){let e=document.querySelectorAll(`.product-card__img`);e&&(new t(`.product-card__slider`,{slidesPerView:1,speed:500,modules:[n],navigation:{nextEl:`.product-card__nav-button_next`,prevEl:`.product-card__nav-button_prev`}}),e.forEach(e=>{e.addEventListener(`mouseover`,e=>{let t=e.target.closest(`.product-card__slider`).querySelector(`.product-card__search`);t.style.visibility=`visible`,t.style.opacity=`1`,t.addEventListener(`click`,()=>{t.style.visibility=`hidden`,t.style.opacity=`0`})})}),e.forEach(e=>{e.addEventListener(`mouseout`,e=>{let t=e.target.closest(`.product-card__slider`).querySelector(`.product-card__search`);t.contains(e.relatedTarget)||(t.style.visibility=`hidden`,t.style.opacity=`0`)})}))}export{i as n,a as t};
