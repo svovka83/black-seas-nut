@@ -1,5 +1,6 @@
 export function getBreadcrumbs() {
 	const shop = document.querySelector(".shop-breadcrumbs");
+	const product = document.querySelector(".product-breadcrumbs");
 	const about = document.querySelector(".about-breadcrumbs");
 	const payment = document.querySelector(".payment-breadcrumbs");
 	const wholesales = document.querySelector(".wholesales-breadcrumbs");
@@ -13,6 +14,16 @@ export function getBreadcrumbs() {
 				{ name: "Магазин", path: "" },
 			],
 			"breadcrumbs_white"
+		);
+	}
+
+	if (product) {
+		product.innerHTML = breadcrumbs(
+			[
+				{ name: "Главная", path: "/black-seas-nut/" },
+				{ name: "Карточка товара", path: "" },
+			],
+			"breadcrumbs_secondary"
 		);
 	}
 

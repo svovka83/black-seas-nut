@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Карточка товара</title>
+		<link rel="stylesheet" href="../../../src/scss/styles.scss" />
+		<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+	</head>
+	<body data-page="product">
+		<!-- preloader -->
+		<div class="preloader">
+			<div class="preloader__spinner"></div>
+		</div>
+
+		<!-- header() -->
+		<!-- prettier-ignore -->
+		{% from "src/partials/modules/header.njk" import header %}
+    {{ header() }}
+
+		<main class="product-main" id="go-to-top">
+			<div class="product-breadcrumbs container">
+				<!-- getBreadcrumbs(links, className) -->
+			</div>
+
+			<!-- product-product -->
+			<section class="product-product container">
+				<!-- it should be a component -->
+				<!-- product() -->
+				<div class="product">
+					<div class="product-slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img class="product-slider__img" src="/images/png/one-product.png" alt="product" />
+							</div>
+							<div class="swiper-slide">
+								<img class="product-slider__img" src="/images/png/one-product.png" alt="product" />
+							</div>
+							<div class="swiper-slide">
+								<img class="product-slider__img" src="/images/png/one-product.png" alt="product" />
+							</div>
+						</div>
+
+						<button class="product-slider__nav-button product-slider__nav-button_prev">
+							<svg class="product-slider__nav-button-icon">
+								<use href="/images/sprites.svg#arrow-left-icon"></use>
+							</svg>
+						</button>
+
+						<button class="product-slider__nav-button product-slider__nav-button_next">
+							<svg class="product-slider__nav-button-icon">
+								<use href="/images/sprites.svg#arrow-right-icon"></use>
+							</svg>
+						</button>
+
+						<!-- probably it doesn't need it here "search" -->
+						<div class="product-slider__search">
+							<!-- search() -->
+						</div>
+					</div>
+
+					<div class="product-content">
+						<div class="product-content__top">
+							<span class="product-content__top-name">Грецкий орех</span>
+							<span class="product-content__top-art">Арт: 0091</span>
+						</div>
+
+						<h2 class="product-content__title">Орех соленый кондитерский очищенный</h2>
+
+						<dl class="product-content__list">
+							<dt class="product-content__list-term">Состав:</dt>
+							<dd class="product-content__list-definition">
+								Ядро грецкого ореха, вымытого очищенного от кожуры, соль экстра (раствор 7%)
+							</dd>
+						</dl>
+						<dl class="product-content__list">
+							<dt class="product-content__list-term">Масса нетто:</dt>
+							<dd class="product-content__list-definition">40г.</dd>
+						</dl>
+						<dl class="product-content__list">
+							<dt class="product-content__list-term">Энергетическая ценность:</dt>
+							<dd class="product-content__list-definition">654 Ккал.</dd>
+						</dl>
+						<dl class="product-content__list">
+							<dt class="product-content__list-term">Срок годности:</dt>
+							<dd class="product-content__list-definition">
+								12 месяцев, с даты расфасовки (указана на упаковке)
+							</dd>
+						</dl>
+
+						<div class="product-content__warning">
+							<span class="product-content__warning-exclamation">
+								<svg class="product-content__warning-exclamation-icon">
+									<use href="/images/sprites.svg#exclamation-icon"></use>
+								</svg>
+							</span>
+							<p class="product-content__warning-text">
+								Хранить в помещениях, защищенных от попадания прямых, солнечных лучей, при температуре
+								от +3 °C до +20 °C, и относительной влажности воздуха не более 75 %
+							</p>
+						</div>
+
+						<div class="product-content__bottom">
+							<p class="product-content__bottom-text">
+								Ваша цена: <span class="product-content__bottom-text-green">19 грн. </span
+								><span class="product-content__bottom-text-discount">21 грн.</span>
+							</p>
+							<div class="product-content__bottom-button">
+								<!-- button( titleBtn, classBtn ) -->
+								<!-- prettier-ignore -->
+								{% from "src/partials/ui/button.njk" import button %}
+                {{ button( "Заказать", "button_normal" ) }}
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- macro footer( classTopBg, classMiddle ) -->
+		<!-- prettier-ignore -->
+		{% from "src/partials/modules/footer.njk" import footer %}
+    {{ footer( "footer-top_bg-gray", "footer-middle_gray" ) }}
+
+		<script type="module" src="../../js/pages/product/scripts.js"></script>
+		<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+	</body>
+</html>

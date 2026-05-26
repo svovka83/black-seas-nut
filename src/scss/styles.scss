@@ -60,6 +60,7 @@
 @use "./modules/manufacturer.scss";
 @use "./modules/news-slider.scss";
 @use "./modules/galleries.scss";
+@use "./modules/product.scss";
 
 // main page
 @use "./pages/main/main-top.scss";
@@ -70,6 +71,9 @@
 @use "./pages/shop/shop-top.scss";
 @use "./pages/shop/shop-filter.scss";
 @use "./pages/shop/shop-products.scss";
+
+// product page
+@use "./pages/product/product-product.scss";
 
 // about page
 @use "./pages/about/about-top.scss";

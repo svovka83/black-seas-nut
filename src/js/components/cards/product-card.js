@@ -6,6 +6,8 @@ export function productCard(id, name, imagesUrl, discount, sales) {
 
 	return `
     <div class="product-card" data-id=${id}>
+      <a class="product-card__link" href="${base}src/pages/product/index.html?id=${id}"></a>
+
       <div class="product-card__slider">
         <div class="swiper-wrapper">
         ${imagesUrl

@@ -1,0 +1,9 @@
+@use "../../settings/variables.scss" as *;
+
+.product-product {
+	padding-top: 74px;
+	padding-bottom: 32px;
+	@media (max-width: 768px) {
+		padding-top: 32px;
+	}
+}
