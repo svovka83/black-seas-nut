@@ -47,6 +47,7 @@
 // components/manufacturer
 @use "./components/manufacturer/manufacturer-simple.scss";
 @use "./components/manufacturer/manufacturer-button.scss";
+@use "./components/manufacturer/manufacturer-scroll.scss";
 @use "./components/manufacturer/manufacturer-slider.scss";
 
 // components/common
@@ -64,6 +65,11 @@
 @use "./pages/main/main-top.scss";
 @use "./pages/main/main-products.scss";
 @use "./pages/main/main-useful.scss";
+
+// shop page
+@use "./pages/shop/shop-top.scss";
+@use "./pages/shop/shop-filter.scss";
+@use "./pages/shop/shop-products.scss";
 
 // about page
 @use "./pages/about/about-top.scss";

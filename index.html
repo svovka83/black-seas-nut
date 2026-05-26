@@ -18,7 +18,7 @@
 		{% from "src/partials/modules/header.njk" import header %}
     {{ header() }}
 
-		<main class="main-content" id="go-to-top">
+		<main class="main-main" id="go-to-top">
 			<!-- main-top -->
 			<section class="main-top">
 				<!-- bannerVideo( posterPath, videoPath ) -->
@@ -128,7 +128,7 @@
 		{% from "src/partials/modules/footer.njk" import footer %}
     {{ footer( "footer-top_bg-white", "footer-middle_white" ) }}
 
-		<!-- modalProductSlider() modal-product-slider -->
+		<!-- modalProductSlider() modal-product-slider - it doest't works correctly -->
 		<!-- prettier-ignore -->
 		{% from "src/partials/components/modals/modal-product-slider.njk" import modalProductSlider %}
     {{ modalProductSlider() }}

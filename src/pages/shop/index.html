@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Каталог продукции</title>
+		<link rel="stylesheet" href="../../../src/scss/styles.scss" />
+		<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+	</head>
+	<body data-page="shop">
+		<!-- preloader -->
+		<div class="preloader">
+			<div class="preloader__spinner"></div>
+		</div>
+
+		<!-- header() -->
+		<!-- prettier-ignore -->
+		{% from "src/partials/modules/header.njk" import header %}
+    {{ header() }}
+
+		<main class="shop-main" id="go-to-top">
+			<!-- shop-top -->
+			<section class="shop-top">
+				<!-- breadcrumbs -->
+				<div class="shop-breadcrumbs container">
+					<!-- getBreadcrumbs() -->
+				</div>
+
+				<!-- bannerTitle( titleBanner, imgPath ) -->
+				<!-- prettier-ignore -->
+				{% from "src/partials/components/banner/banner-title.njk" import bannerTitle %}
+        {{ bannerTitle( "Каталог продукции", "/images/jpg/top/shop.jpg" ) }}
+			</section>
+
+			<!-- shop-filter -->
+			<div class="shop-filter container">
+				<div class="shop-filter__main">
+					Фильтр
+					<svg class="shop-filter__main-icon">
+						<use href="/images/sprites.svg#filter-icon"></use>
+					</svg>
+				</div>
+				<div class="shop-filter__taste">
+					<!-- getSelect() -->
+				</div>
+				<div class="shop-filter__mass">
+					<!-- getSelect() -->
+				</div>
+				<div class="shop-filter__price">
+					<!-- it should be a component -->
+					<button class="arrow-price">
+						<span class="arrow-price__text">Стоимость</span>
+						<svg class="arrow-price__icon">
+							<use href="/images/sprites.svg#arrow-down-icon"></use>
+						</svg>
+						<svg class="arrow-price__icon">
+							<use href="/images/sprites.svg#arrow-up-icon"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="shop-filter__apply">
+					<!-- button( titleBtn, classBtn ) -->
+					<!-- prettier-ignore -->
+					{% from "src/partials/ui/button.njk" import button %}
+          {{ button( "Применить", "button_normal" ) }}
+				</div>
+				<div class="shop-filter__reset">
+					<!-- it should be a component -->
+					<button class="reset">
+						<svg class="reset__icon">
+							<use href="/images/sprites.svg#reset-icon"></use>
+						</svg>
+						<span class="reset__text">Сбросить</span>
+					</button>
+				</div>
+			</div>
+
+			<!-- shop-products -->
+			<div class="shop-products container">
+				<div class="shop-products__products">
+					<!-- getProducts() -->
+				</div>
+				<div class="shop-products__link">
+					<!-- link( title, classLink, pathLink ) -->
+					<!-- prettier-ignore -->
+					{% from "src/partials/ui/link.njk" import link %}
+          {{ link( "Загрузить еще", "link_fs15", "#!") }}
+				</div>
+			</div>
+
+			<!-- manufacturer( classManufacturer ) -->
+			<!-- prettier-ignore -->
+			{% from "src/partials/modules/manufacturer.njk" import manufacturer %}
+			{% from "src/partials/components/manufacturer/manufacturer-scroll.njk" import manufacturerScroll %}
+			{% from "src/partials/components/manufacturer/manufacturer-slider.njk" import manufacturerSlider %}
+			{{ manufacturer( "manufacturer_gray-bg", manufacturerScroll, manufacturerSlider ) }}
+		</main>
+
+		<!-- macro footer( classTopBg, classMiddle ) -->
+		<!-- prettier-ignore -->
+		{% from "src/partials/modules/footer.njk" import footer %}
+    {{ footer( "footer-top_bg-white", "footer-middle_white" ) }}
+
+		<!-- modalProductSlider() modal-product-slider - it doest't works correctly -->
+		<!-- prettier-ignore -->
+		{% from "src/partials/components/modals/modal-product-slider.njk" import modalProductSlider %}
+    {{ modalProductSlider() }}
+
+		<script type="module" src="../../js/pages/shop/scripts.js"></script>
+		<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+	</body>
+</html>

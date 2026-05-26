@@ -1,0 +1,73 @@
+@use "../../settings/variables.scss" as *;
+
+.shop-filter {
+	padding-top: 70px;
+	padding-bottom: 55px;
+	display: grid;
+	grid-template-columns: 164px 311px 222px 300px 196px 96px;
+	align-items: center;
+	&__main {
+		font-weight: 700;
+		font-size: 17px;
+		letter-spacing: 1%;
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		&-icon {
+			width: 22px;
+			height: 22px;
+			fill: $color_primary;
+			margin-left: 9px;
+		}
+	}
+	&__taste {
+		max-width: 283px;
+	}
+	&__mass {
+		max-width: 171px;
+	}
+	&__price {
+	}
+	&__apply {
+		max-width: 150px;
+	}
+	&__reset {
+	}
+}
+
+.arrow-price {
+	display: inline-flex;
+	align-items: center;
+	column-gap: 4px;
+	cursor: pointer;
+	&__text {
+		font-weight: 700;
+		font-size: 17px;
+		letter-spacing: 1%;
+		margin-right: 10px;
+	}
+	&__icon {
+		width: 13px;
+		height: 15px;
+		fill: $text_secondary;
+	}
+}
+
+.reset {
+	display: inline-flex;
+	align-items: center;
+	column-gap: 2px;
+	cursor: pointer;
+	&__icon {
+		width: 12px;
+		height: 12px;
+		fill: $text_secondary;
+		margin-right: 8px;
+	}
+	&__text {
+		font-weight: 600;
+		font-size: 14px;
+		letter-spacing: 1%;
+		color: $text_secondary;
+	}
+}

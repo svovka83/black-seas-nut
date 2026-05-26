@@ -1,9 +1,20 @@
 export function getBreadcrumbs() {
+	const shop = document.querySelector(".shop-breadcrumbs");
 	const about = document.querySelector(".about-breadcrumbs");
 	const payment = document.querySelector(".payment-breadcrumbs");
 	const wholesales = document.querySelector(".wholesales-breadcrumbs");
 	const news = document.querySelector(".news-breadcrumbs");
 	const gallery = document.querySelector(".gallery-breadcrumbs");
+
+	if (shop) {
+		shop.innerHTML = breadcrumbs(
+			[
+				{ name: "Главная", path: "/black-seas-nut/" },
+				{ name: "Магазин", path: "" },
+			],
+			"breadcrumbs_white"
+		);
+	}
 
 	if (about) {
 		about.innerHTML = breadcrumbs(

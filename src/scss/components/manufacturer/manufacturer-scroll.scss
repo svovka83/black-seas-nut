@@ -1,0 +1,42 @@
+@use "../../settings/variables.scss" as *;
+
+.manufacturer-scroll {
+	max-width: 569px;
+	&__title {
+		@media (max-width: 768px) {
+			margin-bottom: 32px;
+		}
+	}
+	&__subtitle {
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 50px;
+		letter-spacing: 1%;
+		margin-bottom: 8px;
+	}
+	&__block {
+		max-width: 450px;
+		max-height: 280px;
+		overflow-y: auto;
+		&::-webkit-scrollbar {
+			width: 6px;
+			height: 4px;
+		}
+		&::-webkit-scrollbar-track {
+			background: #b6b6b6;
+			border-radius: 999px;
+		}
+		&::-webkit-scrollbar-thumb {
+			background: $color_primary;
+			border-radius: 999px;
+		}
+		&::-webkit-scrollbar-thumb:hover {
+			background: $color_secondary;
+		}
+	}
+	&__text {
+		line-height: 156%;
+		letter-spacing: -1%;
+		margin-bottom: 28px;
+	}
+}
