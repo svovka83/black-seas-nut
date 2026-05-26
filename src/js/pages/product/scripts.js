@@ -10,7 +10,7 @@ async function initProductApp() {
 			const { lightMenuHeader, lightMenuFooter } = await import("../../utils/light-current-page.js");
 			const { getBreadcrumbs } = await import("../../components/common/breadcrumbs.js");
 			const { initOneProductSlider } = await import("../../swipers/one-product-slider.js");
-			// const { controlTabs } = await import("../../controllers/control-tabs.js");
+			const { controlTabs } = await import("../../controllers/control-tabs.js");
 
 			await initGeneral();
 
@@ -24,7 +24,7 @@ async function initProductApp() {
 			// swiper
 			initOneProductSlider();
 			// controllers
-			// controlTabs();
+			controlTabs();
 		}
 
 		preloader.classList.add("preloader_hide");

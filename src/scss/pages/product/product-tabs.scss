@@ -1,0 +1,89 @@
+@use "../../settings/variables.scss" as *;
+
+.product-tabs {
+	padding-top: 58px;
+	padding-bottom: 92px;
+	@media (max-width: 768px) {
+		padding-bottom: 52px;
+	}
+	&__buttons-wrapper {
+		@media (max-width: 768px) {
+			overflow-x: auto;
+			scrollbar-width: none;
+			-webkit-overflow-scrolling: touch;
+		}
+	}
+	&__buttons {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		column-gap: 78px;
+		@media (max-width: 768px) {
+			width: max-content;
+			min-width: 768px;
+			justify-content: start;
+			column-gap: 32px;
+		}
+	}
+	&__hr {
+		margin-top: 0px;
+		margin-bottom: 44px;
+	}
+	&__content {
+	}
+}
+
+.product-panel {
+	padding-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	column-gap: 18px;
+	overflow: hidden;
+	@media (max-width: 1024px) {
+		flex-direction: column;
+		row-gap: 32px;
+		align-items: center;
+	}
+	&__content {
+		font-family: "Montserrat", sans-serif;
+		width: 822px;
+		padding-top: 6px;
+		@media (max-width: 1024px) {
+			width: unset;
+			max-width: 822px;
+		}
+	}
+	&__text {
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 25px;
+		letter-spacing: 0%;
+		margin-bottom: 12px;
+	}
+	&__title {
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 16px;
+		letter-spacing: 0%;
+		margin-top: 12px;
+		margin-bottom: 12px;
+	}
+	&__list {
+		list-style: revert;
+		list-style-type: disc;
+		padding-left: 18px;
+		&-item {
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 28px;
+			letter-spacing: 0%;
+			&::marker {
+				color: $color_secondary;
+			}
+		}
+	}
+	// display: none;
+	&.active {
+		display: block;
+	}
+}

@@ -1,8 +1,8 @@
 export function controlTabs() {
-	const tabBtns = document.querySelectorAll(".tab");
+	const tabBtns = document.querySelectorAll(".tab, .tab-simple");
 
 	document.addEventListener("click", (e) => {
-		const tabBtn = e.target.closest(".tab");
+		const tabBtn = e.target.closest(".tab, .tab-simple");
 
 		tabBtns.forEach((btn) => {
 			if (btn.classList.contains("active")) {

@@ -1,0 +1,24 @@
+@use "../settings/variables.scss" as *;
+
+.tab-simple {
+	display: inline-flex;
+	align-items: center;
+	column-gap: 16px;
+	padding-inline: 28px;
+	padding-bottom: 15px;
+	border-bottom: 3px solid transparent;
+	cursor: pointer;
+	&__name {
+		text-align: start;
+		font-weight: 600;
+		font-size: 18px;
+		letter-spacing: 0%;
+		color: #5b5b5b;
+	}
+	&.active {
+		border-bottom: 3px solid $color_primary;
+		.tab-simple__name {
+			color: $text_primary;
+		}
+	}
+}

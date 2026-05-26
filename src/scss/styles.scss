@@ -15,6 +15,7 @@
 @use "./ui/link.scss";
 @use "./ui/read.scss";
 @use "./ui/tab.scss";
+@use "./ui/tab-simple.scss";
 
 // components/preloader
 @use "./components/preloader/preloader.scss";
@@ -74,6 +75,7 @@
 
 // product page
 @use "./pages/product/product-product.scss";
+@use "./pages/product/product-tabs.scss";
 
 // about page
 @use "./pages/about/about-top.scss";
