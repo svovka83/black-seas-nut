@@ -15,14 +15,45 @@
 	&__title {
 		display: inline;
 	}
+	&_green {
+		color: $white;
+		background-color: $color_primary;
+		border: 2px solid $color_primary;
+		&:hover {
+			color: $color_primary;
+			background-color: transparent;
+		}
+	}
+	&_transparent {
+		color: $color_primary;
+		background-color: transparent;
+		border: 2px solid $color_primary;
+		&:hover {
+			color: $white;
+			background-color: $color_primary;
+		}
+	}
+	&_empty {
+		font-weight: 700;
+		color: $color_primary;
+		background-color: transparent;
+		border: 2px solid transparent;
+		&:hover {
+			.link__title {
+				text-decoration: underline;
+			}
+		}
+	}
+	&_fs13 {
+		font-size: 13px;
+	}
 	&_fs14 {
 		font-size: 14px;
 	}
 	&_fs15 {
 		font-size: 15px;
 	}
-	&:hover {
-		color: $white;
-		background-color: $color_primary;
+	&_fs16 {
+		font-size: 16px;
 	}
 }

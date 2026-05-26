@@ -22,10 +22,12 @@ function sign(isAuth) {
 	const signIn = `
 		<ul class="sign">
 			<li class="sign__item">
-				<svg class="sign__icon">
-					<use href="${base}images/sprites.svg#signin-icon"></use>
-				</svg>
-				Вход
+				<a href="${base}src/pages/sign/sign-in/index.html">
+					<svg class="sign__icon">
+						<use href="${base}images/sprites.svg#signin-icon"></use>
+					</svg>
+					Вход
+				</a>
 			</li>
 			<li class="sign__item">Регистрация</li>
 		</ul>

@@ -3,11 +3,11 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>example</title>
-		<!-- <link rel="stylesheet" href="../../../src/scss/styles.scss" />
-		<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" /> -->
+		<title>Вход</title>
+		<link rel="stylesheet" href="../../../../src/scss/styles.scss" />
+		<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 	</head>
-	<body data-page="page">
+	<body data-page="sign-in">
 		<!-- preloader -->
 		<div class="preloader">
 			<div class="preloader__spinner"></div>
@@ -18,14 +18,14 @@
 		{% from "src/partials/modules/header.njk" import header %}
     {{ header() }}
 
-		<main class="page-main" id="go-to-top"></main>
+		<main class="sign-in-main" id="go-to-top"></main>
 
 		<!-- macro footer( classTopBg, classMiddle ) -->
 		<!-- prettier-ignore -->
 		{% from "src/partials/modules/footer.njk" import footer %}
-    {{ footer( "footer-top_bg-white", "footer-middle_white" ) }}
+    {{ footer( "footer-top_bg-gray", "footer-middle_gray" ) }}
 
-		<!-- <script type="module" src="../../js/pages/page/scripts.js"></script>
-		<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script> -->
+		<script type="module" src="../../../js/pages/sign/sign-in/scripts.js"></script>
+		<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 	</body>
 </html>

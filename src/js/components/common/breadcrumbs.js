@@ -7,6 +7,8 @@ export function getBreadcrumbs() {
 	const news = document.querySelector(".news-breadcrumbs");
 	const gallery = document.querySelector(".gallery-breadcrumbs");
 
+	const signIn = document.querySelector(".sign-in-breadcrumbs");
+
 	if (shop) {
 		shop.innerHTML = breadcrumbs(
 			[
@@ -74,6 +76,17 @@ export function getBreadcrumbs() {
 				{ name: "Галерея", path: "" },
 			],
 			"breadcrumbs_white"
+		);
+	}
+
+	// form
+	if (signIn) {
+		signIn.innerHTML = breadcrumbs(
+			[
+				{ name: "Главная", path: "/black-seas-nut/" },
+				{ name: "Вход", path: "" },
+			],
+			"breadcrumbs_secondary"
 		);
 	}
 }

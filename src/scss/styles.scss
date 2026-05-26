@@ -104,5 +104,8 @@
 @use "./pages/gallery/gallery-top.scss";
 @use "./pages/gallery/gallery-content.scss";
 
+// form pages
+@use "./pages/sign/sign-in/sign-in-content.scss";
+
 // modals
 @use "./components/modals/modal-product-slider.scss";

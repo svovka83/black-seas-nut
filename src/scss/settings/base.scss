@@ -13,3 +13,9 @@ body {
 	padding-inline: $container-padding;
 	margin-inline: auto;
 }
+
+.form-container {
+	max-width: calc($form-container-width + 2 * $container-padding);
+	padding-inline: $container-padding;
+	margin-inline: auto;
+}

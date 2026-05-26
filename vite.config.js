@@ -27,6 +27,8 @@ export default defineConfig({
 				news: resolve(__dirname, "src/pages/news/index.html"),
 				oneNews: resolve(__dirname, "src/pages/one-news/index.html"),
 				gallery: resolve(__dirname, "src/pages/gallery/index.html"),
+
+				signIn: resolve(__dirname, "src/pages/sign/sign-in/index.html"),
 			},
 		},
 	},
