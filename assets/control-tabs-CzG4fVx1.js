@@ -1,1 +1,0 @@
-function e(){let e=document.querySelectorAll(`.tab`);document.addEventListener(`click`,t=>{let n=t.target.closest(`.tab`);e.forEach(e=>{e.classList.contains(`active`)&&e.classList.remove(`active`)}),n.classList.contains(`active`)||n.classList.add(`active`)})}export{e as controlTabs};
