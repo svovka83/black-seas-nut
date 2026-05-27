@@ -1,0 +1,66 @@
+{# some class - 1: "" #}
+
+{% macro personalAccount( personalContent ) %}
+	<!-- personal-account-top -->
+	<section class="personal-account-top container">
+		<div class="personal-account-top__title">
+			<!-- title( heading, classTitle, title ) -->
+			{% from "src/partials/ui/title.njk" import title %}
+			{{ title( "h3", "title_h3", "Учетная запись") }}
+		</div>
+
+		<div class="personal-account-top__manager-info">
+			<p class="personal-account-top__manager-info-text">Ваш личный менеджер Олег</p>
+			<a class="personal-account-top__manager-info-phone" href="tel:+380677771412">
+				<svg class="personal-account-top__manager-info-phone-icon">
+					<use href="/images/sprites.svg#phone-icon"></use>
+				</svg>
+				+38 067 777 14 12
+			</a>
+		</div>
+
+		<p class="personal-account-top__discount">Ваша персональная скидка - 5%</p>
+	</section>
+
+	<!-- personal-account-bottom -->
+	<section class="personal-account-bottom container">
+		<div class="personal-account-bottom__navigation">
+			<h5 class="personal-account-bottom__title">Мои заказы</h5>
+
+			<ul class="personal-account-bottom__list">
+				<li class="personal-account-bottom__item">
+					<a class="personal-account-bottom__link" href="#!">История заказов</a>
+				</li>
+				<li class="personal-account-bottom__item">
+					<a class="personal-account-bottom__link" href="#!">История транзакций</a>
+				</li>
+			</ul>
+
+			<h5 class="personal-account-bottom__title">Моя учетная запись</h5>
+
+			<ul class="personal-account-bottom__list">
+				<li class="personal-account-bottom__item">
+					<a class="personal-account-bottom__link" href="/black-seas-nut/src/pages/account/contact-info/index.html">
+						Контактная информация
+					</a>
+				</li>
+				<li class="personal-account-bottom__item">
+					<a class="personal-account-bottom__link" href="/black-seas-nut/src/pages/account/password-change/index.html">
+						Пароль
+					</a>
+				</li>
+				<li class="personal-account-bottom__item">
+					<a class="personal-account-bottom__link" href="#!">Адрес</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="personal-account-bottom__content">
+			
+			{% if personalContent %}
+				{{ personalContent() }}
+    	{% endif %}
+		
+		</div>
+	</section>
+{% endmacro %}

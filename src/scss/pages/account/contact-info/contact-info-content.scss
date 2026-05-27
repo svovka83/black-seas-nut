@@ -1,0 +1,49 @@
+@use "../../../settings/variables.scss" as *;
+
+.contact-info-content {
+	padding-top: 13px;
+	display: flex;
+	align-items: flex-start;
+	column-gap: 29px;
+}
+
+.contact-info-content-form {
+	&__input {
+		width: 474px;
+		margin-bottom: 14px;
+		@media (max-width: 900px) {
+			width: unset;
+			width: 100%;
+			max-width: 474px;
+		}
+	}
+	&__button {
+		max-width: 229px;
+	}
+}
+
+.contact-info-content-avatar {
+	position: relative;
+	width: 131px;
+	height: 170px;
+	&__text {
+		position: relative;
+		text-align: center;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 600;
+		font-size: 13px;
+		line-height: 17px;
+		letter-spacing: 0%;
+		padding-top: 77px;
+		color: $white;
+		z-index: 200;
+	}
+	&__photo {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		z-index: 100;
+	}
+}

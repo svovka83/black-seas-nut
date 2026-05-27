@@ -1,0 +1,34 @@
+{% macro contactInfoContent() %}
+  <div class="contact-info-content">
+    <div class="contact-info-content-form">
+      <div class="contact-info-content-form__input">
+        <!-- input( inputId, inputType, inputPlaceholder ) -->
+        {% from "src/partials/ui/input.njk" import input %}
+        {{ input( "contact-info-name", "text", "ФИО*" ) }}
+      </div>
+
+      <div class="contact-info-content-form__input">
+        <!-- input( inputId, inputType, inputPlaceholder ) -->
+        {% from "src/partials/ui/input.njk" import input %}
+        {{ input( "contact-info-email", "email", "Email*" ) }}
+      </div>
+
+      <div class="contact-info-content-form__input">
+        <!-- input( inputId, inputType, inputPlaceholder ) -->
+        {% from "src/partials/ui/input.njk" import input %}
+        {{ input( "contact-info-phone", "tel", "Телефон*" ) }}
+      </div>
+
+      <div class="contact-info-content-form__button">
+        <!-- button( titleBtn, classBtn ) -->
+        {% from "src/partials/ui/button.njk" import button %}
+        {{ button( "Сохранить", "button_normal" ) }}
+      </div>
+    </div>
+
+    <div class="contact-info-content-avatar">
+      <p class="contact-info-content-avatar__text">Изменить фото</p>
+      <img class="contact-info-content-avatar__photo" src="/images/jpg/forms/avatar.jpg" alt="avatar" />
+    </div>
+  </div>
+{% endmacro %}

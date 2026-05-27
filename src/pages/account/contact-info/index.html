@@ -3,11 +3,11 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Личный кабинет</title>
+		<title>Контактная информация</title>
 		<link rel="stylesheet" href="../../../../src/scss/styles.scss" />
 		<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 	</head>
-	<body data-page="personal-account">
+	<body data-page="contact-info">
 		<!-- preloader -->
 		<div class="preloader">
 			<div class="preloader__spinner"></div>
@@ -18,15 +18,16 @@
 		{% from "src/partials/modules/header.njk" import header %}
     {{ header() }}
 
-		<main class="personal-account-main" id="go-to-top">
-			<div class="personal-account-breadcrumbs container">
+		<main class="contact-info-main" id="go-to-top">
+			<div class="contact-info-breadcrumbs container">
 				<!-- getBreadcrumbs(links, className) -->
 			</div>
 
-			<!-- personalAccount( personalContent ) -->
+			<!-- personalAccount( personalContent ) - needs to refactor on adaptive "contactInfoContent" -->
 			<!-- prettier-ignore -->
 			{% from "src/partials/modules/personal-account.njk" import personalAccount %}
-      {{ personalAccount() }}
+			{% from "src/partials/components/personal-account/contact-info-content.njk" import contactInfoContent %}
+      {{ personalAccount( contactInfoContent ) }}
 		</main>
 
 		<!-- macro footer( classTopBg, classMiddle ) -->
@@ -34,7 +35,7 @@
 		{% from "src/partials/modules/footer.njk" import footer %}
     {{ footer( "footer-top_bg-gray", "footer-middle_gray" ) }}
 
-		<script type="module" src="../../../js/pages/account/personal-account/scripts.js"></script>
+		<script type="module" src="../../../js/pages/account/contact-info/scripts.js"></script>
 		<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 	</body>
 </html>

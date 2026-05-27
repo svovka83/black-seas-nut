@@ -62,6 +62,7 @@
 @use "./modules/news-slider.scss";
 @use "./modules/galleries.scss";
 @use "./modules/product.scss";
+@use "./modules/personal-account.scss";
 
 // main page
 @use "./pages/main/main-top.scss";
@@ -107,7 +108,8 @@
 // form pages
 @use "./pages/sign/sign-in/sign-in-content.scss";
 @use "./pages/sign/password-recovery/password-recovery-content.scss";
-@use "./pages/account/personal-account/personal-account-top.scss";
+@use "./pages/account/password-change/password-change-content.scss";
+@use "./pages/account/contact-info/contact-info-content.scss";
 
 // modals
 @use "./components/modals/modal-product-slider.scss";

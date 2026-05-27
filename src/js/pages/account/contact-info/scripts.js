@@ -1,11 +1,11 @@
-async function initPasswordRecoveryApp() {
+async function initContactInfoApp() {
 	const preloader = document.querySelector(".preloader");
 	const page = document.body.dataset.page;
 
 	try {
 		document.body.style.overflow = "hidden";
 
-		if (page === "password-recovery") {
+		if (page === "contact-info") {
 			const { initGeneral } = await import("../../../init-general.js");
 			const { getBreadcrumbs } = await import("../../../components/common/breadcrumbs.js");
 
@@ -23,4 +23,4 @@ async function initPasswordRecoveryApp() {
 	}
 }
 
-initPasswordRecoveryApp();
+initContactInfoApp();

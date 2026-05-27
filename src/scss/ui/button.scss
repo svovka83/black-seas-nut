@@ -7,6 +7,8 @@
 	font-size: 13px;
 	letter-spacing: 2%;
 	border: 1px solid $color_primary;
+	cursor: pointer;
+	transition: color 0.3s ease, background-color 0.3s ease;
 	&__title {
 		display: inline-block;
 		margin: auto;
@@ -14,6 +16,10 @@
 	&_normal {
 		color: $white;
 		background-color: $color_primary;
+		&:hover {
+			color: $color_primary;
+			background-color: $white;
+		}
 	}
 	&_active {
 		color: $color_primary;
