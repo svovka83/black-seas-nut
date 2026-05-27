@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="../../../../src/scss/styles.scss" />
 		<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 	</head>
-	<body data-page="password-recovery" style="display: grid; grid-template-rows: auto 1fr auto">
+	<body data-page="password-recovery">
 		<!-- preloader -->
 		<div class="preloader">
 			<div class="preloader__spinner"></div>
@@ -23,46 +23,68 @@
 				<!-- getBreadcrumbs(links, className) -->
 			</div>
 
-			<!-- sign-in-content -->
+			<!-- password-recovery-content -->
 			<form class="password-recovery-content form-container" action="#!">
 				<div class="password-recovery-content__title">
 					<!-- title( heading, classTitle, title ) -->
 					<!-- prettier-ignore -->
 					{% from "src/partials/ui/title.njk" import title %}
-					{{ title( "h3", "title_h3", "Войти в личный кабинет") }}
+					{{ title( "h3", "title_h3", "Восстановление пароля") }}
 				</div>
+
+				<p class="password-recovery-content__info-title">
+					<svg class="password-recovery-content__info-title-icon">
+						<use href="/images/sprites.svg#locked-icon"></use>
+					</svg>
+					Забыли пароль?
+				</p>
+
+				<p class="password-recovery-content__info-text">
+					Введите Email Вашего аккаунта, Вам будет выслана ссылка для восстановления пароля.
+				</p>
 
 				<div class="password-recovery-content__email">
 					<!-- input( inputId, inputType, inputPlaceholder ) -->
 					<!-- prettier-ignore -->
 					{% from "src/partials/ui/input.njk" import input %}
-					{{ input( "sign-in-email", "email", "Email" ) }}
+					{{ input( "password-recovery-email", "email", "Email*" ) }}
 				</div>
+
+				<div class="password-recovery-content__button">
+					<!-- button( titleBtn, classBtn ) -->
+					<!-- prettier-ignore -->
+					{% from "src/partials/ui/button.njk" import button %}
+					{{ button( "Отправить ссылку", "button_normal" ) }}
+				</div>
+
+				<p class="password-recovery-content__info-title">
+					<svg class="password-recovery-content__info-title-icon">
+						<use href="/images/sprites.svg#locked-icon"></use>
+					</svg>
+					Восстановление пароля
+				</p>
+
+				<p class="password-recovery-content__info-text">Введите новый пароль для Email example@gmail.com</p>
 
 				<div class="password-recovery-content__password">
 					<!-- input( inputId, inputType, inputPlaceholder ) -->
 					<!-- prettier-ignore -->
 					{% from "src/partials/ui/input.njk" import input %}
-					{{ input( "sign-in-password", "password", "Пароль" ) }}
+					{{ input( "password-recovery-new-password", "password", "Новый пароль*" ) }}
 				</div>
 
-				<div class="password-recovery-content__forgot-password">
-					<!-- link( title, classLink, pathLink ) -->
+				<div class="password-recovery-content__password-confirm">
+					<!-- input( inputId, inputType, inputPlaceholder ) -->
 					<!-- prettier-ignore -->
-					{% from "src/partials/ui/link.njk" import link %}
-					{{ link( "Забыли пароль?", "link_empty link_fs13", "#!") }}
+					{% from "src/partials/ui/input.njk" import input %}
+					{{ input( "password-recovery-confirm-password", "password", "Подтвердите новый пароль*" ) }}
 				</div>
-				<div class="password-recovery-content__enter">
-					<!-- link( title, classLink, pathLink ) -->
+
+				<div class="password-recovery-content__button">
+					<!-- button( titleBtn, classBtn ) -->
 					<!-- prettier-ignore -->
-					{% from "src/partials/ui/link.njk" import link %}
-					{{ link( "Войти", "link_green link_fs16", "#!") }}
-				</div>
-				<div class="password-recovery-content__registration">
-					<!-- link( title, classLink, pathLink ) -->
-					<!-- prettier-ignore -->
-					{% from "src/partials/ui/link.njk" import link %}
-					{{ link( "Регистрация", "link_empty link_fs13", "#!") }}
+					{% from "src/partials/ui/button.njk" import button %}
+					{{ button( "Сменить пароль", "button_normal" ) }}
 				</div>
 			</form>
 		</main>
