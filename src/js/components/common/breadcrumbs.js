@@ -8,6 +8,7 @@ export function getBreadcrumbs() {
 	const gallery = document.querySelector(".gallery-breadcrumbs");
 
 	const signIn = document.querySelector(".sign-in-breadcrumbs");
+	const passwordRecovery = document.querySelector(".password-recovery-breadcrumbs");
 
 	if (shop) {
 		shop.innerHTML = breadcrumbs(
@@ -85,6 +86,16 @@ export function getBreadcrumbs() {
 			[
 				{ name: "Главная", path: "/black-seas-nut/" },
 				{ name: "Вход", path: "" },
+			],
+			"breadcrumbs_secondary"
+		);
+	}
+	if (passwordRecovery) {
+		passwordRecovery.innerHTML = breadcrumbs(
+			[
+				{ name: "Главная", path: "/black-seas-nut/" },
+				{ name: "Вход", path: "/black-seas-nut/src/pages/sign/sign-in/index.html" },
+				{ name: "Восстановление пароля", path: "" },
 			],
 			"breadcrumbs_secondary"
 		);

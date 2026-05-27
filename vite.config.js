@@ -29,6 +29,7 @@ export default defineConfig({
 				gallery: resolve(__dirname, "src/pages/gallery/index.html"),
 
 				signIn: resolve(__dirname, "src/pages/sign/sign-in/index.html"),
+				passwordRecovery: resolve(__dirname, "src/pages/sign/password-recovery/index.html"),
 			},
 		},
 	},
