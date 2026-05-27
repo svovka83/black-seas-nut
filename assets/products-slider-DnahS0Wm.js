@@ -1,0 +1,1 @@
+import{t as e}from"./swiper-B02pSntP.js";function t(){new e(`.main-products__slider`,{slidesPerView:1,spaceBetween:4,speed:500})}export{t as productsSlider};

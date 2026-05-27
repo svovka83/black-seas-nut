@@ -1,5 +1,0 @@
-import{a as e,r as t,t as n}from"./firebase-C6Spziia.js";import{n as r,t as i}from"./slider-in-product-BnEMvITk.js";async function a(){let a=document.querySelector(`.main-products__cards`);if(a)try{let o=await t(e(n,`products`)),s=``;o.forEach(e=>{s+=r(e.id,e.data().name,e.data().imagesUrl,e.data().discount,e.data().sales)}),a.innerHTML=s,i()}catch(e){console.error(`Error getting products:`,e)}}async function o(){let a=document.querySelector(`.main-products__slider-wrapper`);if(a)try{let o=await t(e(n,`products`)),s=``;o.forEach(e=>{s+=`
-        <div class="swiper-slide">
-          ${r(e.id,e.data().name,e.data().imagesUrl,e.data().discount,e.data().sales)}
-        </div>
-      `}),a.innerHTML=s,i()}catch(e){console.error(`Error getting products:`,e)}}export{a as getProductsMain,o as getProductsSlider};

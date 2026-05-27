@@ -1,1 +1,0 @@
-import{t as e}from"./swiper-B0zbuhPR.js";import{t}from"./navigation-CdonCi6B.js";function n(){new e(`.manufacturer-slider`,{slidesPerView:1,speed:500,modules:[t],navigation:{nextEl:`.manufacturer-slider__nav-button_next`,prevEl:`.manufacturer-slider__nav-button_prev`},breakpoints:{321:{allowTouchMove:!0},769:{allowTouchMove:!1}}})}export{n as manufacturerSlider};
