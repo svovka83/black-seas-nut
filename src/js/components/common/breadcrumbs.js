@@ -9,6 +9,7 @@ export function getBreadcrumbs() {
 
 	const signIn = document.querySelector(".sign-in-breadcrumbs");
 	const passwordRecovery = document.querySelector(".password-recovery-breadcrumbs");
+	const personalAccount = document.querySelector(".personal-account-breadcrumbs");
 
 	if (shop) {
 		shop.innerHTML = breadcrumbs(
@@ -96,6 +97,16 @@ export function getBreadcrumbs() {
 				{ name: "Главная", path: "/black-seas-nut/" },
 				{ name: "Вход", path: "/black-seas-nut/src/pages/sign/sign-in/index.html" },
 				{ name: "Восстановление пароля", path: "" },
+			],
+			"breadcrumbs_secondary"
+		);
+	}
+
+	if (personalAccount) {
+		personalAccount.innerHTML = breadcrumbs(
+			[
+				{ name: "Главная", path: "/black-seas-nut/" },
+				{ name: "Личный кабинет", path: "" },
 			],
 			"breadcrumbs_secondary"
 		);

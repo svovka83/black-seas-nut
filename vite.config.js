@@ -30,6 +30,7 @@ export default defineConfig({
 
 				signIn: resolve(__dirname, "src/pages/sign/sign-in/index.html"),
 				passwordRecovery: resolve(__dirname, "src/pages/sign/password-recovery/index.html"),
+				personalAccount: resolve(__dirname, "src/pages/account/personal-account/index.html"),
 			},
 		},
 	},

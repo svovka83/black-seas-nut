@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Личный кабинет</title>
+		<link rel="stylesheet" href="../../../../src/scss/styles.scss" />
+		<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+	</head>
+	<body data-page="personal-account">
+		<!-- preloader -->
+		<div class="preloader">
+			<div class="preloader__spinner"></div>
+		</div>
+
+		<!-- header() -->
+		<!-- prettier-ignore -->
+		{% from "src/partials/modules/header.njk" import header %}
+    {{ header() }}
+
+		<main class="personal-account-main" id="go-to-top">
+			<div class="personal-account-breadcrumbs container">
+				<!-- getBreadcrumbs(links, className) -->
+			</div>
+
+			<!-- personal-account-top -->
+			<section class="personal-account-top container">
+				<div class="personal-account-top__title">
+					<!-- title( heading, classTitle, title ) -->
+					<!-- prettier-ignore -->
+					{% from "src/partials/ui/title.njk" import title %}
+          {{ title( "h3", "title_h3", "Учетная запись") }}
+				</div>
+				<div class="personal-account-top__manager-info">
+					<p class="personal-account-top__manager-info-text">Ваш личный менеджер Олег</p>
+					<a class="personal-account-top__manager-info-phone" href="tel:+380677771412">
+						<svg class="personal-account-top__manager-info-phone-icon">
+							<use href="/images/sprites.svg#phone-icon"></use>
+						</svg>
+						+38 067 777 14 12
+					</a>
+				</div>
+				<p class="personal-account-top__discount">Ваша персональная скидка - 5%</p>
+			</section>
+		</main>
+
+		<!-- macro footer( classTopBg, classMiddle ) -->
+		<!-- prettier-ignore -->
+		{% from "src/partials/modules/footer.njk" import footer %}
+    {{ footer( "footer-top_bg-gray", "footer-middle_gray" ) }}
+
+		<script type="module" src="../../../js/pages/account/personal-account/scripts.js"></script>
+		<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+	</body>
+</html>
