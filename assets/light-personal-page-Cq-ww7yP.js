@@ -1,0 +1,1 @@
+function e(){let e=document.querySelectorAll(`.personal-account-bottom__link`);if(!e)return;let t=window.location.pathname;e.forEach(e=>{let n=new URL(e.href).pathname,r=e.parentElement,i=e=>e.replace(`index.html`,``);i(n)===i(t)&&r.classList.add(`personal-account-bottom__item_active`)})}export{e as lightPersonalPage};
