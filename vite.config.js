@@ -28,6 +28,8 @@ export default defineConfig({
 				oneNews: resolve(__dirname, "src/pages/one-news/index.html"),
 				gallery: resolve(__dirname, "src/pages/gallery/index.html"),
 
+				notFound: resolve(__dirname, "404.html"),
+
 				signIn: resolve(__dirname, "src/pages/sign/sign-in/index.html"),
 				registration: resolve(__dirname, "src/pages/sign/registration/index.html"),
 				passwordRecovery: resolve(__dirname, "src/pages/sign/password-recovery/index.html"),
@@ -36,6 +38,8 @@ export default defineConfig({
 				contactInfo: resolve(__dirname, "src/pages/account/contact-info/index.html"),
 				passwordChange: resolve(__dirname, "src/pages/account/password-change/index.html"),
 				address: resolve(__dirname, "src/pages/account/address/index.html"),
+
+				placed: resolve(__dirname, "src/pages/order/placed/index.html"),
 			},
 		},
 	},

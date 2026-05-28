@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Заказ оформлен</title>
+		<link rel="stylesheet" href="../../../../src/scss/styles.scss" />
+		<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+	</head>
+	<body data-page="placed">
+		<!-- preloader -->
+		<div class="preloader">
+			<div class="preloader__spinner"></div>
+		</div>
+
+		<!-- header() -->
+		<!-- prettier-ignore -->
+		{% from "src/partials/modules/header.njk" import header %}
+    {{ header() }}
+
+		<main class="placed-main" id="go-to-top">
+			<!-- wholesales-top -->
+			<section class="placed-top">
+				<!-- bannerTitleText( titleBanner, textBanner, imgPath ) -->
+				<!-- prettier-ignore -->
+				{% from "src/partials/components/banner/banner-title-text.njk" import bannerTitleText %}
+        {{ bannerTitleText( "Благодарим Вас за заказ!",
+        "Наши менеджеры свяжутся с Вами в ближайшее время",
+        "/images/jpg/top/wholesales.jpg" ) }}
+			</section>
+		</main>
+
+		<!-- macro footer( classTopBg, classMiddle ) -->
+		<!-- prettier-ignore -->
+		{% from "src/partials/modules/footer.njk" import footer %}
+    {{ footer( "footer-top_bg-gray", "footer-middle_gray" ) }}
+
+		<script type="module" src="../../../js/pages/order/placed/scripts.js"></script>
+		<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+	</body>
+</html>

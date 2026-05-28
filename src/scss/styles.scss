@@ -109,9 +109,15 @@
 @use "./pages/sign/sign-in/sign-in-content.scss";
 @use "./pages/sign/registration/registration-content.scss";
 @use "./pages/sign/password-recovery/password-recovery-content.scss";
+
 @use "./pages/account/contact-info/contact-info-content.scss";
 @use "./pages/account/password-change/password-change-content.scss";
 @use "./pages/account/address/address-content.scss";
 
+@use "./pages/order/placed/placed-top.scss";
+
 // modals
 @use "./components/modals/modal-product-slider.scss";
+
+// not-found
+@use "./pages/not-found/not-found-content.scss";

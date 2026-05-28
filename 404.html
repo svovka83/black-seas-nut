@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>404</title>
+		<link rel="stylesheet" href="./src/scss/styles.scss" />
+		<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+	</head>
+	<body data-page="not-found">
+		<!-- preloader -->
+		<div class="preloader">
+			<div class="preloader__spinner"></div>
+		</div>
+
+		<!-- header() -->
+		<!-- prettier-ignore -->
+		{% from "src/partials/modules/header.njk" import header %}
+    {{ header() }}
+
+		<main class="not-found-main" id="go-to-top">
+			<!-- not-found-content -->
+			<div class="not-found-content">
+				<img class="not-found-content__img" src="/images/jpg/top/404.png" alt="page not found" />
+				<p class="not-found-content__text">Страница не найдена</p>
+				<div class="not-found-content__link">
+					<!-- link( title, classLink, pathLink ) -->
+					<!-- prettier-ignore -->
+					{% from "src/partials/ui/link.njk" import link %}
+          {{ link( "Вернуться на Главную страницу", "link_transparent", "/black-seas-nut/") }}
+				</div>
+			</div>
+		</main>
+
+		<!-- macro footer( classTopBg, classMiddle ) -->
+		<!-- prettier-ignore -->
+		{% from "src/partials/modules/footer.njk" import footer %}
+    {{ footer( "footer-top_bg-gray", "footer-middle_gray" ) }}
+
+		<script type="module" src="./src/js/pages/not-found/scripts.js"></script>
+		<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+	</body>
+</html>
