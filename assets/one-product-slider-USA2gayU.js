@@ -1,1 +1,0 @@
-import{t as e}from"./swiper-DyCw7Znt.js";import{t}from"./navigation-CZ824wVT.js";function n(){new e(`.product-slider`,{slidesPerView:1,speed:500,modules:[t],navigation:{nextEl:`.product-slider__nav-button_next`,prevEl:`.product-slider__nav-button_prev`}})}export{n as initOneProductSlider};
