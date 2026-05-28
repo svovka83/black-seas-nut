@@ -10,10 +10,13 @@ export function getBreadcrumbs() {
 	const signIn = document.querySelector(".sign-in-breadcrumbs");
 	const registration = document.querySelector(".registration-breadcrumbs");
 	const passwordRecovery = document.querySelector(".password-recovery-breadcrumbs");
+
 	const personalAccount = document.querySelector(".personal-account-breadcrumbs");
 	const contactInfo = document.querySelector(".contact-info-breadcrumbs");
 	const passwordChange = document.querySelector(".password-change-breadcrumbs");
 	const address = document.querySelector(".address-breadcrumbs");
+
+	const cart = document.querySelector(".cart-breadcrumbs");
 
 	if (shop) {
 		shop.innerHTML = breadcrumbs(
@@ -150,6 +153,17 @@ export function getBreadcrumbs() {
 				{ name: "Главная", path: "/black-seas-nut/" },
 				{ name: "Личный кабинет", path: "/black-seas-nut/src/pages/account/personal-account/index.html" },
 				{ name: "Адрес", path: "" },
+			],
+			"breadcrumbs_secondary"
+		);
+	}
+
+	if (cart) {
+		cart.innerHTML = breadcrumbs(
+			[
+				{ name: "Главная", path: "/black-seas-nut/" },
+				{ name: "Личный кабинет", path: "/black-seas-nut/src/pages/account/personal-account/index.html" },
+				{ name: "Корзина", path: "" },
 			],
 			"breadcrumbs_secondary"
 		);

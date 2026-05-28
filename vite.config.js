@@ -39,6 +39,7 @@ export default defineConfig({
 				passwordChange: resolve(__dirname, "src/pages/account/password-change/index.html"),
 				address: resolve(__dirname, "src/pages/account/address/index.html"),
 
+				cart: resolve(__dirname, "src/pages/order/cart/index.html"),
 				placed: resolve(__dirname, "src/pages/order/placed/index.html"),
 			},
 		},

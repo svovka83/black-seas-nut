@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Корзина</title>
+		<link rel="stylesheet" href="../../../../src/scss/styles.scss" />
+		<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+	</head>
+	<body data-page="cart">
+		<!-- preloader -->
+		<div class="preloader">
+			<div class="preloader__spinner"></div>
+		</div>
+
+		<!-- header() -->
+		<!-- prettier-ignore -->
+		{% from "src/partials/modules/header.njk" import header %}
+    {{ header() }}
+
+		<main class="cart-main" id="go-to-top">
+			<div class="cart-breadcrumbs container">
+				<!-- getBreadcrumbs(links, className) -->
+			</div>
+
+			<section class="cart-content container">
+				<div class="cart-content-top">
+					<div class="cart-content-top__title">
+						<!-- title( heading, classTitle, title ) -->
+						<!-- prettier-ignore -->
+						{% from "src/partials/ui/title.njk" import title %}
+            {{ title( "h3", "title_h3", "Корзина") }}
+					</div>
+
+					<div class="cart-content-top__manager-info">
+						<p class="cart-content-top__manager-info-text">Ваш личный менеджер Олег</p>
+						<a class="cart-content-top__manager-info-phone" href="tel:+380677771412">
+							<svg class="cart-content-top__manager-info-phone-icon">
+								<use href="/images/sprites.svg#phone-icon"></use>
+							</svg>
+							+38 067 777 14 12
+						</a>
+					</div>
+
+					<p class="cart-content-top__discount">Ваша персональная скидка - 5%</p>
+				</div>
+
+				<div class="cart-content-middle">
+					<div class="cart-content-middle__header">
+						<span class="cart-content-middle__header-heading">Товар</span>
+						<span class="cart-content-middle__header-heading">Кол - во</span>
+						<span class="cart-content-middle__header-heading">Цена за товар</span>
+						<span class="cart-content-middle__header-heading">Итоговая стоимость</span>
+					</div>
+
+					<div class="cart-content-middle__products">
+						<!-- here should be products -->
+					</div>
+				</div>
+				<div class="cart-content-bottom"></div>
+				<div class="cart-content-auth"></div>
+			</section>
+		</main>
+
+		<!-- macro footer( classTopBg, classMiddle ) -->
+		<!-- prettier-ignore -->
+		{% from "src/partials/modules/footer.njk" import footer %}
+    {{ footer( "footer-top_bg-gray", "footer-middle_gray" ) }}
+
+		<script type="module" src="../../../js/pages/order/cart/scripts.js"></script>
+		<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+	</body>
+</html>
