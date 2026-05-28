@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Новости и статьи</title>
+		<title>Корзина</title>
 		<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-		<script type="module" crossorigin src="/black-seas-nut/assets/news-BYD9P9Cu.js"></script>
+		<script type="module" crossorigin src="/black-seas-nut/assets/cart-DpHPRR9Z.js"></script>
 		<link rel="modulepreload" crossorigin href="/black-seas-nut/assets/styles-Bdc3X3c-.js">
 		<link rel="modulepreload" crossorigin href="/black-seas-nut/assets/preload-helper-B0VEZeR2.js">
 		<link rel="stylesheet" crossorigin href="/black-seas-nut/assets/styles-DCFOpTvb.css">
 	</head>
-	<body data-page="news">
+	<body data-page="cart">
 		<!-- preloader -->
 		<div class="preloader">
 			<div class="preloader__spinner"></div>
@@ -208,169 +208,49 @@
   </header>
 
 
-		<main class="news-main" id="go-to-top">
-			<div class="news-breadcrumbs container">
+		<main class="cart-main" id="go-to-top">
+			<div class="cart-breadcrumbs container">
 				<!-- getBreadcrumbs(links, className) -->
 			</div>
 
-			<!-- news-content -->
-			<section class="news-content container">
-				<div class="news-content__title">
-					<!-- title( heading, classTitle, title ) -->
-					<!-- prettier-ignore -->
-					
-					
-  <h2 class="title title_h2">Новости и статьи</h2>
+			<section class="cart-content container">
+				<div class="cart-content-top">
+					<div class="cart-content-top__title">
+						<!-- title( heading, classTitle, title ) -->
+						<!-- prettier-ignore -->
+						
+            
+  <h3 class="title title_h3">Корзина</h3>
 
-				</div>
-				<div class="news-content__text">
-					<!-- text( classText, text ) -->
-					<!-- prettier-ignore -->
-					
-					
-  <p class="text text_content">Свежие новости и полезная информация</p>
+					</div>
 
+					<div class="cart-content-top__manager-info">
+						<p class="cart-content-top__manager-info-text">Ваш личный менеджер Олег</p>
+						<a class="cart-content-top__manager-info-phone" href="tel:+380677771412">
+							<svg class="cart-content-top__manager-info-phone-icon">
+								<use href="/black-seas-nut/images/sprites.svg#phone-icon"></use>
+							</svg>
+							+38 067 777 14 12
+						</a>
+					</div>
+
+					<p class="cart-content-top__discount">Ваша персональная скидка - 5%</p>
 				</div>
-				<!-- news-article -->
-				<div class="news-article">
-					<img class="news-article__img" src="/black-seas-nut/images/jpg/news/news-article.jpg" alt="news article" />
-					<div class="news-article__content">
-						<p class="news-article__date">12.04.2019</p>
-						<h3 class="news-article__title">Центр поддержки экспорта, в студии Павел Тулба</h3>
-						<p class="news-article__text">
-							Сельскохозяйственный обслуживающий кооператив “Орех Причерноморья” предлагает своим клиентам
-							выгодные условия сотрудничества.
-						</p>
-						<p class="news-article__text">
-							Ореховый бизнес – один из наиболее перспективных в Украине. Ежегодная нехватка продукта в
-							Европе составляет 100 000 тонн. У Вас есть возможность зарабатывать десятки тысяч долларов в
-							год всего на нескольких гектарах земли.
-						</p>
-						<div class="news-article__read">
-							<!-- read() -->
-						</div>
+
+				<div class="cart-content-middle">
+					<div class="cart-content-middle__header">
+						<span class="cart-content-middle__header-heading">Товар</span>
+						<span class="cart-content-middle__header-heading">Кол - во</span>
+						<span class="cart-content-middle__header-heading">Цена за товар</span>
+						<span class="cart-content-middle__header-heading">Итоговая стоимость</span>
+					</div>
+
+					<div class="cart-content-middle__products">
+						<!-- here should be products -->
 					</div>
 				</div>
-				<div class="news-content__articles">
-					<div class="news-card">
-						<video class="news-card__video" preload="metadata" poster="/black-seas-nut/images/jpg/news/news_1.jpg">
-							<source src="" type="video/mp4" />
-						</video>
-
-						<div class="news-card__content">
-							<p class="news-card__date">12.04.2019</p>
-							<h4 class="news-card__title">Центр поддержки экспорта, в студии Павел Тулба</h4>
-							<p class="news-card__text">
-								Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди
-								наших садоводов, не смотря на большой спрос в Европе и отличную...
-							</p>
-							<div class="news-card__link">
-								<!-- getRead() -->
-							</div>
-						</div>
-					</div>
-					<div class="news-card">
-						<video class="news-card__video" preload="metadata" poster="/black-seas-nut/images/jpg/news/news_2.jpg">
-							<source src="" type="video/mp4" />
-						</video>
-
-						<div class="news-card__content">
-							<p class="news-card__date">12.04.2019</p>
-							<h4 class="news-card__title">
-								В Одесской области состоялся масштабный торгово - экспортный форум
-							</h4>
-							<p class="news-card__text">
-								Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди
-								наших садоводов, не смотря на большой спрос в Европе и отличную...
-							</p>
-							<div class="news-card__link">
-								<!-- getRead() -->
-							</div>
-						</div>
-					</div>
-					<div class="news-card">
-						<video class="news-card__video" preload="metadata" poster="/black-seas-nut/images/jpg/news/news_3.jpg">
-							<source src="" type="video/mp4" />
-						</video>
-
-						<div class="news-card__content">
-							<p class="news-card__date">12.04.2019</p>
-							<h4 class="news-card__title">Сертификация органического производителя</h4>
-							<p class="news-card__text">
-								Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди
-								наших садоводов, не смотря на большой спрос в Европе и отличную...
-							</p>
-							<div class="news-card__link">
-								<!-- getRead() -->
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="news-content__gallery">
-					<!-- galleryCardVideo() -->
-					<!-- prettier-ignore -->
-					
-					
-  <div class="galery-card-video">
-    <video
-      class="galery-card-video__video"
-      preload="metadata"
-      poster="/black-seas-nut/images/jpg/galery/galery-poster.png"
-      muted
-      loop>
-      <source src="/black-seas-nut/videos/galary-video.mp4" type="video/mp4" />
-    </video>
-
-    <div class="galery-card-video__content">
-      <div class="galery-card-video__play">
-        <!-- play( playId ) -->
-        
-        
-  <button class="play" id="galery-big-play">
-    <svg class="play__icon">
-      <use
-        class="play__use"
-        href="/black-seas-nut/images/sprites.svg#play-icon"
-        data-play="play-icon"
-        data-stop="stop-icon"></use>
-    </svg>
-  </button>
-
-      </div>
-
-      <div class="galery-card-video__title">
-        <!-- title( heading, classTitle, title ) -->
-        
-        
-  <h4 class="title title_h4 title_white">Проект UBHDP </h4>
-
-      </div>
-
-      <div class="galery-card-video__text">
-        <!-- text( classText, text ) -->
-        
-        
-  <p class="text text_galery text_white">Вчера к нам приезжал американский агроном Рон , спасибо Мельнику Евгению и проекту UBHDP за возможность получить консультацию 
-        от мировых специалистов!</p>
-
-      </div>
-
-    </div>
-
-    <div class="galery-card-video__eclipse"></div>
-  </div>
-
-				</div>
-				<div class="news-content__link">
-					<!-- link( title, classLink, pathLink ) -->
-					<!-- prettier-ignore -->
-					
-					
-  <a class="link link_fs14" href="https://starcraft-umber.vercel.app/">
-    <span class="link__title">Посмотреть еще</span>
-  </a>
-
-				</div>
+				<div class="cart-content-bottom"></div>
+				<div class="cart-content-auth"></div>
 			</section>
 		</main>
 
