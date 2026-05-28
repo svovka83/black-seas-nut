@@ -25,44 +25,75 @@
 
 			<!-- sign-in-content -->
 			<form class="registration-content form-container" action="#!">
-				<div class="sign-in-content__title">
+				<div class="registration-content__title">
 					<!-- title( heading, classTitle, title ) -->
 					<!-- prettier-ignore -->
 					{% from "src/partials/ui/title.njk" import title %}
-					{{ title( "h3", "title_h3", "Войти в личный кабинет") }}
+					{{ title( "h3", "title_h3", "Регистрация") }}
 				</div>
 
-				<div class="sign-in-content__email">
+				<h4 class="registration-content__subtitle">1. Контактные данные</h4>
+
+				<div class="registration-content__input">
 					<!-- input( inputId, inputType, inputPlaceholder ) -->
 					<!-- prettier-ignore -->
 					{% from "src/partials/ui/input.njk" import input %}
-					{{ input( "sign-in-email", "email", "Email" ) }}
+          {{ input( "registration-name", "text", "ФИО*" ) }}
 				</div>
-
-				<div class="sign-in-content__password">
+				<div class="registration-content__input">
 					<!-- input( inputId, inputType, inputPlaceholder ) -->
 					<!-- prettier-ignore -->
 					{% from "src/partials/ui/input.njk" import input %}
-					{{ input( "sign-in-password", "password", "Пароль" ) }}
+          {{ input( "registration-email", "email", "Email*" ) }}
+				</div>
+				<div class="registration-content__input">
+					<!-- input( inputId, inputType, inputPlaceholder ) -->
+					<!-- prettier-ignore -->
+					{% from "src/partials/ui/input.njk" import input %}
+          {{ input( "registration-tel", "tel", "Телефон*" ) }}
 				</div>
 
-				<div class="sign-in-content__forgot-password">
-					<!-- link( title, classLink, pathLink ) -->
-					<!-- prettier-ignore -->
-					{% from "src/partials/ui/link.njk" import link %}
-					{{ link( "Забыли пароль?", "link_empty link_fs13", "/black-seas-nut/src/pages/sign/password-recovery/index.html") }}
+				<h4 class="registration-content__subtitle">2. Адрес</h4>
+
+				<div class="address-content__country">
+					<!-- getSelect() -->
 				</div>
-				<div class="sign-in-content__enter">
-					<!-- link( title, classLink, pathLink ) -->
-					<!-- prettier-ignore -->
-					{% from "src/partials/ui/link.njk" import link %}
-					{{ link( "Войти", "link_green link_fs16", "/black-seas-nut/src/pages/account/personal-account/index.html") }}
+				<div class="address-content__region">
+					<!-- getSelect() -->
 				</div>
-				<div class="sign-in-content__registration">
+				<div class="registration-content__input">
+					<!-- input( inputId, inputType, inputPlaceholder ) -->
+					<!-- prettier-ignore -->
+					{% from "src/partials/ui/input.njk" import input %}
+          {{ input( "registration-city", "text", "Город*" ) }}
+				</div>
+				<div class="registration-content__input">
+					<!-- input( inputId, inputType, inputPlaceholder ) -->
+					<!-- prettier-ignore -->
+					{% from "src/partials/ui/input.njk" import input %}
+          {{ input( "registration-address", "text", "Адрес" ) }}
+				</div>
+
+				<h4 class="registration-content__subtitle">3. Пароль</h4>
+
+				<div class="registration-content__password">
+					<!-- input( inputId, inputType, inputPlaceholder ) -->
+					<!-- prettier-ignore -->
+					{% from "src/partials/ui/input.njk" import input %}
+					{{ input( "registration-password", "password", "Новый пароль*" ) }}
+				</div>
+				<div class="registration-content__password">
+					<!-- input( inputId, inputType, inputPlaceholder ) -->
+					<!-- prettier-ignore -->
+					{% from "src/partials/ui/input.njk" import input %}
+					{{ input( "registration-confirm-password", "password", "Подтвердить пароль*" ) }}
+				</div>
+
+				<div class="registration-content__registration">
 					<!-- link( title, classLink, pathLink ) -->
 					<!-- prettier-ignore -->
 					{% from "src/partials/ui/link.njk" import link %}
-					{{ link( "Регистрация", "link_empty link_fs13", "/black-seas-nut/src/pages/sign/registration/index.html") }}
+					{{ link( "Продолжить", "link_green link_fs15", "/black-seas-nut/src/pages/account/personal-account/index.html") }}
 				</div>
 			</form>
 		</main>

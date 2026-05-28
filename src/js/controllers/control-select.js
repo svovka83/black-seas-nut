@@ -1,6 +1,10 @@
 export function controlSelect() {
 	const selects = document.querySelectorAll(".select");
 
+	const controls = document.querySelectorAll(".select__control");
+	const icons = document.querySelectorAll(".select__icon");
+	const lists = document.querySelectorAll(".select__list");
+
 	selects.forEach((select) => {
 		const control = select.querySelector(".select__control");
 		const initial = select.querySelector(".select__text");
@@ -10,6 +14,10 @@ export function controlSelect() {
 
 		control.addEventListener("click", () => {
 			if (!control.classList.contains("select__control_active")) {
+				controls.forEach((control) => control.classList.remove("select__control_active"));
+				icons.forEach((icon) => icon.classList.remove("select__icon_open"));
+				lists.forEach((list) => list.classList.remove("select__list_open"));
+
 				control.classList.add("select__control_active");
 				icon.classList.add("select__icon_open");
 				list.classList.add("select__list_open");
