@@ -1,0 +1,31 @@
+{% macro addressContent() %}
+  <div class="address-content">
+    <h5 class="address-content__title">Адрес</h5>
+
+    <div class="address-content__country">
+      <!-- getSelect() -->
+    </div>
+
+    <div class="address-content__region">
+      <!-- getSelect() -->
+    </div>
+
+    <div class="address-content__input">
+      <!-- input( inputId, inputType, inputPlaceholder ) -->
+      {% from "src/partials/ui/input.njk" import input %}
+      {{ input( "city-address", "text", "Город*" ) }}
+    </div>
+
+    <div class="address-content__input">
+      <!-- input( inputId, inputType, inputPlaceholder ) -->
+      {% from "src/partials/ui/input.njk" import input %}
+      {{ input( "address-address", "text", "Адрес" ) }}
+    </div>
+    
+    <div class="address-content__button">
+      <!-- button( titleBtn, classBtn ) -->
+      {% from "src/partials/ui/button.njk" import button %}
+      {{ button( "Сохранить", "button_normal" ) }}
+    </div>
+  </div>
+{% endmacro %}

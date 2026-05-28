@@ -1,6 +1,8 @@
 export function getSelect() {
 	const taste = document.querySelector(".shop-filter__taste");
 	const mass = document.querySelector(".shop-filter__mass");
+	const country = document.querySelector(".address-content__country");
+	const region = document.querySelector(".address-content__region");
 
 	if (taste) {
 		taste.innerHTML = select("Вкус", [
@@ -9,13 +11,28 @@ export function getSelect() {
 			{ name: "очищенный", option: "refined" },
 		]);
 	}
-
 	if (mass) {
 		mass.innerHTML = select("Масса", [
 			{ name: "20 г.", option: "twenty" },
 			{ name: "40 г.", option: "forty" },
 			{ name: "60 г.", option: "sixty" },
 			{ name: "80 г.", option: "eighty" },
+		]);
+	}
+
+	if (country) {
+		country.innerHTML = select("Страна", [
+			{ name: "Украина", option: "ukraine" },
+			{ name: "США", option: "usa" },
+			{ name: "Чехия", option: "czech-republic" },
+			{ name: "Великобритания", option: "united-kingdom" },
+		]);
+	}
+	if (region) {
+		region.innerHTML = select("Область", [
+			{ name: "Большая", option: "big-region" },
+			{ name: "Средняя", option: "meddium-region" },
+			{ name: "Маленькая", option: "small-region" },
 		]);
 	}
 }

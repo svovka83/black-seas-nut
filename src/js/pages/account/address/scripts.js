@@ -1,14 +1,16 @@
-async function initContactInfoApp() {
+async function initAddressApp() {
 	const preloader = document.querySelector(".preloader");
 	const page = document.body.dataset.page;
 
 	try {
 		document.body.style.overflow = "hidden";
 
-		if (page === "contact-info") {
+		if (page === "address") {
 			const { initGeneral } = await import("../../../init-general.js");
 			const { getBreadcrumbs } = await import("../../../components/common/breadcrumbs.js");
 			const { lightPersonalPage } = await import("../../../utils/light-personal-page.js");
+			const { getSelect } = await import("../../../ui/select.js");
+			const { controlSelect } = await import("../../../controllers/control-select.js");
 
 			await initGeneral();
 
@@ -17,6 +19,12 @@ async function initContactInfoApp() {
 
 			// light page item
 			lightPersonalPage();
+
+			// ui and components
+			getSelect();
+
+			// controllers
+			controlSelect();
 		}
 
 		preloader.classList.add("preloader_hide");
@@ -27,4 +35,4 @@ async function initContactInfoApp() {
 	}
 }
 
-initContactInfoApp();
+initAddressApp();

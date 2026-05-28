@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Адрес</title>
+		<link rel="stylesheet" href="../../../../src/scss/styles.scss" />
+		<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+	</head>
+	<body data-page="address">
+		<!-- preloader -->
+		<div class="preloader">
+			<div class="preloader__spinner"></div>
+		</div>
+
+		<!-- header() -->
+		<!-- prettier-ignore -->
+		{% from "src/partials/modules/header.njk" import header %}
+    {{ header() }}
+
+		<main class="address-main" id="go-to-top">
+			<div class="address-breadcrumbs container">
+				<!-- getBreadcrumbs(links, className) -->
+			</div>
+
+			<!-- personalAccount( personalContent ) -->
+			<!-- prettier-ignore -->
+			{% from "src/partials/modules/personal-account.njk" import personalAccount %}
+			{% from "src/partials/components/personal-account/address-content.njk" import addressContent %}
+      {{ personalAccount( addressContent ) }}
+		</main>
+
+		<!-- macro footer( classTopBg, classMiddle ) -->
+		<!-- prettier-ignore -->
+		{% from "src/partials/modules/footer.njk" import footer %}
+    {{ footer( "footer-top_bg-gray", "footer-middle_gray" ) }}
+
+		<script type="module" src="../../../js/pages/account/address/scripts.js"></script>
+		<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+	</body>
+</html>

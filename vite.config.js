@@ -29,11 +29,13 @@ export default defineConfig({
 				gallery: resolve(__dirname, "src/pages/gallery/index.html"),
 
 				signIn: resolve(__dirname, "src/pages/sign/sign-in/index.html"),
+				registration: resolve(__dirname, "src/pages/sign/registration/index.html"),
 				passwordRecovery: resolve(__dirname, "src/pages/sign/password-recovery/index.html"),
 
 				personalAccount: resolve(__dirname, "src/pages/account/personal-account/index.html"),
 				contactInfo: resolve(__dirname, "src/pages/account/contact-info/index.html"),
 				passwordChange: resolve(__dirname, "src/pages/account/password-change/index.html"),
+				address: resolve(__dirname, "src/pages/account/address/index.html"),
 			},
 		},
 	},

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Регистрация</title>
+		<link rel="stylesheet" href="../../../../src/scss/styles.scss" />
+		<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+	</head>
+	<body data-page="registration">
+		<!-- preloader -->
+		<div class="preloader">
+			<div class="preloader__spinner"></div>
+		</div>
+
+		<!-- header() -->
+		<!-- prettier-ignore -->
+		{% from "src/partials/modules/header.njk" import header %}
+    {{ header() }}
+
+		<main class="registration-main" id="go-to-top">
+			<div class="registration-breadcrumbs container">
+				<!-- getBreadcrumbs(links, className) -->
+			</div>
+
+			<!-- sign-in-content -->
+			<form class="registration-content form-container" action="#!">
+				<div class="sign-in-content__title">
+					<!-- title( heading, classTitle, title ) -->
+					<!-- prettier-ignore -->
+					{% from "src/partials/ui/title.njk" import title %}
+					{{ title( "h3", "title_h3", "Войти в личный кабинет") }}
+				</div>
+
+				<div class="sign-in-content__email">
+					<!-- input( inputId, inputType, inputPlaceholder ) -->
+					<!-- prettier-ignore -->
+					{% from "src/partials/ui/input.njk" import input %}
+					{{ input( "sign-in-email", "email", "Email" ) }}
+				</div>
+
+				<div class="sign-in-content__password">
+					<!-- input( inputId, inputType, inputPlaceholder ) -->
+					<!-- prettier-ignore -->
+					{% from "src/partials/ui/input.njk" import input %}
+					{{ input( "sign-in-password", "password", "Пароль" ) }}
+				</div>
+
+				<div class="sign-in-content__forgot-password">
+					<!-- link( title, classLink, pathLink ) -->
+					<!-- prettier-ignore -->
+					{% from "src/partials/ui/link.njk" import link %}
+					{{ link( "Забыли пароль?", "link_empty link_fs13", "/black-seas-nut/src/pages/sign/password-recovery/index.html") }}
+				</div>
+				<div class="sign-in-content__enter">
+					<!-- link( title, classLink, pathLink ) -->
+					<!-- prettier-ignore -->
+					{% from "src/partials/ui/link.njk" import link %}
+					{{ link( "Войти", "link_green link_fs16", "/black-seas-nut/src/pages/account/personal-account/index.html") }}
+				</div>
+				<div class="sign-in-content__registration">
+					<!-- link( title, classLink, pathLink ) -->
+					<!-- prettier-ignore -->
+					{% from "src/partials/ui/link.njk" import link %}
+					{{ link( "Регистрация", "link_empty link_fs13", "/black-seas-nut/src/pages/sign/registration/index.html") }}
+				</div>
+			</form>
+		</main>
+
+		<!-- macro footer( classTopBg, classMiddle ) -->
+		<!-- prettier-ignore -->
+		{% from "src/partials/modules/footer.njk" import footer %}
+    {{ footer( "footer-top_bg-gray", "footer-middle_gray" ) }}
+
+		<script type="module" src="../../../js/pages/sign/registration/scripts.js"></script>
+		<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+	</body>
+</html>

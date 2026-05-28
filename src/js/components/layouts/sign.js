@@ -29,7 +29,10 @@ function sign(isAuth) {
 					Вход
 				</a>
 			</li>
-			<li class="sign__item">Регистрация</li>
+			<li class="sign__item">
+				<a href="${base}src/pages/sign/registration/index.html">
+					Регистрация</li>
+				</a>
 		</ul>
 	`;
 

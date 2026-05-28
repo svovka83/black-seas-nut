@@ -108,8 +108,9 @@
 // form pages
 @use "./pages/sign/sign-in/sign-in-content.scss";
 @use "./pages/sign/password-recovery/password-recovery-content.scss";
-@use "./pages/account/password-change/password-change-content.scss";
 @use "./pages/account/contact-info/contact-info-content.scss";
+@use "./pages/account/password-change/password-change-content.scss";
+@use "./pages/account/address/address-content.scss";
 
 // modals
 @use "./components/modals/modal-product-slider.scss";

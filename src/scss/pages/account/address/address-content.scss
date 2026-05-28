@@ -1,0 +1,26 @@
+@use "../../../settings/variables.scss" as *;
+
+.address-content {
+	max-width: 474px;
+	&__title {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 700;
+		font-size: 17px;
+		line-height: 32px;
+		letter-spacing: 1%;
+		margin-bottom: 14px;
+	}
+	&__country {
+		margin-bottom: 14px;
+	}
+	&__region {
+		margin-bottom: 14px;
+	}
+	&__input {
+		margin-bottom: 14px;
+	}
+	&__button {
+		width: 229px;
+		margin-left: auto;
+	}
+}

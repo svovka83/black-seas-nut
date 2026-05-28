@@ -8,10 +8,12 @@ export function getBreadcrumbs() {
 	const gallery = document.querySelector(".gallery-breadcrumbs");
 
 	const signIn = document.querySelector(".sign-in-breadcrumbs");
+	const registration = document.querySelector(".registration-breadcrumbs");
 	const passwordRecovery = document.querySelector(".password-recovery-breadcrumbs");
 	const personalAccount = document.querySelector(".personal-account-breadcrumbs");
 	const contactInfo = document.querySelector(".contact-info-breadcrumbs");
 	const passwordChange = document.querySelector(".password-change-breadcrumbs");
+	const address = document.querySelector(".address-breadcrumbs");
 
 	if (shop) {
 		shop.innerHTML = breadcrumbs(
@@ -93,6 +95,15 @@ export function getBreadcrumbs() {
 			"breadcrumbs_secondary"
 		);
 	}
+	if (registration) {
+		registration.innerHTML = breadcrumbs(
+			[
+				{ name: "Главная", path: "/black-seas-nut/" },
+				{ name: "Регистрация", path: "" },
+			],
+			"breadcrumbs_secondary"
+		);
+	}
 	if (passwordRecovery) {
 		passwordRecovery.innerHTML = breadcrumbs(
 			[
@@ -129,6 +140,16 @@ export function getBreadcrumbs() {
 				{ name: "Главная", path: "/black-seas-nut/" },
 				{ name: "Личный кабинет", path: "/black-seas-nut/src/pages/account/personal-account/index.html" },
 				{ name: "Пароль", path: "" },
+			],
+			"breadcrumbs_secondary"
+		);
+	}
+	if (address) {
+		address.innerHTML = breadcrumbs(
+			[
+				{ name: "Главная", path: "/black-seas-nut/" },
+				{ name: "Личный кабинет", path: "/black-seas-nut/src/pages/account/personal-account/index.html" },
+				{ name: "Адрес", path: "" },
 			],
 			"breadcrumbs_secondary"
 		);

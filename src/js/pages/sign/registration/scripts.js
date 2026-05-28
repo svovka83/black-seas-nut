@@ -1,22 +1,18 @@
-async function initContactInfoApp() {
+async function initRegistrationApp() {
 	const preloader = document.querySelector(".preloader");
 	const page = document.body.dataset.page;
 
 	try {
 		document.body.style.overflow = "hidden";
 
-		if (page === "contact-info") {
+		if (page === "registration") {
 			const { initGeneral } = await import("../../../init-general.js");
 			const { getBreadcrumbs } = await import("../../../components/common/breadcrumbs.js");
-			const { lightPersonalPage } = await import("../../../utils/light-personal-page.js");
 
 			await initGeneral();
 
 			// breadcrumbs
 			getBreadcrumbs();
-
-			// light page item
-			lightPersonalPage();
 		}
 
 		preloader.classList.add("preloader_hide");
@@ -27,4 +23,4 @@ async function initContactInfoApp() {
 	}
 }
 
-initContactInfoApp();
+initRegistrationApp();
