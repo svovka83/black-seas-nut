@@ -3,11 +3,11 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Корзина</title>
+		<title>Заказ</title>
 		<link rel="stylesheet" href="../../../../src/scss/styles.scss" />
 		<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 	</head>
-	<body data-page="cart">
+	<body data-page="order">
 		<!-- preloader -->
 		<div class="preloader">
 			<div class="preloader__spinner"></div>
@@ -18,8 +18,8 @@
 		{% from "src/partials/modules/header.njk" import header %}
     {{ header() }}
 
-		<main class="cart-main" id="go-to-top">
-			<div class="cart-breadcrumbs container">
+		<main class="order-main" id="go-to-top">
+			<div class="order-breadcrumbs container">
 				<!-- getBreadcrumbs(links, className) -->
 			</div>
 

@@ -1,0 +1,86 @@
+@use "../../settings/variables.scss" as *;
+
+.cart-card {
+	height: 62px;
+	display: grid;
+	grid-template-columns: minmax(auto, 397px) minmax(auto, 337px) minmax(auto, 349px) minmax(auto, 171px);
+	align-items: center;
+	column-gap: 12px;
+	border-bottom: 1px solid $color_border_8;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out;
+	&:hover {
+		background-color: #337d5a1a;
+	}
+	&__name {
+		font-family: "Montserrat", sans-serif;
+		font-size: 14px;
+		padding-left: 25px;
+		@media (max-width: 768px) {
+			padding-left: 12px;
+		}
+	}
+	&__buttons {
+		padding-left: 25px;
+		@media (max-width: 768px) {
+			padding-left: 12px;
+		}
+	}
+	&__price {
+		font-family: "Montserrat", sans-serif;
+		font-size: 14px;
+		padding-left: 25px;
+		@media (max-width: 768px) {
+			padding-left: 12px;
+		}
+	}
+	&__total {
+		font-family: "Montserrat", sans-serif;
+		font-size: 14px;
+		padding-left: 25px;
+		@media (max-width: 768px) {
+			padding-left: 12px;
+		}
+	}
+}
+
+// it will be a separate component
+.quantity-block {
+	display: flex;
+	align-items: center;
+	&__button {
+		cursor: pointer;
+		&-icon {
+			width: 11px;
+			height: 7px;
+			fill: $text_secondary;
+			&-subtract {
+				transform: rotate(90deg);
+			}
+			&-add {
+				transform: rotate(-90deg);
+			}
+			&:active {
+				fill: $color_secondary;
+			}
+		}
+	}
+	&__quantity {
+		width: 44px;
+		height: 28px;
+		font-family: "Montserrat", sans-serif;
+		font-size: 14px;
+		line-height: 32px;
+		margin-inline: 7px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid $color_border_15;
+		transition: border 0.2s ease-in-out;
+	}
+	&:hover {
+		.quantity-block__quantity {
+			border: 1px solid $color_secondary;
+		}
+	}
+}
